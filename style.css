@@ -1,0 +1,260 @@
+/*******************
+ * I) DISC LOADER
+ * II) HEADPHONE WARNING
+ ******************/
+body
+{
+    background: #0D0D0D;
+}
+@font-face
+{
+    font-family: 'Quicksand'; /* Font for text */
+    src: url('fonts/quicksand/Quicksand-Regular.otf');
+}
+@font-face
+{
+    font-family: 'Rajdhani'; /* Font for inter-title */
+    src: url('fonts/rajdhani/rajdhani-semibold.ttf');
+}
+@font-face
+{
+    font-family: 'Monument-Extended'; /* Font for titles */
+    src: url('fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
+}
+
+/*******************
+******************** WEBSITE DISC LOADER
+*******************/
+.loader
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loader .loader-disc
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    background-image: url('images/disc-loader.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: .25vw solid #eee;
+    box-shadow: 0px 0px 15px 1px #555;
+    will-change: transform opacity;
+    transform: scaleZ(0.5);
+    animation: disc-loader-rotation 5s infinite linear;
+}
+.loader .loader-disc .disc-track
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30.17%;
+    height: 30.17%;
+    background: transparent;
+    border: 3px solid #FFBA00;
+    border-radius: 50%;
+}
+.loader .loader-disc .disc-track .disc-center
+{
+    width: 45.71%;
+    height: 45.71%;
+    background: #fff;
+    border-radius: 50%;
+}
+  
+@keyframes disc-loader-rotation
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: rotateZ(180deg);
+        opacity: 1;
+    }
+    85%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+/*******************
+******************** HEADPHONE WARNING
+*******************/
+.headphone
+{
+    display: none;
+    position: relative;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: headphone-display 3s;
+    will-change: opacity;
+}
+@keyframes headphone-display
+{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+}
+.headphone .headphone-head
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-bottom: double 18px transparent;
+    border-top: solid 18px #727272;
+    border-right: double 18px #727272;
+    border-left: double 18px #727272;
+}
+.headphone .headphone-left
+{
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    height: 80px;
+    width: 40px;
+    border-radius: 100px 30px 30px 100px;
+    border-right: 20px solid #727272;
+    background: #FFBA00;
+    will-change: transform;
+    animation: headphone-beat 0.5s linear 2s infinite;
+}
+.headphone .headphone-right
+{
+    position: absolute;
+    top: 90px;
+    left: 115px;
+    height: 80px;
+    width: 40px;
+    border-radius: 30px 100px 100px 30px;
+    border-left: 20px solid #727272;
+    background: #FFBA00;
+    will-change: transform;
+    animation: headphone-beat 0.5s linear 2s infinite;
+}
+@keyframes headphone-beat
+{
+    0%
+    {
+        transform:scale(1);
+    }
+    100%
+    {
+        transform:scale(1.05);
+    }
+}
+.headphone-warning-text
+{
+    display: none;
+    font-family: 'Quicksand';
+    color: #F5F5F5;
+    text-align: center;
+    margin-top: 10%;
+    animation: headphone-display 3s;
+}
+
+/*******************
+******************** HEADPHONE WARNING START BUTTON
+*******************/
+.start-button
+{
+    display: none;
+    width: 290px;
+    height: 110px;
+    position: relative;
+    margin: 3rem auto 0;
+    animation: headphone-display 3s;
+    will-change: opacity;
+}
+.start-button:hover .start-button-inner
+{
+    top: -4px;
+    transform: scale(1, 1);
+    cursor: pointer;
+}
+.start-button-container
+{
+    border-bottom: 2px solid #F5F5F5;
+    position: absolute;
+    width: 95%;
+    height: 80px;
+}
+.start-button-container:before, .start-button-container:after
+{
+    border-bottom: 2px solid #F5F5F5;
+    width: 96%;
+    left: 2%;
+    bottom: -8px;
+    content: "";
+    position: absolute;
+}
+.start-button-container:after
+{
+    width: 92%;
+    left: 4%;
+    bottom: -14px;
+}
+.start-button-container .start-button-inner
+{
+    width: 104.2%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: -2.1%;
+    border: 2px solid #F5F5F5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: #0D0D0D;
+    transform: scale(0.96, 0.96);
+    transition: all .3s;
+    z-index: 4;
+}
+.start-button-container .start-button-text
+{
+    text-decoration: none;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+.headphone-warning-animation
+{
+    animation : delete-headphone 1s;
+}
+@keyframes delete-headphone
+{
+    0%
+    {
+        opacity: 1
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
