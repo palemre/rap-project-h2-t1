@@ -1,16 +1,15 @@
 /*******************
  * I) DISC LOADER
  * II) HEADPHONE WARNING
- * III) FIXED HAMBURGER MENU
- * IV) FIXED DOTS NAV
- * V) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
+ * III) DISPLAY MAIN RAP WRAPPER
+ * IV) FIXED HAMBURGER MENU
+ * V) FIXED DOTS NAV
+ * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
  ******************/
 body
 {
     background: #0D0D0D;
-    perspective: 800px;
-    transform-style: preserve-3d;
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
 }
 @font-face
@@ -266,6 +265,43 @@ body
 }
 
 /*******************
+******************** DISPLAY MAIN RAP WRAPPER
+*******************/
+.wrapper-rap-history
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    will-change: opacity;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+.display-wrapper-rap-history
+{
+    animation: display-main-history-of-rap 1s forwards;
+}
+@keyframes display-main-history-of-rap
+{
+    0%
+    {
+        display: inline;
+        opacity: 0;
+    }
+    80%
+    {
+        display: inline;
+        opacity: 1
+    }
+    100%
+    {
+        display: inline;
+        opacity: 1
+    }
+}
+
+/*******************
 ******************** FIXED HAMBURGER MENU
 *******************/
 #hamburger-menu
@@ -274,6 +310,7 @@ body
 }
 #hamburger-menu + .hamburger-menu-lines
 {
+    display: none;
     position: fixed;
     top: 2rem;
     left: 2rem;
@@ -327,7 +364,7 @@ body
     background: #0D0D0D;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     /* height: 100px; */
     z-index: 3;
     transition: .5s;
@@ -376,7 +413,7 @@ body
 *******************/
 .vertical-dots-nav
 {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -384,6 +421,7 @@ body
     left: 2rem;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
 }
 .vertical-dots-nav .vertical-nav-dot
 {
@@ -402,7 +440,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : INTRO
 *******************/
-.text-history
+.wrapper-rap-history .text-history
 {
     position: absolute;
     font-family: 'Monument-Extended';
@@ -412,7 +450,7 @@ body
     left: 50%;
     transform: translateX(-50%);
 }
-.text-of-rap
+.wrapper-rap-history .text-history .text-of-rap
 {
     position: absolute;
     width: 100%;
@@ -423,10 +461,11 @@ body
     left: 84%;
     transform: translateX(-50%);
 }
+
 /*******************
 ******************** RAP'S HISTORY : INTRO --> SCROLL DOWN
 *******************/
-.scroll-down-text
+.wrapper-rap-history .scroll-down-text
 {
     font-family: 'Quicksand';
     text-orientation: upright;
@@ -434,14 +473,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     right: 2rem;
     top: 35%;
     transform: translateY(-50%);
     color: #FFF;
 }
-.scroll-down-line
+.wrapper-rap-history .scroll-down-line
 {
     position: absolute;
     right: -1rem;
@@ -450,4 +489,14 @@ body
     transform: rotate(90deg);
     background: #FFF;
     top: 55%;
+}
+
+/*******************
+******************** RAP'S HISTORY : RAP TYPES
+*******************/
+.wrapper-rap-history .rap-types
+{
+    background: red;
+    max-width: 100%;
+    height: 1000px;
 }
