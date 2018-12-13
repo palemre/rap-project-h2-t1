@@ -1,6 +1,7 @@
 /*******************
  * I) DISC LOADER : DELETE AFTER ANIMATION FINISHED
  * II) HEADPHONE WARNING : DISPLAY AFTER DISC & DELETE AFTER ANIMATION FINISHED
+ * III) RAP HISTORY : DISPLAY WHEN NEEDED
  ******************/
 
 /*******************
@@ -39,4 +40,9 @@ startButton.addEventListener('click', () =>
         startButton.remove()
         window.clearInterval(deleteHeadphoneWarning)
     }, 1000)
+
 })
+
+/*******************
+******************** START HISTORY OF RAP
+*******************/
