@@ -441,6 +441,16 @@ body
 /*******************
 ******************** RAP'S HISTORY : INTRO
 *******************/
+/* MOSAIC BACKGROUND IMAGE */
+.wrapper-rap-history .rap-history-background
+{
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: url('images/mosaique-albums-rap.jpg')
+    /* border: 3px solid green; */
+}
+
 .wrapper-rap-history .rap-content .text-history
 {
     position: absolute;
@@ -493,11 +503,102 @@ body
 }
 
 /*******************
+******************** RAP'S HISTORY : RAP ORIGIN
+*******************/
+.wrapper-rap-history .rap-content .rap-origin
+{
+    background: #0D0D0D;
+    max-width: 100%;
+    position: relative;
+}
+.wrapper-rap-history .rap-content .rap-origin .rap-origin-text
+{
+    position: relative;
+    color: #FFF;
+    font-family: 'Monument-Extended';
+    font-size: 7rem;
+    top: 7%;
+    padding: 0;
+    left: 99%;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+/* RAP'S ORIGIN TIMELINE DESIGN */
+.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container .pulse-button
+{
+    position: relative;
+    margin-top: -50px;
+    margin: 0 50px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #FFBA00;
+}
+.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container .pulse-button.current-pulse-button
+{
+    background: #FFBA00;
+}
+
+.pulse-button-animation
+{
+    animation: pulse-button-timeline 1.5s infinite;
+}
+@keyframes pulse-button-timeline
+{
+    70%
+    {
+        box-shadow: 0 0 0 10px #FFBA00;
+    }
+    100%
+    {
+        box-shadow: 0 0 0 0 #FFBA00;
+    }
+}
+.wrapper-rap-history .rap-content .rap-origin .pulse-button-text
+{
+    font-family: 'Quicksand';
+    color: #FFF;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    max-width: 50%;
+}
+.rap-origin-timeline-line
+{
+    width: 60%;
+    position: absolute;
+    height: 0.5rem;
+    background: #FFF;
+    top: 41.25%;
+    left: 20%;
+}
+
+/*******************
 ******************** RAP'S HISTORY : RAP TYPES
 *******************/
 .wrapper-rap-history .rap-content .rap-types
 {
-    background: red;
+    background: #0D0D0D;
+    border: 1px solid white;
     max-width: 100%;
 }
 /* .test
@@ -525,7 +626,7 @@ body
     0%   { opacity: 1; }
     100% { opacity: 0; }
 }
-.hip-hop-content
+.wrapper-rap-history .hip-hop-content
 {
     transition: all 2s;
     will-change: transform opacity;
