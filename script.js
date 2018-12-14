@@ -22,7 +22,7 @@ const discDisplay = setInterval(() =>
 const headphone = document.querySelector('.headphone')
 const headphoneWarning = document.querySelector('.headphone-warning-text')
 const startButton = document.querySelector('.start-button')
-
+//GET MAIN RAP ELEMENTS
 const wrapperRapHistory = document.querySelector('.wrapper-rap-history')
 const verticalDotsNav = document.querySelector('.vertical-dots-nav')
 const hamburgerMenuLines = document.querySelector('.hamburger-menu-lines')
@@ -80,7 +80,7 @@ startButton.addEventListener('click', () =>
 const pulseButtons = rapOrigin.querySelectorAll('.pulse-button')
 const pulseButtonText = rapOrigin.querySelector('.pulse-button-text')
 let selectedButton = 0
-const rapOriginTexts = ['Le genre se développe en tant que mouvement culturel et artistique aux États-Unis, à New York, dans le South Bronx au début des années 1970.', 'Les premiers raps sont réalisés par des maîtres de cérémonies faisant des rimes simples pour mettre de l’ambiance en soirée. Ceux-ci sont italiens contrairement à ce que l’on pourrait croire.', 'Sortie de « Rapper’s Delight » du groupe Sugarhill Gag, qui devient le premier tube rap dans le monde.', 'Début de la popularité, explosion du rap dans le monde entier. C’est à cette période que le rap vas arriver en europe notamment en France et en Angleterre.', 'Sortie de “the message” de Grandmaster Flash qui engendre une révolution par sa nouvelle approche au rap']
+const rapOriginTexts = ['1982 : The Message de Grandmaster Flash est la révolution annoncée. C’est le premier tube hip-hop ; une culture de rue qui était alors composée principalement de danse et de set.', '1982 : les Beastie Boys commencèrent eux aussi à se faire connaître, prouvant et montrant ainsi que la culture hip-hop était bien un mélange de culture et d\'influence noir et blanche.', '1996 : L’album All eyez on me 2Pac reconnu comme l’un des plus influent de l’histoire du hip-hop. Côté West-Coast en guerre avec la East-Coast des USA', '1997 : Life after Death : album sortie à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de hip-hop le plus vendu tous les temps.', '2002 : Lose Yourself musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un Oscar et deux Grammy Awards.']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
 rapOrigin.addEventListener('click', () =>
@@ -93,6 +93,17 @@ rapOrigin.addEventListener('click', () =>
             pulseButtons[i].style.backgroundColor = '#FFBA00'
             pulseButtons[i].classList.add('pulse-button-animation')
             pulseButtonText.innerHTML = rapOriginTexts[i]
+            //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
+            if (i == 0)
+            { rapOrigin.style.backgroundImage = `url('images/rap-timeline/grandmaster-flash.jpg')` }
+            else if (i == 1)
+            { rapOrigin.style.backgroundImage = `url('images/rap-timeline/beastie-boys.jpg')` }
+            else if (i == 2)
+            { rapOrigin.style.backgroundImage = `url('images/rap-timeline/2pac.jpg')` }
+            else if (i == 3)
+            { rapOrigin.style.backgroundImage = `url('images/rap-timeline/notorious-big.png')` }
+            else if (i == 4)
+            { rapOrigin.style.backgroundImage = `url('images/rap-timeline/eminem.jpg')` }
         })
         if (i != selectedButton)
         {

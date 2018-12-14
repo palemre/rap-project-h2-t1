@@ -114,14 +114,8 @@ body
 }
 @keyframes headphone-display
 {
-    0%
-    {
-        opacity: 0;
-    }
-    90%
-    {
-        opacity: 1;
-    }
+    0%  { opacity: 0; }
+    90% { opacity: 1; }
 }
 .headphone .headphone-head
 {
@@ -162,14 +156,8 @@ body
 }
 @keyframes headphone-beat
 {
-    0%
-    {
-        transform:scale(1);
-    }
-    100%
-    {
-        transform:scale(1.05);
-    }
+    0%   { transform:scale(1);    }
+    100% { transform:scale(1.05); }
 }
 .headphone-warning-text
 {
@@ -255,14 +243,8 @@ body
 }
 @keyframes delete-headphone
 {
-    0%
-    {
-        opacity: 1
-    }
-    100%
-    {
-        opacity: 0;
-    }
+    0%   { opacity: 1;  }
+    100% { opacity: 0; }
 }
 
 /*******************
@@ -448,7 +430,6 @@ body
     display: block;
     position: absolute;
     background: url('images/mosaique-albums-rap.jpg')
-    /* border: 3px solid green; */
 }
 
 .wrapper-rap-history .rap-content .text-history
@@ -507,9 +488,10 @@ body
 *******************/
 .wrapper-rap-history .rap-content .rap-origin
 {
-    background: #0D0D0D;
+    background: url('images/rap-timeline/grandmaster-flash.jpg');
     max-width: 100%;
     position: relative;
+    background-size: cover;
 }
 .wrapper-rap-history .rap-content .rap-origin .rap-origin-text
 {
@@ -531,7 +513,7 @@ body
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -562,21 +544,15 @@ body
 }
 @keyframes pulse-button-timeline
 {
-    70%
-    {
-        box-shadow: 0 0 0 10px #FFBA00;
-    }
-    100%
-    {
-        box-shadow: 0 0 0 0 #FFBA00;
-    }
+    70%  { box-shadow: 0 0 0 10px #FFBA00; }
+    100% { box-shadow: 0 0 0 0 #FFBA00;    }
 }
 .wrapper-rap-history .rap-content .rap-origin .pulse-button-text
 {
     font-family: 'Quicksand';
     color: #FFF;
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
@@ -588,7 +564,7 @@ body
     position: absolute;
     height: 0.5rem;
     background: #FFF;
-    top: 41.25%;
+    top: 11.25%;
     left: 20%;
 }
 
@@ -600,13 +576,14 @@ body
     background: #0D0D0D;
     border: 1px solid white;
     max-width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
 }
-/* .test
+.wrapper-rap-history .rap-content .rap-types .rapper
 {
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-} */
+    width: 25%;
+}
 
 /*******************
 ******************** TUNNEL EFFECT BETWEEN MUSIC TYPES
