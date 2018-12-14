@@ -5,6 +5,7 @@
  * IV) FIXED HAMBURGER MENU
  * V) FIXED DOTS NAV
  * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
+ * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
  ******************/
 body
 {
@@ -440,7 +441,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : INTRO
 *******************/
-.wrapper-rap-history .text-history
+.wrapper-rap-history .rap-content .text-history
 {
     position: absolute;
     font-family: 'Monument-Extended';
@@ -450,7 +451,7 @@ body
     left: 50%;
     transform: translateX(-50%);
 }
-.wrapper-rap-history .text-history .text-of-rap
+.wrapper-rap-history .rap-content .text-history .text-of-rap
 {
     position: absolute;
     width: 100%;
@@ -465,7 +466,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : INTRO --> SCROLL DOWN
 *******************/
-.wrapper-rap-history .scroll-down-text
+.wrapper-rap-history .rap-content .scroll-down-text
 {
     font-family: 'Quicksand';
     text-orientation: upright;
@@ -480,7 +481,7 @@ body
     transform: translateY(-50%);
     color: #FFF;
 }
-.wrapper-rap-history .scroll-down-line
+.wrapper-rap-history .rap-content .scroll-down-line
 {
     position: absolute;
     right: -1rem;
@@ -494,9 +495,49 @@ body
 /*******************
 ******************** RAP'S HISTORY : RAP TYPES
 *******************/
-.wrapper-rap-history .rap-types
+.wrapper-rap-history .rap-content .rap-types
 {
     background: red;
     max-width: 100%;
+}
+/* .test
+{
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+} */
+
+/*******************
+******************** TUNNEL EFFECT BETWEEN MUSIC TYPES
+*******************/
+/* DIFFERENT CONTENTS WITH ANIMATION ON TUNNEL */
+.wrapper-rap-history .rap-content
+{
+    transition: all 2s;
+    will-change: transform opacity;
+}
+.tunnel-animation
+{
+    animation: tunnelAnimation 2s;
+}
+@keyframes tunnelAnimation 
+{
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+.hip-hop-content
+{
+    transition: all 2s;
+    will-change: transform opacity;
     height: 1000px;
+    background: blue;
+}
+
+/* BUTTON FOR TUNNEL FROM RAP TO HIP-HOP */
+.wrapper-rap-history .rap-content .rap-types .tunnel-to-hip-hop
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
