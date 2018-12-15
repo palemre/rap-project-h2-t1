@@ -4,8 +4,12 @@
     --colorForText: #F0F0F0; /* white-like color for basic texts */
 }
 /*******************
- * I) HIP-HOP CONTENT
+ * I) HIP-HOP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
  ******************/
+
+/*******************
+******************** HIP-HOP CONTENT : INTRO
+*******************/
  /* HIP-HOP BACKGROUND DISPLAY WITH TITLE */
 .wrapper-rap-history .hip-hop-content
 {
@@ -24,19 +28,55 @@
     background: url('images/hip-hop/mosaique-albums-hip-hop.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
+.wrapper-rap-history .hip-hop-content .hip-hop-history .scroll-down-text.scroll-hip-hop
+{ top: 20%; }
+.wrapper-rap-history .hip-hop-content .hip-hop-history .scroll-down-line.line-hip-hop
+{ top: 30%; }
+
 /* HIP-HOP TITLE STYLE ON STYLE.CSS --> .music-type-text */
 .wrapper-rap-history .hip-hop-content .hip-hop-history .text-the,
 .music-type-text.hip-hop
-{
-    color: var(--colorForTitleInHipHop);
-}
-.hip-hop-content .hip-hop-history .text-the
+{ color: var(--colorForTitleInHipHop); }
+.music-type-text.hip-hop
+{ top: 22%; }
+.wrapper-rap-history .hip-hop-content .hip-hop-history .text-the
 {
     position: absolute;
-    top: 51.5%;
+    top: 27.9%;
     left: 25%;
     transform: rotate(-90deg);
     transform-origin: 0 0;
     font-size: 2.85rem;
     font-family: 'Monument-Extended';
+}
+
+/*******************
+******************** HIP-HOP CONTENT : ORIGIN
+*******************/
+/* BACKGROUND OF HIP-HOP'S ORIGIN */
+.music-style-origin.js-hip-hop-origin
+{
+    background: #0D0D0D;
+    max-width: 100%;
+    position: relative;
+}
+.music-style-origin-text.hip-hop-origin-text
+{
+    width: 1rem;
+}
+
+/* HIP-HOP ORIGIN TEXT STYLE ON STYLE.CSS --> .music-style-origin-text */
+/* HIP-HOP ORIGIN PULSE BUTTON STYLE ON STYLE.CSS --> .pulse-button */
+/* HIP-HOP ORIGIN PULSE BUTTON TEXT STYLE ON STYLE.CSS --> .pulse-button-text */
+.pulse-button.current-pulse-button-hip-hop
+{
+    background: #7762E8;
+}
+.wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button
+{
+    box-shadow: 0 0 0 0 #7762E8;
+}
+.wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button-text
+{
+    color: var(--colorForTitleInHipHop);
 }

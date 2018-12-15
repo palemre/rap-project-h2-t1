@@ -4,7 +4,8 @@
  * III) RAP HISTORY : DISPLAY MAIN RAP WRAPPER + RAP'S ORIGIN
  * IV) NAV DOTS & AUDIO : FILL NAV DOTS & PLAYS AUDIO ON SCROLL
  * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
- * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP HIP-HOP JAZZ
+ * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
+ * VII) HIP-HOP'S ORIGIN TIMELINE
  ******************/
 
 /*******************
@@ -35,6 +36,7 @@ const $hipHopMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-hip-h
 
 
 const offsetHeight = document.body.offsetHeight
+const offsetWidth = document.body.offsetWidth
 
 const headphoneDisplay = setInterval(() =>
 {
@@ -72,7 +74,6 @@ $startButton.addEventListener('click', () =>
         $rapOrigin.style.height =`${offsetHeight}px`
 
         //RAP TYPES DISPLAY
-        // rapTypes.style.marginTop =`${offsetHeight}px`
         $rapTypes.style.height =`${offsetHeight}px`
 
         window.clearInterval(deleteHeadphoneWarning)
@@ -270,12 +271,15 @@ const $rapImpacts = $wrapperRapHistory.querySelector('.js-rap-impacts')
 $rapImpacts.style.height =`${offsetHeight}px`
 
 /*******************
-******************** BACK IN TIME TUNNEL EFFECT
+******************** BACK IN TIME TUNNEL EFFECT : RAP TO HIP-HOP
 *******************/
 //TUNNEL FROM RAP TO HIP-HOP
 const $tunnelToHipHop = $rapImpacts.querySelector('.js-tunnel-to-hip-hop')
 const $rapMainContainerToDisplay = $wrapperRapHistory.querySelector('.rap-main-container-to-display')
 const $hipHopContent = $wrapperRapHistory.querySelector('.js-hip-hop-content')
+
+//SELECT HIP-HOP CONTENTS
+const $hiphopOrigin = $wrapperRapHistory.querySelector('.js-hip-hop-origin')
 
 $tunnelToHipHop.addEventListener('click', () =>
 {
@@ -292,5 +296,49 @@ $tunnelToHipHop.addEventListener('click', () =>
     }, 1500)
     $rapMainContainerToDisplay.classList.add('tunnel-animation')
     $hipHopContent.classList.add('tunnel-animation-in')
+
+    //DIPLAY HIP-HOP HISTORY'S CONTENT
+    $hiphopOrigin.style.height =`${offsetHeight}px`
+    $hiphopOrigin.style.width =`${offsetWidth}px`
+})
+
+/*******************
+******************** HIP-HOP'S ORIGIN TIMELINE
+*******************/
+//HIP-HOP'S ORIGIN TIMELINE PULSE BUTTONS
+const $pulseButtonsHipHop = $hiphopOrigin.querySelectorAll('.js-pulse-button-hip-hop')
+const $pulseButtonTextHipHop = $hiphopOrigin.querySelector('.js-pulse-button-text-hip-hop')
+let selectedButtonHipHop = 0
+const hiphopOriginTexts = ['1970 : Naissance du hip-hop', '1980 : Début de l’âge d’or du hip-hop, elle se définit par sa diversité, sa qualité, son innovation, et l’importance de ses contenus', '1982 : Sortie de “the message” de Grandmaster Flash qui engendre une révolution', '1984 : Création du hip-hop new school. Le new school a des rythmes influencé par le rock music38 et est noté pour son rap socio-politiques violents.', '1990 : La sortie de Fear of a Black Planet par Public Enemy joue un rôle clé dans la popularisation du hip-hop auprès du grand public. C’est l’année où le rap a explosé.']
+
+//CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
+$hiphopOrigin.addEventListener('click', () =>
+{
+    for (let i = 0; i < $pulseButtonsHipHop.length; i++)
+    {
+        $pulseButtonsHipHop[i].addEventListener('click', () =>
+        {
+            selectedButtonHipHop = i
+            $pulseButtonsHipHop[i].style.backgroundColor = '#7762E8'
+            $pulseButtonsHipHop[i].classList.add('pulse-button-animation-hip-hop')
+            $pulseButtonTextHipHop.innerHTML = hiphopOriginTexts[i]
+            //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
+            // if (i == 0)
+            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.jpg')` }
+            // else if (i == 1)
+            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.jpg')` }
+            // else if (i == 2)
+            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.jpg')` }
+            // else if (i == 3)
+            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/notorious-big.png')` }
+            // else if (i == 4)
+            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.jpg')` }
+        })
+        if (i != selectedButtonHipHop)
+        {
+            $pulseButtonsHipHop[i].style.backgroundColor = `#FFF`
+            $pulseButtonsHipHop[i].classList.remove('pulse-button-animation-hip-hop')
+        }
+    }
 })
 

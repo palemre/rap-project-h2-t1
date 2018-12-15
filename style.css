@@ -490,7 +490,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : RAP ORIGIN
 *******************/
-.wrapper-rap-history .rap-content .rap-origin
+.music-style-origin
 {
     background: url('images/rap/rap-timeline/grandmaster-flash.jpg');
     max-width: 100%;
@@ -498,7 +498,7 @@ body
     background-size: cover;
     box-shadow: rgb(0, 0, 0) 0px 1px 5px 5px inset;
 }
-.wrapper-rap-history .rap-content .rap-origin .rap-origin-text
+.music-style-origin-text
 {
     position: relative;
     color: var(--colorForText);
@@ -511,8 +511,8 @@ body
     transform-origin: 0 0;
 }
 
-/* RAP'S ORIGIN TIMELINE DESIGN */
-.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container
+/* EACH MUSIC STYLE'S ORIGIN TIMELINE DESIGN */
+.music-style-origin-timeline-container
 {
     display: flex;
     justify-content: center;
@@ -523,8 +523,7 @@ body
     transform: translateX(-50%);
     z-index: 10;
 }
-
-.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container .pulse-button
+.pulse-button
 {
     position: relative;
     margin-top: -50px;
@@ -538,7 +537,7 @@ body
     cursor: pointer;
     box-shadow: 0 0 0 0 #FFBA00;
 }
-.wrapper-rap-history .rap-content .rap-origin .rap-origin-timeline-container .pulse-button.current-pulse-button
+.pulse-button.current-pulse-button
 {
     background: #FFBA00;
 }
@@ -552,10 +551,19 @@ body
     70%  { box-shadow: 0 0 0 10px #FFBA00; }
     100% { box-shadow: 0 0 0 0 #FFBA00;    }
 }
-.wrapper-rap-history .rap-content .rap-origin .pulse-button-text
+.pulse-button-animation-hip-hop
+{
+    animation: pulse-button-timeline-hip-hop 1s 5;
+}
+@keyframes pulse-button-timeline-hip-hop
+{
+    70%  { box-shadow: 0 0 0 10px #7762E8; }
+    100% { box-shadow: 0 0 0 0 #7762E8;    }
+}
+.pulse-button-text
 {
     font-family: 'Quicksand';
-    color: rgb(255, 255, 0);
+    color: var(--colorForTitleInRap);
     position: relative;
     top: 60%;
     left: 50%;
@@ -563,7 +571,7 @@ body
     transform: translateX(-50%);
     max-width: 50%;
 }
-.rap-origin-timeline-line
+.music-style-origin-timeline-line
 {
     width: 60%;
     position: absolute;
@@ -606,7 +614,6 @@ body
     position: absolute;
     top: 70%;
     width: 20%;
-    text-align: justify;
     opacity: 0;
     will-change: opacity;
     transform: translateX(-10%);
