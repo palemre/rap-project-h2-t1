@@ -1,3 +1,8 @@
+:root
+{
+    --colorForTitleInRap: #FFBA00; /* orange-like color for titles in rap */
+    --colorForText: #F0F0F0; /* white-like color for basic texts */
+}
 /*******************
  * I) DISC LOADER
  * II) HEADPHONE WARNING
@@ -359,7 +364,7 @@ body
 {
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 20%;
     right: 20%;
 }
@@ -432,24 +437,23 @@ body
     background: url('images/rap/mosaique-albums-rap.jpg');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
-
-.wrapper-rap-history .rap-content .text-history
+.music-type-text
 {
     position: absolute;
     font-family: 'Monument-Extended';
     font-size: 6rem;
-    color: #FFF;
+    color: var(--colorForText);
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
 }
-.wrapper-rap-history .rap-content .text-history .text-of-rap
+.wrapper-rap-history .rap-content .music-type-text .text-of-rap
 {
     position: absolute;
     width: 100%;
     font-family: 'Monument-Extended';
     font-size: 4rem;
-    color: #FFBA00;
+    color: var(--colorForTitleInRap);
     top: 75%;
     left: 84%;
     transform: translateX(-50%);
@@ -458,7 +462,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : INTRO --> SCROLL DOWN
 *******************/
-.wrapper-rap-history .rap-content .scroll-down-text
+.scroll-down-text
 {
     font-family: 'Quicksand';
     text-orientation: upright;
@@ -473,7 +477,7 @@ body
     transform: translateY(-50%);
     color: #FFF;
 }
-.wrapper-rap-history .rap-content .scroll-down-line
+.scroll-down-line
 {
     position: absolute;
     right: -1rem;

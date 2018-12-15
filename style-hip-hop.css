@@ -1,19 +1,42 @@
+:root
+{
+    --colorForTitleInHipHop: #7762E8; /* orange-like color for titles in rap */
+    --colorForText: #F0F0F0; /* white-like color for basic texts */
+}
 /*******************
  * I) HIP-HOP CONTENT
- * II) HEADPHONE WARNING
- * III) DISPLAY MAIN RAP WRAPPER
- * IV) FIXED HAMBURGER MENU
- * V) FIXED DOTS NAV
- * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
- * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
  ******************/
+ /* HIP-HOP BACKGROUND DISPLAY WITH TITLE */
 .wrapper-rap-history .hip-hop-content
 {
     display: none;
     transition: all 1.5s;
     will-change: opacity;
-    height: 1000px;
-    background: url('images/hip-hop/mosaique-albums-hip-hop.png');
     position: absolute;
     top: 0;
+    width: 100vw;
+    max-width: 100vw;
+}
+.wrapper-rap-history .hip-hop-content .hip-hop-history
+{
+    width: 100%;
+    display: block;
+    background: url('images/hip-hop/mosaique-albums-hip-hop.png');
+    box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
+}
+/* HIP-HOP TITLE STYLE ON STYLE.CSS --> .music-type-text */
+.wrapper-rap-history .hip-hop-content .hip-hop-history .text-the,
+.music-type-text.hip-hop
+{
+    color: var(--colorForTitleInHipHop);
+}
+.hip-hop-content .hip-hop-history .text-the
+{
+    position: absolute;
+    top: 51.5%;
+    left: 25%;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    font-size: 2.85rem;
+    font-family: 'Monument-Extended';
 }

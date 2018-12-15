@@ -10,12 +10,12 @@
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
-const $discLoader = document.querySelector('.js-loader')
-const discDisplay = setInterval(() =>
-{
-    $discLoader.remove()
-    window.clearInterval(discDisplay)
-}, 5000)
+// const $discLoader = document.querySelector('.js-loader')
+// const discDisplay = setInterval(() =>
+// {
+//     $discLoader.remove()
+//     window.clearInterval(discDisplay)
+// }, 5000)
 
 /*******************
 ******************** HEADPHONE WARNING + MAIN RAP WRAPPER DISPLAY
@@ -30,6 +30,9 @@ const $hamburgerMenuLines = document.querySelector('.js-hamburger-menu-lines')
 const $rapOrigin = $wrapperRapHistory.querySelector('.js-rap-origin')
 const $rapTypes = $wrapperRapHistory.querySelector('.js-rap-types')
 const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-rap-history-background')
+const $hipHopMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-hip-hop-history')
+
+
 
 const offsetHeight = document.body.offsetHeight
 
@@ -39,7 +42,7 @@ const headphoneDisplay = setInterval(() =>
     $headphoneWarning.style.display = `block`
     $startButton.style.display = `block`
     window.clearInterval(headphoneDisplay)
-}, 5000)
+}, 1000)
 
 $startButton.addEventListener('click', () =>
 {
@@ -63,6 +66,7 @@ $startButton.addEventListener('click', () =>
 
         //RAP MOSAIC BACKGROUND
         $rapMosaicBackgroundImage.style.height = `${offsetHeight}px`
+        $hipHopMosaicBackgroundImage.style.height = `${offsetHeight}px`
 
         //RAP ORIGIN DISPLAY
         $rapOrigin.style.height =`${offsetHeight}px`
@@ -95,15 +99,15 @@ $rapOrigin.addEventListener('click', () =>
             $pulseButtonText.innerHTML = rapOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $rapOrigin.style.backgroundImage = `url('images/rap-timeline/grandmaster-flash.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.jpg')` }
             else if (i == 1)
-            { $rapOrigin.style.backgroundImage = `url('images/rap-timeline/beastie-boys.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.jpg')` }
             else if (i == 2)
-            { $rapOrigin.style.backgroundImage = `url('images/rap-timeline/2pac.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.jpg')` }
             else if (i == 3)
-            { $rapOrigin.style.backgroundImage = `url('images/rap-timeline/notorious-big.png')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/notorious-big.png')` }
             else if (i == 4)
-            { $rapOrigin.style.backgroundImage = `url('images/rap-timeline/eminem.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.jpg')` }
         })
         if (i != selectedButton)
         {
