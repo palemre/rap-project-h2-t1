@@ -429,8 +429,7 @@ body
 {
     width: 100%;
     display: block;
-    position: absolute;
-    background: url('images/mosaique-albums-rap.jpg');
+    background: url('images/rap/mosaique-albums-rap.jpg');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 
@@ -438,7 +437,7 @@ body
 {
     position: absolute;
     font-family: 'Monument-Extended';
-    font-size: 5rem;
+    font-size: 6rem;
     color: #FFF;
     top: 40%;
     left: 50%;
@@ -490,7 +489,7 @@ body
 *******************/
 .wrapper-rap-history .rap-content .rap-origin
 {
-    background: url('images/rap-timeline/grandmaster-flash.jpg');
+    background: url('images/rap/rap-timeline/grandmaster-flash.jpg');
     max-width: 100%;
     position: relative;
     background-size: cover;
@@ -590,13 +589,13 @@ body
     position: relative;
 }
 .wrapper-rap-history .rap-content .rap-types .rapper.rapper-eminem
-{ background-image: url('images/rapper/eminem.jpg'); }
+{ background-image: url('images/rap/rapper/eminem.jpg'); }
 .wrapper-rap-history .rap-content .rap-types .rapper.rapper-dr-dre
-{ background-image: url('images/rapper/dr-dre.jpg'); }
+{ background-image: url('images/rap/rapper/dr-dre.jpg'); }
 .wrapper-rap-history .rap-content .rap-types .rapper.rapper-nelly
-{ background-image: url('images/rapper/nelly.jpg'); }
+{ background-image: url('images/rap/rapper/nelly.jpg'); }
 .wrapper-rap-history .rap-content .rap-types .rapper.rapper-snoop-dogg
-{ background-image: url('images/rapper/snoop-dog.jpg'); }
+{ background-image: url('images/rap/rapper/snoop-dog.jpg'); }
 .wrapper-rap-history .rap-content .rap-types .rapper-text
 {
     display: inline;
@@ -658,7 +657,7 @@ body
 {
     max-width: 100%;
     position: relative;
-    background: url('images/rap-message-background.jpg');
+    background: url('images/rap/rap-message-background.jpg');
     background-size: cover;
 }
 .wrapper-rap-history .rap-content .rap-message .rap-message-text-la
@@ -699,7 +698,7 @@ body
 {
     max-width: 100%;
     position: relative;
-    background: url('images/rap-impacts-background.jpg');
+    background: url('images/rap/rap-impacts-background.jpg');
     background-size: cover;
 }
 .wrapper-rap-history .rap-content .rap-impacts .rap-impacts-text-les
@@ -736,31 +735,29 @@ body
 /*******************
 ******************** TUNNEL EFFECT BETWEEN MUSIC TYPES
 *******************/
-/* DIFFERENT CONTENTS WITH ANIMATION ON TUNNEL */
-.wrapper-rap-history .rap-content
+/* MUSIC TYPES WITH TUNNEL LIKE ANIMATION */
+.wrapper-rap-history .rap-main-container-to-display
 {
-    transition: all 2s;
+    transition: all 1.5s;
     will-change: transform opacity;
 }
 .tunnel-animation
-{
-    animation: tunnelAnimation 2s;
-}
+{ animation: tunnelAnimation 1.5s; }
 @keyframes tunnelAnimation 
 {
     0%   { opacity: 1; }
     100% { opacity: 0; }
 }
-.wrapper-rap-history .hip-hop-content
+.tunnel-animation-in
+{ animation: tunnelAnimationIn 1.5s; }
+@keyframes tunnelAnimationIn 
 {
-    transition: all 2s;
-    will-change: transform opacity;
-    height: 1000px;
-    background: blue;
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* BUTTON FOR TUNNEL FROM RAP TO HIP-HOP */
-.wrapper-rap-history .rap-content .rap-types .tunnel-to-hip-hop
+.wrapper-rap-history .rap-content .rap-impacts .tunnel-to-hip-hop
 {
     position: relative;
     top: 50%;

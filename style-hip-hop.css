@@ -1,0 +1,19 @@
+/*******************
+ * I) HIP-HOP CONTENT
+ * II) HEADPHONE WARNING
+ * III) DISPLAY MAIN RAP WRAPPER
+ * IV) FIXED HAMBURGER MENU
+ * V) FIXED DOTS NAV
+ * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
+ * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
+ ******************/
+.wrapper-rap-history .hip-hop-content
+{
+    display: none;
+    transition: all 1.5s;
+    will-change: opacity;
+    height: 1000px;
+    background: url('images/hip-hop/mosaique-albums-hip-hop.png');
+    position: absolute;
+    top: 0;
+}

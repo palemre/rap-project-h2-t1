@@ -65,7 +65,6 @@ $startButton.addEventListener('click', () =>
         $rapMosaicBackgroundImage.style.height = `${offsetHeight}px`
 
         //RAP ORIGIN DISPLAY
-        $rapOrigin.style.marginTop =`${offsetHeight}px`
         $rapOrigin.style.height =`${offsetHeight}px`
 
         //RAP TYPES DISPLAY
@@ -130,65 +129,50 @@ const $secondVerticalDot = $verticalDotsNav.querySelector('.second-dot')
 const $thirdVerticalDot = $verticalDotsNav.querySelector('.third-dot')
 const $fourthVerticalDot = $verticalDotsNav.querySelector('.fourth-dot')
 const $fifthVerticalDot = $verticalDotsNav.querySelector('.fifth-dot')
-const $sixthVerticalDot = $verticalDotsNav.querySelector('.sixth-dot')
 
 window.addEventListener('scroll', () =>
 {
     percentOfScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100
 
-    if (percentOfScroll >= 0 && percentOfScroll < 15)
+    if (percentOfScroll >= 0 && percentOfScroll < 20)
     {
         $firstVerticalDot.style.background = `#FFF`
         $secondVerticalDot.style.background = `transparent`
         $thirdVerticalDot.style.background = `transparent`
         $fourthVerticalDot.style.background = `transparent`
         $fifthVerticalDot.style.background = `transparent`
-        $sixthVerticalDot.style.background = `transparent`
     }
-    else if (percentOfScroll >= 15 && percentOfScroll < 30)
+    else if (percentOfScroll >= 20 && percentOfScroll < 40)
     {
         $firstVerticalDot.style.background = `transparent`
         $secondVerticalDot.style.background = `#FFF`
         $thirdVerticalDot.style.background = `transparent`
         $fourthVerticalDot.style.background = `transparent`
         $fifthVerticalDot.style.background = `transparent`
-        $sixthVerticalDot.style.background = `transparent`
     }
-    else if (percentOfScroll >= 30 && percentOfScroll < 45)
+    else if (percentOfScroll >= 40 && percentOfScroll < 60)
     {
         $firstVerticalDot.style.background = `transparent`
         $secondVerticalDot.style.background = `transparent`
         $thirdVerticalDot.style.background = `#FFF`
         $fourthVerticalDot.style.background = `transparent`
         $fifthVerticalDot.style.background = `transparent`
-        $sixthVerticalDot.style.background = `transparent`
     }
-    else if (percentOfScroll >= 45 && percentOfScroll < 60)
+    else if (percentOfScroll >= 60 && percentOfScroll < 85)
     {
         $firstVerticalDot.style.background = `transparent`
         $secondVerticalDot.style.background = `transparent`
         $thirdVerticalDot.style.background = `transparent`
         $fourthVerticalDot.style.background = `#FFF`
         $fifthVerticalDot.style.background = `transparent`
-        $sixthVerticalDot.style.background = `transparent`
     }
-    else if (percentOfScroll >= 60 && percentOfScroll < 75)
+    else if (percentOfScroll >= 85)
     {
         $firstVerticalDot.style.background = `transparent`
         $secondVerticalDot.style.background = `transparent`
         $thirdVerticalDot.style.background = `transparent`
         $fourthVerticalDot.style.background = `transparent`
         $fifthVerticalDot.style.background = `#FFF`
-        $sixthVerticalDot.style.background = `transparent`
-    }
-    else if (percentOfScroll >= 75)
-    {
-        $firstVerticalDot.style.background = `transparent`
-        $secondVerticalDot.style.background = `transparent`
-        $thirdVerticalDot.style.background = `transparent`
-        $fourthVerticalDot.style.background = `transparent`
-        $fifthVerticalDot.style.background = `transparent`
-        $sixthVerticalDot.style.background = `#FFF`
     }
 })
 
@@ -285,20 +269,24 @@ $rapImpacts.style.height =`${offsetHeight}px`
 ******************** BACK IN TIME TUNNEL EFFECT
 *******************/
 //TUNNEL FROM RAP TO HIP-HOP
-// const $tunnelToHipHop = $rapTypes.querySelector('.tunnel-to-hip-hop')
-// const $rapContent = $wrapperRapHistory.querySelector('.rap-content')
-// const $hipHopContent = $wrapperRapHistory.querySelector('.hip-hop-content')
+const $tunnelToHipHop = $rapImpacts.querySelector('.js-tunnel-to-hip-hop')
+const $rapMainContainerToDisplay = $wrapperRapHistory.querySelector('.rap-main-container-to-display')
+const $hipHopContent = $wrapperRapHistory.querySelector('.js-hip-hop-content')
 
-// $tunnelToHipHop.addEventListener('click', () =>
-// {
-//     document.body.style.overflow = `hidden`
-//     $rapContent.style.transform = `translateZ(801px)`
-//     const tunnelAnimation = setInterval(() =>
-//     {
-//         $rapContent.style.display = `none`
-//         document.body.style.overflow = `visible`
-//         window.clearInterval(tunnelAnimation)
-//     }, 2000)
-//     $rapContent.classList.add('block-animation')
-// })
+$tunnelToHipHop.addEventListener('click', () =>
+{
+    document.body.style.overflow = `hidden`
+    $rapMainContainerToDisplay.classList.add('tunnel-animation')
+    $rapMainContainerToDisplay.style.transform = `translateZ(801px)`
+    const tunnelAnimation = setInterval(() =>
+    {
+        $rapMainContainerToDisplay.style.display = `none`
+        $hipHopContent.style.display = `inline`
+        document.body.style.overflow = `visible`
+        window.clearInterval(tunnelAnimation)
+        window.scroll(0, 0);
+    }, 1500)
+    $rapMainContainerToDisplay.classList.add('tunnel-animation')
+    $hipHopContent.classList.add('tunnel-animation-in')
+})
 
