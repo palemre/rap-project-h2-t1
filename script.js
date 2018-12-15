@@ -3,7 +3,7 @@
  * II) HEADPHONE WARNING : DISPLAY AFTER DISC & DELETE AFTER ANIMATION FINISHED
  * III) RAP HISTORY : DISPLAY MAIN RAP WRAPPER + RAP'S ORIGIN
  * IV) NAV DOTS & AUDIO : FILL NAV DOTS & PLAYS AUDIO ON SCROLL
- * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE
+ * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
  * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP HIP-HOP JAZZ
  ******************/
 
@@ -274,6 +274,12 @@ $rapperSnoopDoggBackground.addEventListener('mouseout', () =>
 *******************/
 const $rapMessage = $wrapperRapHistory.querySelector('.js-rap-message')
 $rapMessage.style.height =`${offsetHeight}px`
+
+/*******************
+******************** RAP'S HISTORY : RAP'S IMPACTS
+*******************/
+const $rapImpacts = $wrapperRapHistory.querySelector('.js-rap-impacts')
+$rapImpacts.style.height =`${offsetHeight}px`
 
 /*******************
 ******************** BACK IN TIME TUNNEL EFFECT
