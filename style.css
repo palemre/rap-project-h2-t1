@@ -654,7 +654,43 @@ body
 /*******************
 ******************** RAP'S HISTORY : RAP'S MESSAGE
 *******************/
-
+.wrapper-rap-history .rap-content .rap-message
+{
+    max-width: 100%;
+    position: relative;
+    background: url('images/rap-message-background.jpg');
+    background-size: cover;
+}
+.wrapper-rap-history .rap-content .rap-message .rap-message-text-la
+{
+    font-family: 'Monument-Extended';
+    color: #FFBA00;
+    font-size: 3.15rem;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    bottom: 1.5%;
+    left: 15%;
+}
+.wrapper-rap-history .rap-content .rap-message .rap-message-text-morale
+{
+    font-family: 'Monument-Extended';
+    color: #FFBA00;
+    font-size: 8rem;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+.wrapper-rap-history .rap-content .rap-message .rap-message-description-text
+{
+    position: absolute;
+    bottom: 35%;
+    width: 55%;
+    left: 15%;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Quicksand';
+}
 
 /*******************
 ******************** TUNNEL EFFECT BETWEEN MUSIC TYPES

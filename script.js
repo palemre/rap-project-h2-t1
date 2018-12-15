@@ -10,7 +10,7 @@
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
-const $discLoader = document.querySelector('.loader')
+const $discLoader = document.querySelector('.js-loader')
 const discDisplay = setInterval(() =>
 {
     $discLoader.remove()
@@ -20,16 +20,16 @@ const discDisplay = setInterval(() =>
 /*******************
 ******************** HEADPHONE WARNING + MAIN RAP WRAPPER DISPLAY
 *******************/
-const $headphone = document.querySelector('.headphone')
-const $headphoneWarning = document.querySelector('.headphone-warning-text')
-const $startButton = document.querySelector('.start-button')
+const $headphone = document.querySelector('.js-headphone')
+const $headphoneWarning = document.querySelector('.js-headphone-warning-text')
+const $startButton = document.querySelector('.js-start-button')
 //GET MAIN RAP ELEMENTS
-const $wrapperRapHistory = document.querySelector('.wrapper-rap-history')
-const $verticalDotsNav = document.querySelector('.vertical-dots-nav')
-const $hamburgerMenuLines = document.querySelector('.hamburger-menu-lines')
-const $rapOrigin = $wrapperRapHistory.querySelector('.rap-origin')
-const $rapTypes = $wrapperRapHistory.querySelector('.rap-types')
-const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.rap-history-background')
+const $wrapperRapHistory = document.querySelector('.js-wrapper-rap-history')
+const $verticalDotsNav = document.querySelector('.js-vertical-dots-nav')
+const $hamburgerMenuLines = document.querySelector('.js-hamburger-menu-lines')
+const $rapOrigin = $wrapperRapHistory.querySelector('.js-rap-origin')
+const $rapTypes = $wrapperRapHistory.querySelector('.js-rap-types')
+const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-rap-history-background')
 
 const offsetHeight = document.body.offsetHeight
 
@@ -78,8 +78,8 @@ $startButton.addEventListener('click', () =>
 
 
 //RAP'S ORIGIN TIMELINE PULSE BUTTONS
-const $pulseButtons = $rapOrigin.querySelectorAll('.pulse-button')
-const $pulseButtonText = $rapOrigin.querySelector('.pulse-button-text')
+const $pulseButtons = $rapOrigin.querySelectorAll('.js-pulse-button')
+const $pulseButtonText = $rapOrigin.querySelector('.js-pulse-button-text')
 let selectedButton = 0
 const rapOriginTexts = ['1982 : The Message de Grandmaster Flash est la révolution annoncée. C’est le premier tube hip-hop ; une culture de rue qui était alors composée principalement de danse et de set.', '1982 : les Beastie Boys commencèrent eux aussi à se faire connaître, prouvant et montrant ainsi que la culture hip-hop était bien un mélange de culture et d\'influence noir et blanche.', '1996 : L’album All eyez on me 2Pac reconnu comme l’un des plus influent de l’histoire du hip-hop. Côté West-Coast en guerre avec la East-Coast des USA', '1997 : Life after Death : album sortie à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de hip-hop le plus vendu tous les temps.', '2002 : Lose Yourself musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un Oscar et deux Grammy Awards.']
 
@@ -272,6 +272,8 @@ $rapperSnoopDoggBackground.addEventListener('mouseout', () =>
 /*******************
 ******************** RAP'S HISTORY : RAP'S MESSAGE
 *******************/
+const $rapMessage = $wrapperRapHistory.querySelector('.js-rap-message')
+$rapMessage.style.height =`${offsetHeight}px`
 
 /*******************
 ******************** BACK IN TIME TUNNEL EFFECT
