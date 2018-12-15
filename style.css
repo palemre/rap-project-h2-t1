@@ -168,7 +168,7 @@ body
 {
     display: none;
     font-family: 'Quicksand';
-    color: #F5F5F5;
+    color: var(--colorForText);
     text-align: center;
     margin-top: 10%;
     animation: headphone-display 3s;
@@ -240,7 +240,7 @@ body
 .start-button-container .start-button-text
 {
     text-decoration: none;
-    color: #F5F5F5;
+    color: var(--colorForText);
     cursor: pointer;
 }
 .headphone-warning-animation
@@ -354,7 +354,6 @@ body
     top: 0;
     left: 0;
     width: 100vw;
-    /* height: 100px; */
     z-index: 3;
     transition: .5s;
     transition-delay: .5s;
@@ -379,7 +378,7 @@ body
 {
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFF;
+    color: var(--colorForText);
     font-weight: 700;
     font-family: sans-serif;
     display: block;
@@ -475,7 +474,7 @@ body
     right: 2rem;
     top: 35%;
     transform: translateY(-50%);
-    color: #FFF;
+    color: var(--colorForText);
 }
 .scroll-down-line
 {
@@ -502,7 +501,7 @@ body
 .wrapper-rap-history .rap-content .rap-origin .rap-origin-text
 {
     position: relative;
-    color: #FFF;
+    color: var(--colorForText);
     font-family: 'Monument-Extended';
     font-size: 7rem;
     top: 7%;
@@ -603,7 +602,7 @@ body
 .wrapper-rap-history .rap-content .rap-types .rapper-text
 {
     display: inline;
-    color: #FFF;
+    color: var(--colorForText);
     position: absolute;
     top: 70%;
     width: 20%;
@@ -667,7 +666,7 @@ body
 .wrapper-rap-history .rap-content .rap-message .rap-message-text-la
 {
     font-family: 'Monument-Extended';
-    color: #FFBA00;
+    color: var(--colorForTitleInRap);
     font-size: 3.15rem;
     transform: rotate(-90deg);
     transform-origin: 0 0;
@@ -678,7 +677,7 @@ body
 .wrapper-rap-history .rap-content .rap-message .rap-message-text-morale
 {
     font-family: 'Monument-Extended';
-    color: #FFBA00;
+    color: var(--colorForTitleInRap);
     font-size: 8rem;
     position: absolute;
     bottom: 5%;
@@ -690,7 +689,7 @@ body
     bottom: 35%;
     width: 55%;
     left: 15%;
-    color: #FFF;
+    color: var(--colorForText);
     font-size: 1rem;
     font-family: 'Quicksand';
 }
@@ -708,7 +707,7 @@ body
 .wrapper-rap-history .rap-content .rap-impacts .rap-impacts-text-les
 {
     font-family: 'Monument-Extended';
-    color: #FFBA00;
+    color: var(--colorForTitleInRap);
     font-size: 2.35rem;
     transform: rotate(-90deg);
     transform-origin: 0 0;
@@ -719,7 +718,7 @@ body
 .wrapper-rap-history .rap-content .rap-impacts .rap-impacts-text-impacts
 {
     font-family: 'Monument-Extended';
-    color: #FFBA00;
+    color: var(--colorForTitleInRap);
     font-size: 8rem;
     position: absolute;
     top: 5%;
@@ -731,7 +730,7 @@ body
     top: 35%;
     width: 45%;
     left: 15.8%;
-    color: #FFF;
+    color: var(--colorForText);
     font-size: 1rem;
     font-family: 'Quicksand';
 }
