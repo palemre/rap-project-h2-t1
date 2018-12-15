@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- WEBSITE LOADER : ROTATING DISC -->
-    <div class="loader">
+    <div class="loader js-loader">
         <div class="loader-disc">
           <div class="disc-track">
             <div class="disc-center"></div>
@@ -19,13 +19,13 @@
     </div>
 
     <!-- HEADPHONE WARNING -->
-    <div class="headphone">
+    <div class="headphone js-headphone">
         <div class="headphone-head"></div>
         <div class="headphone-left"></div>
         <div class="headphone-right"></div>
     </div>
-    <p class="headphone-warning-text">Veuillez utiliser un casque audio pour une meilleure expérience.</p>
-    <div class="start-button">
+    <p class="headphone-warning-text js-headphone-warning-text">Veuillez utiliser un casque audio pour une meilleure expérience.</p>
+    <div class="start-button js-start-button">
         <div class="start-button-container">
             <div class="start-button-inner">
                 <button class="start-button-text">Commencer</button>
@@ -34,7 +34,7 @@
     </div>
 
     <!-- FIXED DOTS NAV -->
-    <div class="vertical-dots-nav">
+    <div class="vertical-dots-nav js-vertical-dots-nav">
         <div class="vertical-nav-dot first-dot"></div>
         <div class="vertical-nav-dot second-dot"></div>
         <div class="vertical-nav-dot third-dot"></div>
@@ -45,7 +45,7 @@
 
     <!-- FIXED HAMBURGER MENU -->
     <input id="hamburger-menu" type="checkbox">
-    <label class="hamburger-menu-lines" for="hamburger-menu">
+    <label class="hamburger-menu-lines js-hamburger-menu-lines" for="hamburger-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -59,13 +59,13 @@
     </nav>
 
     <!-- MAIN WRAPPER RAP'S HISTORY -->
-    <div class="wrapper-rap-history">
+    <div class="wrapper-rap-history js-wrapper-rap-history">
 
         <!-- BACKGROUND IMAGE RAP'S HISTORY : MOSAIC -->
-        <div class="rap-history-background"></div>
+        <div class="rap-history-background js-rap-history-background"></div>
 
         <!-- RAP'S CONTENT -->
-        <div class="rap-content">
+        <div class="rap-content js-rap-content">
                 <!-- SCROLL DOWN CALL TO ACTION ON THE RIGHT -->
                 <span class="scroll-down-text">SCROLL</span>
                 <div class="scroll-down-line"></div>
@@ -76,39 +76,35 @@
                 </span>
 
                 <!-- RAP : ORIGIN -->
-                <div class="rap-origin">
+                <div class="rap-origin js-rap-origin">
                     <div class='rap-origin-timeline-container'>
-                        <span class='pulse-button current-pulse-button pulse-button-animation'></span>
-                        <span class='pulse-button'></span>
-                        <span class='pulse-button'></span>
-                        <span class='pulse-button'></span>
-                        <span class='pulse-button'></span>
+                        <span class='pulse-button js-pulse-button current-pulse-button pulse-button-animation'></span>
+                        <span class='pulse-button js-pulse-button'></span>
+                        <span class='pulse-button js-pulse-button'></span>
+                        <span class='pulse-button js-pulse-button'></span>
+                        <span class='pulse-button js-pulse-button'></span>
                     </div>
                     <p class="rap-origin-text">ORIGINE</p>
-                    <p class="pulse-button-text">Le genre se développe en tant que mouvement culturel et artistique aux États-Unis, à New York, dans le South Bronx au début des années 1970.</p>
+                    <p class="pulse-button-text js-pulse-button-text">Le genre se développe en tant que mouvement culturel et artistique aux États-Unis, à New York, dans le South Bronx au début des années 1970.</p>
                     <div class="rap-origin-timeline-line"></div>
                 </div>
-        
+
                 <!-- RAP : TYPES -->
-                <div class="rap-types">
-                    <div class="rapper rapper-eminem">
-                        <img src="images/rapper/eminem.jpg" alt="rappeur Eminem.">
-                    </div>
-                    <div class="rapper rapper-dr-dre">
-                        <img src="images/rapper/dr-dre.jpg" alt="rappeur Dr. Dre.">
-                    </div>
-                    <div class="rapper rapper-nelly">
-                        <img src="images/rapper/nelly.jpg" alt="rappeur Nelly.">
-                    </div>
-                    <div class="rapper rapper-snoop-dog">
-                        <img src="images/rapper/snoop-dog.jpg" alt="rappeur Snoop-Dog.">
-                    </div>
-                    <!-- <button class="tunnel-to-hip-hop">CLICK</button> -->
+                <div class="rap-types js-rap-types">
+                    <div class="rapper rapper-eminem js-rapper-eminem"></div>
+                    <div class="rapper-text rapper-eminem-text js-rapper-eminem-text">Rap conscient<br><br>Les rappeurs questionnent les inégalités sociales. Ils critiquent et dénoncent les lois établies par le gouvernement. Ils revendiquent l’égalité et l’équité. C’est un rap contestataire, politique et militant.</div>
+                    <div class="rapper rapper-dr-dre js-rapper-dr-dre"></div>
+                    <div class="rapper-text rapper-dr-dre-text js-rapper-dr-dre-text">Gangsta rap<br><br>Les rappeurs n’ont de cesse de se mettre en avant, leurs styles, leurs faits, les actes afin d’embellir leurs privilèges. Les sons parlent de violences, de l’usage d’armes à feu et de la vente de drogue.</div>
+                    <div class="rapper rapper-nelly js-rapper-nelly"></div>
+                    <div class="rapper-text rapper-nelly-text js-rapper-nelly-text">Rap festif<br><br>Le rap festif parle de la vie nocturne, des conquêtes d’un soir.  Des samples funky, parfois même jazzy, des paroles qui dénoncent toujours, mais n’appellent pas forcément à la Révolution.</div>
+                    <div class="rapper rapper-snoop-dogg js-rapper-snoop-dogg"></div>
+                    <div class="rapper-text rapper-snoop-dogg-text js-rapper-snoop-dogg-text">Rap Ego Trip<br><br>Les rappeurs d’ego-trip racontent leurs modes de vie luxueuse, leurs richesses et de leurs actions pour embellir leurs personnes.</div>
+                    <!-- <button class="tunnel-to-hip-hop js-tunnel-to-hip-hop">CLICK</button> -->
                 </div>
         </div>
 
         <!-- HIP-HOP'S CONTENT -->
-        <!-- <div class="hip-hop-content">
+        <!-- <div class="hip-hop-content js-hip-hop-content">
 
         </div> -->
 

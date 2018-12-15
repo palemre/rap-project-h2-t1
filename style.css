@@ -201,8 +201,9 @@ body
     width: 96%;
     left: 2%;
     bottom: -8px;
-    content: "";
+    content: '';
     position: absolute;
+    cursor: pointer;
 }
 .start-button-container:after
 {
@@ -429,7 +430,8 @@ body
     width: 100%;
     display: block;
     position: absolute;
-    background: url('images/mosaique-albums-rap.jpg')
+    background: url('images/mosaique-albums-rap.jpg');
+    box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 
 .wrapper-rap-history .rap-content .text-history
@@ -492,6 +494,7 @@ body
     max-width: 100%;
     position: relative;
     background-size: cover;
+    box-shadow: rgb(0, 0, 0) 0px 1px 5px 5px inset;
 }
 .wrapper-rap-history .rap-content .rap-origin .rap-origin-text
 {
@@ -540,7 +543,7 @@ body
 
 .pulse-button-animation
 {
-    animation: pulse-button-timeline 1.5s infinite;
+    animation: pulse-button-timeline 1s 5;
 }
 @keyframes pulse-button-timeline
 {
@@ -550,7 +553,7 @@ body
 .wrapper-rap-history .rap-content .rap-origin .pulse-button-text
 {
     font-family: 'Quicksand';
-    color: #FFF;
+    color: rgb(255, 255, 0);
     position: relative;
     top: 60%;
     left: 50%;
@@ -574,7 +577,6 @@ body
 .wrapper-rap-history .rap-content .rap-types
 {
     background: #0D0D0D;
-    border: 1px solid white;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -583,7 +585,76 @@ body
 .wrapper-rap-history .rap-content .rap-types .rapper
 {
     width: 25%;
+    opacity: 1;
+    will-change: opacity;
+    position: relative;
 }
+.wrapper-rap-history .rap-content .rap-types .rapper.rapper-eminem
+{ background-image: url('images/rapper/eminem.jpg'); }
+.wrapper-rap-history .rap-content .rap-types .rapper.rapper-dr-dre
+{ background-image: url('images/rapper/dr-dre.jpg'); }
+.wrapper-rap-history .rap-content .rap-types .rapper.rapper-nelly
+{ background-image: url('images/rapper/nelly.jpg'); }
+.wrapper-rap-history .rap-content .rap-types .rapper.rapper-snoop-dogg
+{ background-image: url('images/rapper/snoop-dog.jpg'); }
+.wrapper-rap-history .rap-content .rap-types .rapper-text
+{
+    display: inline;
+    color: #FFF;
+    position: absolute;
+    top: 70%;
+    width: 20%;
+    text-align: justify;
+    opacity: 0;
+    will-change: opacity;
+    transform: translateX(-10%);
+    font-family: 'Quicksand';
+}
+.wrapper-rap-history .rap-content .rap-types .rapper-eminem-text
+{ left: 5%; }
+.wrapper-rap-history .rap-content .rap-types .rapper-dr-dre-text
+{ left: 30%; }
+.wrapper-rap-history .rap-content .rap-types .rapper-nelly-text
+{ left: 55%; }
+.wrapper-rap-history .rap-content .rap-types .rapper-snoop-dogg-text
+{ left: 80%; }
+
+/* ANIMATION FOR BACKGROUND OPACITY OF HOVERED RAPPER */
+.rapper-background-animation-mouseover
+{ animation: rapper-background-animation-mouseover 0.3s forwards; }
+.rapper-background-animation-mouseout
+{ animation: rapper-background-animation-mouseout 0.3s forwards; }
+@keyframes rapper-background-animation-mouseover
+{
+    0%   { opacity : 1;   }
+    100% { opacity : 0.5; }
+}
+@keyframes rapper-background-animation-mouseout
+{
+    0%   { opacity : 0.5; }
+    100% { opacity : 1;   }
+}
+
+/* ANIMATION FOR DESCRIPTION TEXT OPACITY OF HOVERED RAPPER */
+.rapper-text-animation-mouseover
+{ animation: rapper-text-animation-mouseover 0.3s forwards; }
+.rapper-text-animation-mouseout
+{ animation: rapper-text-animation-mouseout 0.3s forwards; }
+@keyframes rapper-text-animation-mouseover
+{
+    0%   { opacity : 0; }
+    100% { opacity : 1; }
+}
+@keyframes rapper-text-animation-mouseout
+{
+    0%   { opacity : 1; }
+    100% { opacity : 0; }
+}
+
+/*******************
+******************** RAP'S HISTORY : RAP'S MESSAGE
+*******************/
+
 
 /*******************
 ******************** TUNNEL EFFECT BETWEEN MUSIC TYPES
