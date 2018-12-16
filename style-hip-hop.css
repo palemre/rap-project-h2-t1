@@ -112,3 +112,25 @@
     .artist-text-animation-mouseover
     .artist-text-animation-mouseout
 */
+
+/*******************
+******************** HIP-HOP CONTENT : MESSAGE
+*******************/
+.music-style-message.hip-hop-message
+{
+    background: url('images/hip-hop/hip-hop-message-background.jpg');
+    background-size: cover;
+}
+/* STYLE FOR HIP-HOP'S MESSAGE IN STYLE.CSS
+    .music-style-message
+    .music-style-message-text-la
+    .music-style-message-text-morale
+    .music-style-message-description-text
+*/
+.music-style-message-description-text
+{
+    top: 10%;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}

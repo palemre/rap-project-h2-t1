@@ -661,16 +661,16 @@ body
 }
 
 /*******************
-******************** RAP'S HISTORY : RAP'S MESSAGE
+******************** MUSIC STYLE'S MESSAGE
 *******************/
-.wrapper-rap-history .rap-content .rap-message
+.music-style-message
 {
     max-width: 100%;
     position: relative;
     background: url('images/rap/rap-message-background.jpg');
     background-size: cover;
 }
-.wrapper-rap-history .rap-content .rap-message .rap-message-text-la
+.music-style-message-text-la
 {
     font-family: 'Monument-Extended';
     color: var(--colorForTitleInRap);
@@ -681,7 +681,7 @@ body
     bottom: 1.5%;
     left: 15%;
 }
-.wrapper-rap-history .rap-content .rap-message .rap-message-text-morale
+.music-style-message-text-morale
 {
     font-family: 'Monument-Extended';
     color: var(--colorForTitleInRap);
@@ -690,7 +690,7 @@ body
     bottom: 5%;
     left: 20%;
 }
-.wrapper-rap-history .rap-content .rap-message .rap-message-description-text
+.music-style-message-description-text
 {
     position: absolute;
     bottom: 35%;

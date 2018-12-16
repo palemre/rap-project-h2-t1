@@ -1,6 +1,7 @@
 /*******************
  * I) HIP-HOP'S ORIGIN
  * II) HIP-HOP'S TYPES
+ * III) HIP-HOP'S MESSAGE
  ******************/
 
 /*******************
@@ -120,3 +121,8 @@ $artistDjKoolHercBackground.addEventListener('mouseout', () =>
     $artistDjKoolHerc.classList.add('artist-text-animation-mouseout')
 })
 
+/*******************
+******************** HIP-HOP'S MESSAGE
+*******************/
+const $hipHopMessage = $wrapperRapHistory.querySelector('.js-hip-hop-message')
+$hipHopMessage.style.height =`${offsetHeight}px`
