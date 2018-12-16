@@ -584,7 +584,7 @@ body
 /*******************
 ******************** RAP'S HISTORY : RAP TYPES
 *******************/
-.wrapper-rap-history .rap-content .rap-types
+.music-style-types
 {
     background: #0D0D0D;
     max-width: 100%;
@@ -592,22 +592,22 @@ body
     display: flex;
     overflow: hidden;
 }
-.wrapper-rap-history .rap-content .rap-types .rapper
+.artist
 {
     width: 25%;
     opacity: 1;
     will-change: opacity;
     position: relative;
 }
-.wrapper-rap-history .rap-content .rap-types .rapper.rapper-eminem
+.wrapper-rap-history .rap-content .artist.rapper-eminem
 { background-image: url('images/rap/rapper/eminem.jpg'); }
-.wrapper-rap-history .rap-content .rap-types .rapper.rapper-dr-dre
+.wrapper-rap-history .rap-content .artist.rapper-dr-dre
 { background-image: url('images/rap/rapper/dr-dre.jpg'); }
-.wrapper-rap-history .rap-content .rap-types .rapper.rapper-nelly
+.wrapper-rap-history .rap-content .artist.rapper-nelly
 { background-image: url('images/rap/rapper/nelly.jpg'); }
-.wrapper-rap-history .rap-content .rap-types .rapper.rapper-snoop-dogg
+.wrapper-rap-history .rap-content .artist.rapper-snoop-dogg
 { background-image: url('images/rap/rapper/snoop-dog.jpg'); }
-.wrapper-rap-history .rap-content .rap-types .rapper-text
+.artist-text
 {
     display: inline;
     color: var(--colorForText);
@@ -619,42 +619,42 @@ body
     transform: translateX(-10%);
     font-family: 'Quicksand';
 }
-.wrapper-rap-history .rap-content .rap-types .rapper-eminem-text
+.wrapper-rap-history .rap-content .rapper-eminem-text
 { left: 5%; }
-.wrapper-rap-history .rap-content .rap-types .rapper-dr-dre-text
+.wrapper-rap-history .rap-content .rapper-dr-dre-text
 { left: 30%; }
-.wrapper-rap-history .rap-content .rap-types .rapper-nelly-text
+.wrapper-rap-history .rap-content .rapper-nelly-text
 { left: 55%; }
-.wrapper-rap-history .rap-content .rap-types .rapper-snoop-dogg-text
+.wrapper-rap-history .rap-content .rapper-snoop-dogg-text
 { left: 80%; }
 
-/* ANIMATION FOR BACKGROUND OPACITY OF HOVERED RAPPER */
-.rapper-background-animation-mouseover
-{ animation: rapper-background-animation-mouseover 0.3s forwards; }
-.rapper-background-animation-mouseout
-{ animation: rapper-background-animation-mouseout 0.3s forwards; }
-@keyframes rapper-background-animation-mouseover
+/* ANIMATION FOR BACKGROUND OPACITY OF HOVERED ARTIST */
+.artist-background-animation-mouseover
+{ animation: artist-background-animation-mouseover 0.3s forwards; }
+.artist-background-animation-mouseout
+{ animation: artist-background-animation-mouseout 0.3s forwards; }
+@keyframes artist-background-animation-mouseover
 {
     0%   { opacity : 1;   }
     100% { opacity : 0.5; }
 }
-@keyframes rapper-background-animation-mouseout
+@keyframes artist-background-animation-mouseout
 {
     0%   { opacity : 0.5; }
     100% { opacity : 1;   }
 }
 
-/* ANIMATION FOR DESCRIPTION TEXT OPACITY OF HOVERED RAPPER */
-.rapper-text-animation-mouseover
-{ animation: rapper-text-animation-mouseover 0.3s forwards; }
-.rapper-text-animation-mouseout
-{ animation: rapper-text-animation-mouseout 0.3s forwards; }
-@keyframes rapper-text-animation-mouseover
+/* ANIMATION FOR DESCRIPTION TEXT OPACITY OF HOVERED ARTIST */
+.artist-text-animation-mouseover
+{ animation: artist-text-animation-mouseover 0.3s forwards; }
+.artist-text-animation-mouseout
+{ animation: artist-text-animation-mouseout 0.3s forwards; }
+@keyframes artist-text-animation-mouseover
 {
     0%   { opacity : 0; }
     100% { opacity : 1; }
 }
-@keyframes rapper-text-animation-mouseout
+@keyframes artist-text-animation-mouseout
 {
     0%   { opacity : 1; }
     100% { opacity : 0; }

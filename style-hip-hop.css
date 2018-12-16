@@ -80,3 +80,35 @@
 {
     color: var(--colorForTitleInHipHop);
 }
+
+/*******************
+******************** HIP-HOP CONTENT : TYPES
+*******************/
+.wrapper-rap-history .hip-hop-content .artist.hip-hop-mia
+{ background-image: url('images/hip-hop/artists/mia.jpg'); }
+.wrapper-rap-history .hip-hop-content .artist.hip-hop-mc-hammer
+{ background-image: url('images/hip-hop/artists/mc-hammer.jpg'); }
+.wrapper-rap-history .hip-hop-content .artist.hip-hop-dj-shadow
+{ background-image: url('images/hip-hop/artists/dj-shadow.jpeg'); }
+.wrapper-rap-history .hip-hop-content .artist.hip-hop-dj-kool-herc
+{ background-image: url('images/hip-hop/artists/dj-kool-herc.jpg'); }
+
+/* EACH ARTIST DIV STYLE IN STYLE.CSS -> .artist */
+/* EACH ARTIST DESCRIPTION TEXT POSITIONNING */
+.wrapper-rap-history .hip-hop-content .artist-mia-text
+{ left: 5%; }
+.wrapper-rap-history .hip-hop-content .artist-mc-hammer-text
+{ left: 30%; }
+.wrapper-rap-history .hip-hop-content .artist-dj-shadow-text
+{ left: 55%; }
+.wrapper-rap-history .hip-hop-content .artist-dj-kool-herc-text
+{ left: 80%; }
+
+/* ANIMATION FOR BACKGROUND OPACITY OF HOVERED ARTIST IN STYLE.CSS
+    .artist-background-animation-mouseover
+    .artist-background-animation-mouseout
+*/
+/* ANIMATION FOR DESCRIPTION TEXT OPACITY OF HOVERED ARTIST IN STYLE.CSS
+    .artist-text-animation-mouseover
+    .artist-text-animation-mouseout
+*/

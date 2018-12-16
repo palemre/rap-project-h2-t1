@@ -204,7 +204,6 @@ $rapperEminemBackground.addEventListener('mouseover', () =>
     $rapperEminemText.classList.remove('rapper-text-animation-mouseout')
     $rapperEminemText.classList.add('rapper-text-animation-mouseover')
 })
-
 $rapperEminemBackground.addEventListener('mouseout', () =>
 {
     $rapperEminemBackground.classList.remove('rapper-background-animation-mouseover')
@@ -219,7 +218,6 @@ $rapperDrDreBackground.addEventListener('mouseover', () =>
     $rapperDrDreText.classList.remove('rapper-text-animation-mouseout')
     $rapperDrDreText.classList.add('rapper-text-animation-mouseover')
 })
-
 $rapperDrDreBackground.addEventListener('mouseout', () =>
 {
     $rapperDrDreBackground.classList.remove('rapper-background-animation-mouseover')
@@ -234,7 +232,6 @@ $rapperNellyBackground.addEventListener('mouseover', () =>
     $rapperNellyText.classList.remove('rapper-text-animation-mouseout')
     $rapperNellyText.classList.add('rapper-text-animation-mouseover')
 })
-
 $rapperNellyBackground.addEventListener('mouseout', () =>
 {
     $rapperNellyBackground.classList.remove('rapper-background-animation-mouseover')
@@ -249,7 +246,6 @@ $rapperSnoopDoggBackground.addEventListener('mouseover', () =>
     $rapperSnoopDoggText.classList.remove('rapper-text-animation-mouseout')
     $rapperSnoopDoggText.classList.add('rapper-text-animation-mouseover')
 })
-
 $rapperSnoopDoggBackground.addEventListener('mouseout', () =>
 {
     $rapperSnoopDoggBackground.classList.remove('rapper-background-animation-mouseover')
@@ -301,44 +297,3 @@ $tunnelToHipHop.addEventListener('click', () =>
     $hiphopOrigin.style.height =`${offsetHeight}px`
     $hiphopOrigin.style.width =`${offsetWidth}px`
 })
-
-/*******************
-******************** HIP-HOP'S ORIGIN TIMELINE
-*******************/
-//HIP-HOP'S ORIGIN TIMELINE PULSE BUTTONS
-const $pulseButtonsHipHop = $hiphopOrigin.querySelectorAll('.js-pulse-button-hip-hop')
-const $pulseButtonTextHipHop = $hiphopOrigin.querySelector('.js-pulse-button-text-hip-hop')
-let selectedButtonHipHop = 0
-const hiphopOriginTexts = ['1970 : Naissance du hip-hop', '1980 : Début de l’âge d’or du hip-hop, elle se définit par sa diversité, sa qualité, son innovation, et l’importance de ses contenus', '1982 : Sortie de “the message” de Grandmaster Flash qui engendre une révolution', '1984 : Création du hip-hop new school. Le new school a des rythmes influencé par le rock music38 et est noté pour son rap socio-politiques violents.', '1990 : La sortie de Fear of a Black Planet par Public Enemy joue un rôle clé dans la popularisation du hip-hop auprès du grand public. C’est l’année où le rap a explosé.']
-
-//CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
-$hiphopOrigin.addEventListener('click', () =>
-{
-    for (let i = 0; i < $pulseButtonsHipHop.length; i++)
-    {
-        $pulseButtonsHipHop[i].addEventListener('click', () =>
-        {
-            selectedButtonHipHop = i
-            $pulseButtonsHipHop[i].style.backgroundColor = '#7762E8'
-            $pulseButtonsHipHop[i].classList.add('pulse-button-animation-hip-hop')
-            $pulseButtonTextHipHop.innerHTML = hiphopOriginTexts[i]
-            //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
-            // if (i == 0)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.jpg')` }
-            // else if (i == 1)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.jpg')` }
-            // else if (i == 2)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.jpg')` }
-            // else if (i == 3)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/notorious-big.png')` }
-            // else if (i == 4)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.jpg')` }
-        })
-        if (i != selectedButtonHipHop)
-        {
-            $pulseButtonsHipHop[i].style.backgroundColor = `#FFF`
-            $pulseButtonsHipHop[i].classList.remove('pulse-button-animation-hip-hop')
-        }
-    }
-})
-
