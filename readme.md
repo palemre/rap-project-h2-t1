@@ -1,41 +1,23 @@
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-# Project Title
+# L'Histoire du Rap
 
-One Paragraph of project description goes here
+L'Histoire du Rap is a project leaded by HETIC students (a well-known french web school), within no more than 10 days. This project have been done as a subject to reflexion on History. According to the creator's, history's problem is how it is learned and accessed. That's why they chose one specific historical subject, rap music, and delayed rap's history through an immersive website.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Be ready to revive rap's history through this website. No specific action needed, just open index.html in a web browser supporting HTML, CSS & Javascript.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+A web browser supporting HTML, CSS & JS.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Nothing to install.
 
-Say what the step will be
+## Running
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
+Launch index.html. Through this home page you'll be able to learn more on rap's history by scrolling down and discovering rap through its origin with important dates, its different types, message and impacts on society. Then dive to hip-hop, the main music style which rap comes from. Once again you will be able to learn more about hip-hop with exactly rap's scheme. Finally, the process is the same for jazz, the music which hip-hop comes from.
 
 ### Break down into end to end tests
 

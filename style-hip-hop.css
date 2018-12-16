@@ -51,16 +51,15 @@
 ******************** HIP-HOP CONTENT : ORIGIN
 *******************/
 /* BACKGROUND OF HIP-HOP'S ORIGIN */
-.music-style-origin.js-hip-hop-origin
+.hip-hop-content .music-style-origin
 {
-    background: #0D0D0D;
+    background: url('images/hip-hop/hip-hop-timeline/run-dmc.jpg');
     max-width: 100%;
     position: relative;
+    background-size: cover;
 }
 .music-style-origin-text.hip-hop-origin-text
-{
-    width: 1rem;
-}
+{ width: 1rem; }
 
 /* HIP-HOP ORIGIN TEXT STYLE ON STYLE.CSS --> .music-style-origin-text */
 /* HIP-HOP ORIGIN PULSE BUTTON STYLE ON STYLE.CSS --> .pulse-button */
