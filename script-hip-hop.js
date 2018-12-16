@@ -2,6 +2,7 @@
  * I) HIP-HOP'S ORIGIN
  * II) HIP-HOP'S TYPES
  * III) HIP-HOP'S MESSAGE
+ * IV) HIP-HOP'S IMPACTS
  ******************/
 
 /*******************
@@ -126,3 +127,9 @@ $artistDjKoolHercBackground.addEventListener('mouseout', () =>
 *******************/
 const $hipHopMessage = $wrapperRapHistory.querySelector('.js-hip-hop-message')
 $hipHopMessage.style.height =`${offsetHeight}px`
+
+/*******************
+******************** HIP-HOP'S IMPACTS
+*******************/
+const $hipHopImpacts = $wrapperRapHistory.querySelector('.js-hip-hop-impacts')
+$hipHopImpacts.style.height =`${offsetHeight}px`

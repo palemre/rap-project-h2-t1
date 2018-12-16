@@ -199,59 +199,59 @@ const $rapperSnoopDoggText = $rapTypes.querySelector('.js-rapper-snoop-dogg-text
 //SET MOUSEOVER & MOUSEOUT LISTENER FOR DISPLAYING DESCRIPTION TEXT
 $rapperEminemBackground.addEventListener('mouseover', () =>
 {
-    $rapperEminemBackground.classList.remove('rapper-background-animation-mouseout')
-    $rapperEminemBackground.classList.add('rapper-background-animation-mouseover')
-    $rapperEminemText.classList.remove('rapper-text-animation-mouseout')
-    $rapperEminemText.classList.add('rapper-text-animation-mouseover')
+    $rapperEminemBackground.classList.remove('artist-background-animation-mouseout')
+    $rapperEminemBackground.classList.add('artist-background-animation-mouseover')
+    $rapperEminemText.classList.remove('artist-text-animation-mouseout')
+    $rapperEminemText.classList.add('artist-text-animation-mouseover')
 })
 $rapperEminemBackground.addEventListener('mouseout', () =>
 {
-    $rapperEminemBackground.classList.remove('rapper-background-animation-mouseover')
-    $rapperEminemBackground.classList.add('rapper-background-animation-mouseout')
-    $rapperEminemText.classList.remove('rapper-text-animation-mouseover')
-    $rapperEminemText.classList.add('rapper-text-animation-mouseout')
+    $rapperEminemBackground.classList.remove('artist-background-animation-mouseover')
+    $rapperEminemBackground.classList.add('artist-background-animation-mouseout')
+    $rapperEminemText.classList.remove('artist-text-animation-mouseover')
+    $rapperEminemText.classList.add('artist-text-animation-mouseout')
 })
 $rapperDrDreBackground.addEventListener('mouseover', () =>
 {
-    $rapperDrDreBackground.classList.remove('rapper-background-animation-mouseout')
-    $rapperDrDreBackground.classList.add('rapper-background-animation-mouseover')
-    $rapperDrDreText.classList.remove('rapper-text-animation-mouseout')
-    $rapperDrDreText.classList.add('rapper-text-animation-mouseover')
+    $rapperDrDreBackground.classList.remove('artist-background-animation-mouseout')
+    $rapperDrDreBackground.classList.add('artist-background-animation-mouseover')
+    $rapperDrDreText.classList.remove('artist-text-animation-mouseout')
+    $rapperDrDreText.classList.add('artist-text-animation-mouseover')
 })
 $rapperDrDreBackground.addEventListener('mouseout', () =>
 {
-    $rapperDrDreBackground.classList.remove('rapper-background-animation-mouseover')
-    $rapperDrDreBackground.classList.add('rapper-background-animation-mouseout')
-    $rapperDrDreText.classList.remove('rapper-text-animation-mouseover')
-    $rapperDrDreText.classList.add('rapper-text-animation-mouseout')
+    $rapperDrDreBackground.classList.remove('artist-background-animation-mouseover')
+    $rapperDrDreBackground.classList.add('artist-background-animation-mouseout')
+    $rapperDrDreText.classList.remove('artist-text-animation-mouseover')
+    $rapperDrDreText.classList.add('artist-text-animation-mouseout')
 })
 $rapperNellyBackground.addEventListener('mouseover', () =>
 {
-    $rapperNellyBackground.classList.remove('rapper-background-animation-mouseout')
-    $rapperNellyBackground.classList.add('rapper-background-animation-mouseover')
-    $rapperNellyText.classList.remove('rapper-text-animation-mouseout')
-    $rapperNellyText.classList.add('rapper-text-animation-mouseover')
+    $rapperNellyBackground.classList.remove('artist-background-animation-mouseout')
+    $rapperNellyBackground.classList.add('artist-background-animation-mouseover')
+    $rapperNellyText.classList.remove('artist-text-animation-mouseout')
+    $rapperNellyText.classList.add('artist-text-animation-mouseover')
 })
 $rapperNellyBackground.addEventListener('mouseout', () =>
 {
-    $rapperNellyBackground.classList.remove('rapper-background-animation-mouseover')
-    $rapperNellyBackground.classList.add('rapper-background-animation-mouseout')
-    $rapperNellyText.classList.remove('rapper-text-animation-mouseover')
-    $rapperNellyText.classList.add('rapper-text-animation-mouseout')
+    $rapperNellyBackground.classList.remove('artist-background-animation-mouseover')
+    $rapperNellyBackground.classList.add('artist-background-animation-mouseout')
+    $rapperNellyText.classList.remove('artist-text-animation-mouseover')
+    $rapperNellyText.classList.add('artist-text-animation-mouseout')
 })
 $rapperSnoopDoggBackground.addEventListener('mouseover', () =>
 {
-    $rapperSnoopDoggBackground.classList.remove('rapper-background-animation-mouseout')
-    $rapperSnoopDoggBackground.classList.add('rapper-background-animation-mouseover')
-    $rapperSnoopDoggText.classList.remove('rapper-text-animation-mouseout')
-    $rapperSnoopDoggText.classList.add('rapper-text-animation-mouseover')
+    $rapperSnoopDoggBackground.classList.remove('artist-background-animation-mouseout')
+    $rapperSnoopDoggBackground.classList.add('artist-background-animation-mouseover')
+    $rapperSnoopDoggText.classList.remove('artist-text-animation-mouseout')
+    $rapperSnoopDoggText.classList.add('artist-text-animation-mouseover')
 })
 $rapperSnoopDoggBackground.addEventListener('mouseout', () =>
 {
-    $rapperSnoopDoggBackground.classList.remove('rapper-background-animation-mouseover')
-    $rapperSnoopDoggBackground.classList.add('rapper-background-animation-mouseout')
-    $rapperSnoopDoggText.classList.remove('rapper-text-animation-mouseover')
-    $rapperSnoopDoggText.classList.add('rapper-text-animation-mouseout')
+    $rapperSnoopDoggBackground.classList.remove('artist-background-animation-mouseover')
+    $rapperSnoopDoggBackground.classList.add('artist-background-animation-mouseout')
+    $rapperSnoopDoggText.classList.remove('artist-text-animation-mouseover')
+    $rapperSnoopDoggText.classList.add('artist-text-animation-mouseout')
 })
 
 /*******************

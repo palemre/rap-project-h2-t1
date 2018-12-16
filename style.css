@@ -702,16 +702,16 @@ body
 }
 
 /*******************
-******************** RAP'S HISTORY : RAP'S IMPACTS
+******************** MUSIC STYLE'S IMPACTS
 *******************/
-.wrapper-rap-history .rap-content .rap-impacts
+.music-style-impacts
 {
     max-width: 100%;
     position: relative;
     background: url('images/rap/rap-impacts-background.jpg');
     background-size: cover;
 }
-.wrapper-rap-history .rap-content .rap-impacts .rap-impacts-text-les
+.music-style-impacts-text-les
 {
     font-family: 'Monument-Extended';
     color: var(--colorForTitleInRap);
@@ -722,7 +722,7 @@ body
     top: 20.5%;
     left: 15.8%;
 }
-.wrapper-rap-history .rap-content .rap-impacts .rap-impacts-text-impacts
+.music-style-impacts-text-impacts
 {
     font-family: 'Monument-Extended';
     color: var(--colorForTitleInRap);
@@ -731,7 +731,7 @@ body
     top: 5%;
     left: 20%;
 }
-.wrapper-rap-history .rap-content .rap-impacts .rap-impacts-description-text
+.music-style-impacts-description-text
 {
     position: absolute;
     top: 35%;

@@ -4,7 +4,7 @@
     --colorForText: #F0F0F0; /* white-like color for basic texts */
 }
 /*******************
- * I) HIP-HOP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
+ * I) HIP-HOP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
  ******************/
 
 /*******************
@@ -127,10 +127,28 @@
     .music-style-message-text-morale
     .music-style-message-description-text
 */
-.music-style-message-description-text
+.music-style-message-description-text.hip-hop-message-text
 {
     top: 10%;
     width: 50%;
     text-align: center;
     left: 25%;
+}
+
+/*******************
+******************** HIP-HOP CONTENT : IMPACTS
+*******************/
+.music-style-impacts.hip-hop-impacts
+{
+    background: url('images/hip-hop/hip-hop-impacts-background.jpg');
+}
+/* STYLE FOR HIP-HOP'S IMPACTS IN STYLE.CSS
+    .music-style-impacts
+    .music-style-impacts-text-les
+    .music-style-impacts-text-impacts
+    .music-style-impacts-description-text
+*/
+.music-style-impacts-description-text.hip-hop-impacts-text
+{
+    bottom: 25%;
 }
