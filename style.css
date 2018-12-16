@@ -9,7 +9,7 @@
  * III) DISPLAY MAIN RAP WRAPPER
  * IV) FIXED HAMBURGER MENU
  * V) FIXED DOTS NAV
- * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE
+ * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
  * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
  ******************/
 body
@@ -80,7 +80,6 @@ body
     background: #fff;
     border-radius: 50%;
 }
-  
 @keyframes disc-loader-rotation
 {
     0%
@@ -250,7 +249,7 @@ body
 @keyframes delete-headphone
 {
     0%   { opacity: 1;  }
-    100% { opacity: 0; }
+    100% { opacity: 0;  }
 }
 
 /*******************
@@ -294,9 +293,7 @@ body
 ******************** FIXED HAMBURGER MENU
 *******************/
 #hamburger-menu
-{
-    display: none;
-}
+{ display: none; }
 #hamburger-menu + .hamburger-menu-lines
 {
     display: none;
@@ -320,17 +317,11 @@ body
     transition: 0.5s;
 }
 #hamburger-menu + .hamburger-menu-lines span:first-child
-{
-    top: 3px;
-}
+{ top: 3px; }
 #hamburger-menu + .hamburger-menu-lines span:last-child
-{
-    top: 16px;
-}
+{ top: 16px; }
 .hamburger-menu-lines:hover
-{
-    cursor: pointer;
-}
+{ cursor: pointer; }
 #hamburger-menu:checked + .hamburger-menu-lines span
 {
     opacity: 0;
@@ -395,7 +386,6 @@ body
     transition-delay: .5s;
 }
 
-
 /*******************
 ******************** FIXED DOTS NAV IN MUSIC TYPE
 *******************/
@@ -421,9 +411,7 @@ body
     transition: all 0.3s;
 }
 .vertical-nav-dot:first-child
-{
-    background: #FFF;
-}
+{ background: #FFF; }
 
 /*******************
 ******************** RAP'S HISTORY : INTRO
@@ -538,23 +526,17 @@ body
     box-shadow: 0 0 0 0 #FFBA00;
 }
 .pulse-button.current-pulse-button
-{
-    background: #FFBA00;
-}
+{ background: #FFBA00; }
 
 .pulse-button-animation
-{
-    animation: pulse-button-timeline 1s 5;
-}
+{ animation: pulse-button-timeline 1s 5; }
 @keyframes pulse-button-timeline
 {
     70%  { box-shadow: 0 0 0 10px #FFBA00; }
     100% { box-shadow: 0 0 0 0 #FFBA00;    }
 }
 .pulse-button-animation-hip-hop
-{
-    animation: pulse-button-timeline-hip-hop 1s 5;
-}
+{ animation: pulse-button-timeline-hip-hop 1s 5; }
 @keyframes pulse-button-timeline-hip-hop
 {
     70%  { box-shadow: 0 0 0 10px #7762E8; }

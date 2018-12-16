@@ -3,6 +3,7 @@
  * II) HIP-HOP'S TYPES
  * III) HIP-HOP'S MESSAGE
  * IV) HIP-HOP'S IMPACTS
+ * V) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : HIP-HOP -> JAZZ
  ******************/
 
 /*******************
@@ -133,3 +134,7 @@ $hipHopMessage.style.height =`${offsetHeight}px`
 *******************/
 const $hipHopImpacts = $wrapperRapHistory.querySelector('.js-hip-hop-impacts')
 $hipHopImpacts.style.height =`${offsetHeight}px`
+
+/*******************
+******************** BACK IN TIME TUNNEL EFFECT : HIP-HOP TO JAZZ
+*******************/
