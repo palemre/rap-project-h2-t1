@@ -1,7 +1,6 @@
 :root
 {
     --colorForTitleInHipHop: #7762E8; /* orange-like color for titles in rap */
-    --colorForText: #F0F0F0; /* white-like color for basic texts */
 }
 /*******************
  * I) HIP-HOP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
@@ -69,17 +68,11 @@
 /* HIP-HOP ORIGIN PULSE BUTTON STYLE ON STYLE.CSS --> .pulse-button */
 /* HIP-HOP ORIGIN PULSE BUTTON TEXT STYLE ON STYLE.CSS --> .pulse-button-text */
 .pulse-button.current-pulse-button-hip-hop
-{
-    background: #7762E8;
-}
+{ background: #7762E8; }
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button
-{
-    box-shadow: 0 0 0 0 #7762E8;
-}
+{ box-shadow: 0 0 0 0 #7762E8; }
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button-text
-{
-    color: var(--colorForTitleInHipHop);
-}
+{ color: var(--colorForTitleInHipHop); }
 
 /*******************
 ******************** HIP-HOP CONTENT : TYPES
@@ -139,9 +132,7 @@
 ******************** HIP-HOP CONTENT : IMPACTS
 *******************/
 .music-style-impacts.hip-hop-impacts
-{
-    background: url('images/hip-hop/hip-hop-impacts-background.jpg');
-}
+{ background: url('images/hip-hop/hip-hop-impacts-background.jpg'); }
 /* STYLE FOR HIP-HOP'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les
@@ -153,3 +144,17 @@
     top: 65%;
     left: 16.1%;
 }
+
+/*******************
+******************** TUNNEL EFFECT BETWEEN MUSIC TYPES
+*******************/
+.hip-hop-main-container-to-display
+{
+    transition: all 1.5s;
+    will-change: transform opacity;
+}
+/* TUNNEL ANIMATION IN STYLE.CSS
+    .tunnel-animation
+    .tunnel-animation-in
+*/
+/* BUTTON FOR TUNNEL ANIMATION IN STYLE.CSS -> .tunnel-animation-button */

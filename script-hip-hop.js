@@ -138,3 +138,32 @@ $hipHopImpacts.style.height =`${offsetHeight}px`
 /*******************
 ******************** BACK IN TIME TUNNEL EFFECT : HIP-HOP TO JAZZ
 *******************/
+//TUNNEL FROM HIP-HOP TO JAZZ
+const $jazzOrigin = $wrapperRapHistory.querySelector('.js-jazz-origin')
+const $tunnelToJazz = $hipHopImpacts.querySelector('.js-tunnel-to-jazz')
+const $hipHopMainContainerToDisplay = $wrapperRapHistory.querySelector('.hip-hop-main-container-to-display')
+const $jazzContent = $wrapperRapHistory.querySelector('.js-jazz-content')
+const $jazzMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-jazz-history')
+
+//SELECT JAZZ CONTENTS
+
+$tunnelToJazz.addEventListener('click', () =>
+{
+    document.body.style.overflow = `hidden`
+    $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+    $hipHopMainContainerToDisplay.style.transform = `translateZ(802px)`
+    const tunnelAnimation = setInterval(() =>
+    {
+        $hipHopMainContainerToDisplay.style.display = `none`
+        $jazzContent.style.display = `inline`
+        document.body.style.overflow = `visible`
+        window.clearInterval(tunnelAnimation)
+        window.scroll(0, 0);
+    }, 1500)
+    $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+    $jazzContent.classList.add('tunnel-animation-in')
+
+    //DIPLAY JAZZ HISTORY'S CONTENT
+    $jazzOrigin.style.height =`${offsetHeight}px`
+    $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
+})

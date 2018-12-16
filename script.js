@@ -33,8 +33,6 @@ const $rapTypes = $wrapperRapHistory.querySelector('.js-rap-types')
 const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-rap-history-background')
 const $hipHopMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-hip-hop-history')
 
-
-
 const offsetHeight = document.body.offsetHeight
 const offsetWidth = document.body.offsetWidth
 
@@ -66,7 +64,7 @@ $startButton.addEventListener('click', () =>
         $verticalDotsNav.classList.add('display-wrapper-rap-history')
         $hamburgerMenuLines.classList.add('display-wrapper-rap-history')
 
-        //RAP MOSAIC BACKGROUND
+        //MUSIC STYLE MOSAIC BACKGROUND
         $rapMosaicBackgroundImage.style.height = `${offsetHeight}px`
         $hipHopMosaicBackgroundImage.style.height = `${offsetHeight}px`
 
