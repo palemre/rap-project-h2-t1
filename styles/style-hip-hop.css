@@ -22,7 +22,7 @@
 {
     width: 100%;
     display: block;
-    background: url('images/hip-hop/mosaique-albums-hip-hop.png');
+    background: url('../images/hip-hop/mosaique-albums-hip-hop.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 .wrapper-rap-history .hip-hop-content .hip-hop-history .scroll-down-text.scroll-hip-hop
@@ -53,7 +53,7 @@
 /* BACKGROUND OF HIP-HOP'S ORIGIN */
 .hip-hop-content .music-style-origin
 {
-    background: url('images/hip-hop/hip-hop-timeline/run-dmc.png');
+    background: url('../images/hip-hop/hip-hop-timeline/run-dmc.png');
     max-width: 100%;
     position: relative;
     background-size: cover;
@@ -75,13 +75,13 @@
 ******************** HIP-HOP CONTENT : TYPES
 *******************/
 .wrapper-rap-history .hip-hop-content .artist.hip-hop-mia
-{ background-image: url('images/hip-hop/artists/mia.png'); }
+{ background-image: url('../images/hip-hop/artists/mia.png'); }
 .wrapper-rap-history .hip-hop-content .artist.hip-hop-mc-hammer
-{ background-image: url('images/hip-hop/artists/mc-hammer.png'); }
+{ background-image: url('../images/hip-hop/artists/mc-hammer.png'); }
 .wrapper-rap-history .hip-hop-content .artist.hip-hop-dj-shadow
-{ background-image: url('images/hip-hop/artists/dj-shadow.png'); }
+{ background-image: url('../images/hip-hop/artists/dj-shadow.png'); }
 .wrapper-rap-history .hip-hop-content .artist.hip-hop-dj-kool-herc
-{ background-image: url('images/hip-hop/artists/dj-kool-herc.png'); }
+{ background-image: url('../images/hip-hop/artists/dj-kool-herc.png'); }
 
 /* EACH ARTIST DIV STYLE IN STYLE.CSS -> .artist */
 /* EACH ARTIST DESCRIPTION TEXT POSITIONNING */
@@ -108,7 +108,7 @@
 *******************/
 .music-style-message.hip-hop-message
 {
-    background: url('images/hip-hop/hip-hop-message-background.png');
+    background: url('../images/hip-hop/hip-hop-message-background.png');
     background-size: cover;
 }
 /* STYLE FOR HIP-HOP'S MESSAGE IN STYLE.CSS
@@ -129,7 +129,10 @@
 ******************** HIP-HOP CONTENT : IMPACTS
 *******************/
 .music-style-impacts.hip-hop-impacts
-{ background: url('images/hip-hop/hip-hop-impacts-background.png'); }
+{
+    background: url('../images/hip-hop/hip-hop-impacts-background.png');
+    background-size: cover;
+}
 /* STYLE FOR HIP-HOP'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les

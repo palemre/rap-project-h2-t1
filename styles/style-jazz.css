@@ -22,7 +22,7 @@
 {
     width: 100%;
     display: block;
-    background: url('images/hip-hop/mosaique-albums-jazz.png');
+    background: url('../images/hip-hop/mosaique-albums-jazz.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 .wrapper-rap-history .jazz-content .jazz-history .scroll-down-text.scroll-jazz
@@ -53,7 +53,7 @@
 /* BACKGROUND OF JAZZ'S ORIGIN */
 .music-style-origin.js-jazz-origin
 {
-    background: url('images/jazz/jazz-timeline/benny.png');
+    background: url('../images/jazz/jazz-timeline/benny.png');
     max-width: 100%;
     position: relative;
     background-size: cover;
@@ -75,13 +75,13 @@
 ******************** JAZZ CONTENT : TYPES
 *******************/
 .wrapper-rap-history .jazz-content .artist.jazz-swing
-{ background-image: url('images/jazz/artists/swing.png'); }
+{ background-image: url('../images/jazz/artists/swing.png'); }
 .wrapper-rap-history .jazz-content .artist.jazz-bebop
-{ background-image: url('images/jazz/artists/bebop.png'); }
+{ background-image: url('../images/jazz/artists/bebop.png'); }
 .wrapper-rap-history .jazz-content .artist.jazz-hard-bop
-{ background-image: url('images/jazz/artists/hard-bop.png'); }
+{ background-image: url('../images/jazz/artists/hard-bop.png'); }
 .wrapper-rap-history .jazz-content .artist.jazz-jazz-rock
-{ background-image: url('images/jazz/artists/jazz-rock.png'); }
+{ background-image: url('../images/jazz/artists/jazz-rock.png'); }
 
 /* EACH ARTIST DIV STYLE IN STYLE.CSS -> .artist */
 /* EACH ARTIST DESCRIPTION TEXT POSITIONNING */
@@ -108,7 +108,7 @@
 *******************/
 .music-style-message.jazz-message
 {
-    background: url('images/jazz/jazz-message-background.png');
+    background: url('../images/jazz/jazz-message-background.png');
     background-size: cover;
 }
 /* STYLE FOR JAZZ'S MESSAGE IN STYLE.CSS
@@ -129,7 +129,10 @@
 ******************** JAZZ CONTENT : IMPACTS
 *******************/
 .music-style-impacts.jazz-impacts
-{ background: url('images/jazz/jazz-impacts-background.png'); }
+{
+    background: url('../images/jazz/jazz-impacts-background.png');
+    background-size: cover;
+}
 /* STYLE FOR JAZZ'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les

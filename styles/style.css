@@ -27,17 +27,17 @@ body
 @font-face
 {
     font-family: 'Quicksand'; /* Font for text */
-    src: url('fonts/quicksand/Quicksand-Regular.otf');
+    src: url('../fonts/quicksand/Quicksand-Regular.otf');
 }
 @font-face
 {
     font-family: 'Rajdhani'; /* Font for inter-title */
-    src: url('fonts/rajdhani/rajdhani-semibold.ttf');
+    src: url('../fonts/rajdhani/rajdhani-semibold.ttf');
 }
 @font-face
 {
     font-family: 'Monument-Extended'; /* Font for titles */
-    src: url('fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
+    src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
 
 /*******************
@@ -58,7 +58,7 @@ body
     justify-content: center;
     width: 50vh;
     height: 50vh;
-    background-image: url('images/disc-loader.png');
+    background-image: url('../images/disc-loader.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -437,7 +437,7 @@ body
 {
     width: 100%;
     display: block;
-    background: url('images/rap/mosaique-albums-rap.png');
+    background: url('../images/rap/mosaique-albums-rap.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 .music-type-text
@@ -496,7 +496,7 @@ body
 *******************/
 .music-style-origin
 {
-    background: url('images/rap/rap-timeline/grandmaster-flash.png');
+    background: url('../images/rap/rap-timeline/grandmaster-flash.png');
     max-width: 100%;
     position: relative;
     background-size: cover;
@@ -605,13 +605,13 @@ body
     position: relative;
 }
 .wrapper-rap-history .rap-content .artist.rapper-eminem
-{ background-image: url('images/rap/rapper/eminem.png'); }
+{ background-image: url('../images/rap/rapper/eminem.png'); }
 .wrapper-rap-history .rap-content .artist.rapper-dr-dre
-{ background-image: url('images/rap/rapper/dr-dre.png'); }
+{ background-image: url('../images/rap/rapper/dr-dre.png'); }
 .wrapper-rap-history .rap-content .artist.rapper-nelly
-{ background-image: url('images/rap/rapper/nelly.png'); }
+{ background-image: url('../images/rap/rapper/nelly.png'); }
 .wrapper-rap-history .rap-content .artist.rapper-snoop-dogg
-{ background-image: url('images/rap/rapper/snoop-dog.png'); }
+{ background-image: url('../images/rap/rapper/snoop-dog.png'); }
 .artist-text
 {
     display: inline;
@@ -672,7 +672,7 @@ body
 {
     max-width: 100%;
     position: relative;
-    background: url('images/rap/rap-message-background.png');
+    background: url('../images/rap/rap-message-background.png');
     background-size: cover;
 }
 .music-style-message-text-la
@@ -713,7 +713,7 @@ body
 {
     max-width: 100%;
     position: relative;
-    background: url('images/rap/rap-impacts-background.png');
+    background: url('../images/rap/rap-impacts-background.png');
     background-size: cover;
 }
 .music-style-impacts-text-les
@@ -779,7 +779,3 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/*******************
-******************** FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
-*******************/

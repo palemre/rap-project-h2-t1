@@ -5,7 +5,6 @@
  * IV) HIP-HOP'S IMPACTS
  * V) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : HIP-HOP -> JAZZ
  ******************/
-
 /*******************
 ******************** HIP-HOP'S ORIGIN TIMELINE
 *******************/
@@ -28,15 +27,15 @@ $hiphopOrigin.addEventListener('click', () =>
             $pulseButtonTextHipHop.innerHTML = hiphopOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $hiphopOrigin.style.backgroundImage = `url('images/hip-hop/hip-hop-timeline/run-dmc.png')` }
+            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/run-dmc.png')` }
             else if (i == 1)
-            { $hiphopOrigin.style.backgroundImage = `url('images/hip-hop/hip-hop-timeline/paid-in-full.png')` }
+            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/paid-in-full.png')` }
             else if (i == 2)
-            { $hiphopOrigin.style.backgroundImage = `url('images/hip-hop/hip-hop-timeline/public-enemy.png')` }
+            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/public-enemy.png')` }
             else if (i == 3)
-            { $hiphopOrigin.style.backgroundImage = `url('images/hip-hop/hip-hop-timeline/the-fugees.png')` }
+            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/the-fugees.png')` }
             else if (i == 4)
-            { $hiphopOrigin.style.backgroundImage = `url('images/hip-hop/hip-hop-timeline/college-droput-hero.png')` }
+            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/college-droput-hero.png')` }
         })
         if (i != selectedButtonHipHop)
         {
@@ -146,7 +145,6 @@ let $jazzContent = $wrapperRapHistory.querySelector('.js-jazz-content')
 const $jazzMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-jazz-history')
 
 //SELECT JAZZ CONTENTS
-
 $tunnelToJazz.addEventListener('click', () =>
 {
     document.body.style.overflow = `hidden`
