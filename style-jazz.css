@@ -40,10 +40,10 @@
 {
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 33.6%;
     transform: rotate(-90deg);
     transform-origin: 0 0;
-    font-size: 2.85rem;
+    font-size: 2.75rem;
     font-family: 'Monument-Extended';
 }
 
@@ -123,4 +123,21 @@
     width: 50%;
     text-align: center;
     left: 25%;
+}
+
+/*******************
+******************** JAZZ CONTENT : IMPACTS
+*******************/
+.music-style-impacts.jazz-impacts
+{ background: url('images/jazz/jazz-impacts-background.jpg'); }
+/* STYLE FOR JAZZ'S IMPACTS IN STYLE.CSS
+    .music-style-impacts
+    .music-style-impacts-text-les
+    .music-style-impacts-text-impacts
+    .music-style-impacts-description-text
+*/
+.music-style-impacts-description-text.jazz-impacts-text
+{
+    top: 30%;
+    left: 16.1%;
 }

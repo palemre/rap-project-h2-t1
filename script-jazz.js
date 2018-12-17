@@ -1,6 +1,8 @@
 /*******************
  * I) JAZZ'S ORIGIN
  * II) JAZZ'S TYPES
+ * III) JAZZ'S MESSAGE
+ * IV) JAZZ'S IMPACTS
  ******************/
 /*******************
 ******************** JAZZ'S ORIGIN TIMELINE
@@ -124,4 +126,10 @@ $artistJazzRockBackground.addEventListener('mouseout', () =>
 *******************/
 const $jazzMessage = $wrapperRapHistory.querySelector('.js-jazz-message')
 $jazzMessage.style.height =`${offsetHeight}px`
+
+/*******************
+******************** JAZZ'S IMPACTS
+*******************/
+const $jazzImpacts = $wrapperRapHistory.querySelector('.js-jazz-impacts')
+$jazzImpacts.style.height =`${offsetHeight}px`
 
