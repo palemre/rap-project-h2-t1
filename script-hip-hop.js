@@ -142,7 +142,7 @@ $hipHopImpacts.style.height =`${offsetHeight}px`
 const $jazzOrigin = $wrapperRapHistory.querySelector('.js-jazz-origin')
 const $tunnelToJazz = $hipHopImpacts.querySelector('.js-tunnel-to-jazz')
 const $hipHopMainContainerToDisplay = $wrapperRapHistory.querySelector('.hip-hop-main-container-to-display')
-const $jazzContent = $wrapperRapHistory.querySelector('.js-jazz-content')
+let $jazzContent = $wrapperRapHistory.querySelector('.js-jazz-content')
 const $jazzMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-jazz-history')
 
 //SELECT JAZZ CONTENTS

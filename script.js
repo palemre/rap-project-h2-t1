@@ -6,6 +6,7 @@
  * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
  * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
  * VII) DISPLAY HIP-HOP'S HISTORY INTRO
+ * VIII) FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
  ******************/
 
 /*******************
@@ -32,6 +33,7 @@ const $rapOrigin = $wrapperRapHistory.querySelector('.js-rap-origin')
 const $rapTypes = $wrapperRapHistory.querySelector('.js-rap-types')
 const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-rap-history-background')
 const $hipHopMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-hip-hop-history')
+
 
 const offsetHeight = document.body.offsetHeight
 const offsetWidth = document.body.offsetWidth
@@ -269,8 +271,8 @@ $rapImpacts.style.height =`${offsetHeight}px`
 *******************/
 //TUNNEL FROM RAP TO HIP-HOP
 const $tunnelToHipHop = $rapImpacts.querySelector('.js-tunnel-to-hip-hop')
-const $rapMainContainerToDisplay = $wrapperRapHistory.querySelector('.rap-main-container-to-display')
-const $hipHopContent = $wrapperRapHistory.querySelector('.js-hip-hop-content')
+let $rapMainContainerToDisplay = $wrapperRapHistory.querySelector('.rap-main-container-to-display')
+let $hipHopContent = $wrapperRapHistory.querySelector('.js-hip-hop-content')
 
 //SELECT HIP-HOP CONTENTS
 const $hiphopOrigin = $wrapperRapHistory.querySelector('.js-hip-hop-origin')
@@ -280,6 +282,7 @@ $tunnelToHipHop.addEventListener('click', () =>
     document.body.style.overflow = `hidden`
     $rapMainContainerToDisplay.classList.add('tunnel-animation')
     $rapMainContainerToDisplay.style.transform = `translateZ(801px)`
+    $hipHopContent.style.transform = `translateZ(0)`
     const tunnelAnimation = setInterval(() =>
     {
         $rapMainContainerToDisplay.style.display = `none`
@@ -294,4 +297,174 @@ $tunnelToHipHop.addEventListener('click', () =>
     //DIPLAY HIP-HOP HISTORY'S CONTENT
     $hiphopOrigin.style.height =`${offsetHeight}px`
     $hiphopOrigin.style.width =`${offsetWidth}px`
+})
+
+/*******************
+******************** FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+*******************/
+//SELECT EACH ITEM IN NAV
+const $navDisplayRap = document.querySelector('.nav-display-rap')
+const $navDisplayHipHop = document.querySelector('.nav-display-hip-hop')
+const $navDisplayJazz = document.querySelector('.nav-display-jazz')
+const $navDisplayAbout = document.querySelector('.nav-display-about')
+const $hamburgerMenu = document.querySelector('#hamburger-menu')
+
+
+//ACCESS TO RAP'S PAGE
+$navDisplayRap.addEventListener('click', () =>
+{
+    $hamburgerMenu.checked = false
+    //IF THE CURRENT PAGE IS HIP-HOP
+    if ($hipHopContent.style.display != 'none')
+    {
+        $jazzContent.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+        $hipHopMainContainerToDisplay.style.transform = `translateZ(802px)`
+        $rapMainContainerToDisplay.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $hipHopMainContainerToDisplay.style.display = `none`
+            $rapMainContainerToDisplay.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+        $rapMainContainerToDisplay.classList.add('tunnel-animation-in')
+    
+        //DIPLAY RAP'S HISTORY'S CONTENT
+        $rapOrigin.style.height =`${offsetHeight}px`
+        $rapMosaicBackgroundImage.style.height =`${offsetHeight}px`
+    }
+    //IF THE CURRENT PAGE IS JAZZ
+    else if ($jazzContent.style.display != 'none')
+    {
+        $hipHopContent.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $jazzContent.classList.add('tunnel-animation')
+        $jazzContent.style.transform = `translateZ(803px)`
+        $rapMainContainerToDisplay.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $jazzContent.style.display = `none`
+            $rapMainContainerToDisplay.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $jazzContent.classList.add('tunnel-animation')
+        $rapMainContainerToDisplay.classList.add('tunnel-animation-in')
+    
+        //DIPLAY RAP'S HISTORY'S CONTENT
+        $rapOrigin.style.height =`${offsetHeight}px`
+        $rapMosaicBackgroundImage.style.height =`${offsetHeight}px`
+    }
+    //IF THE CURRENT PAGE IS RAP NOTHING TO DO
+})
+
+//ACCESS TO HIP-HOP'S PAGE
+$navDisplayHipHop.addEventListener('click', () =>
+{
+    $hamburgerMenu.checked = false
+    //IF THE CURRENT PAGE IS RAP
+    if ($rapMainContainerToDisplay.style.display != 'none')
+    {
+        $jazzContent.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $rapMainContainerToDisplay.classList.add('tunnel-animation')
+        $rapMainContainerToDisplay.style.transform = `translateZ(802px)`
+        $hipHopContent.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $rapMainContainerToDisplay.style.display = `none`
+            $hipHopContent.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $rapMainContainerToDisplay.classList.add('tunnel-animation')
+        $hipHopContent.classList.add('tunnel-animation-in')
+    
+        //DIPLAY HIP-HOP'S HISTORY'S CONTENT
+        $hiphopOrigin.style.height =`${offsetHeight}px`
+        $hiphopOrigin.style.width =`${offsetWidth}px`
+    }
+    //IF THE CURRENT PAGE IS JAZZ
+    else if ($jazzContent.style.display != 'none')
+    {
+        $rapMainContainerToDisplay.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $jazzContent.classList.add('tunnel-animation')
+        $jazzContent.style.transform = `translateZ(803px)`
+        $hipHopContent.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $jazzContent.style.display = `none`
+            $hipHopContent.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $jazzContent.classList.add('tunnel-animation')
+        $hipHopContent.classList.add('tunnel-animation-in')
+    
+        //DIPLAY RAP'S HISTORY'S CONTENT
+        $hiphopOrigin.style.height =`${offsetHeight}px`
+        $hiphopOrigin.style.width =`${offsetWidth}px`
+    }
+    //IF THE CURRENT PAGE IS HIP-HOP NOTHING TO DO
+})
+
+//ACCESS TO JAZZ'S PAGE
+$navDisplayJazz.addEventListener('click', () =>
+{
+    $hamburgerMenu.checked = false
+    //IF THE CURRENT PAGE IS RAP
+    if ($rapMainContainerToDisplay.style.display != 'none')
+    {
+        $hipHopContent.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $rapMainContainerToDisplay.classList.add('tunnel-animation')
+        $rapMainContainerToDisplay.style.transform = `translateZ(802px)`
+        $jazzContent.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $rapMainContainerToDisplay.style.display = `none`
+            $jazzContent.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $rapMainContainerToDisplay.classList.add('tunnel-animation')
+        $jazzContent.classList.add('tunnel-animation-in')
+    
+        //DIPLAY HIP-HOP'S HISTORY'S CONTENT
+        $jazzOrigin.style.height =`${offsetHeight}px`
+        $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
+    }
+    //IF THE CURRENT PAGE IS HIP-HOP
+    else if ($hipHopContent.style.display != 'none')
+    {
+        $rapMainContainerToDisplay.style.display = `none`
+        document.body.style.overflow = `hidden`
+        $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+        $hipHopMainContainerToDisplay.style.transform = `translateZ(802px)`
+        $jazzContent.style.transform = `translateZ(0)`
+        const tunnelAnimation = setInterval(() =>
+        {
+            $hipHopMainContainerToDisplay.style.display = `none`
+            $jazzContent.style.display = `inline`
+            document.body.style.overflow = `visible`
+            window.clearInterval(tunnelAnimation)
+            window.scroll(0, 0);
+        }, 1500)
+        $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
+        $jazzContent.classList.add('tunnel-animation-in')
+    
+        //DIPLAY RAP'S HISTORY'S CONTENT
+        $jazzOrigin.style.height =`${offsetHeight}px`
+        $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
+    }
+    //IF THE CURRENT PAGE IS JAZZ NOTHING TO DO
 })

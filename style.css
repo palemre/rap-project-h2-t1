@@ -11,7 +11,13 @@
  * V) FIXED DOTS NAV
  * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
  * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
+ * VIII) FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
  ******************/
+html,
+body
+{
+    overflow-x: hidden;
+}
 body
 {
     background: #0D0D0D;
@@ -346,8 +352,8 @@ body
     left: 0;
     width: 100vw;
     z-index: 3;
-    transition: .5s;
-    transition-delay: .5s;
+    transition: 0.5s;
+    transition-delay: 0.5s;
     overflow: hidden;
 }
 #hamburger-menu ~ nav > ul
@@ -763,3 +769,7 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*******************
+******************** FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+*******************/
