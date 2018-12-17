@@ -7,17 +7,15 @@
  * I) DISC LOADER
  * II) HEADPHONE WARNING
  * III) DISPLAY MAIN RAP WRAPPER
- * IV) FIXED HAMBURGER MENU
+ * IV) FULLSCREEN HAMBURGER MENU
  * V) FIXED DOTS NAV
  * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
  * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
- * VIII) FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+ * VIII) FUULSCREEN NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
  ******************/
 html,
 body
-{
-    overflow-x: hidden;
-}
+{ overflow-x: hidden; }
 body
 {
     background: #0D0D0D;
@@ -39,7 +37,10 @@ body
     font-family: 'Monument-Extended'; /* Font for titles */
     src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
-
+.important-text
+{
+    color: var(--colorForTitleInRap);
+}
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
@@ -396,6 +397,56 @@ body
 {
     opacity: 1;
     transition-delay: .5s;
+}
+/* ABOUT DESIGN */
+.about-box
+{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #0D0D0D;
+    font-family: 'Quicksand';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    opacity: 0;
+    will-change: opacity;
+    color: var(--colorForText);
+    z-index: 10;
+}
+.about-box p
+{ width: 65%; }
+.about-box-animation-in
+{
+    display: flex;
+    animation: about-box-animation-in 1s forwards;
+}
+@keyframes about-box-animation-in
+{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.about-box-animation-out
+{ animation: about-box-animation-out 1s forwards; }
+@keyframes about-box-animation-out
+{
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+.about-box .close-about-box
+{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url('../images/close.png');
+    background-size: cover;
+    top: 2rem;
+    left: 2.5rem;
+    cursor: pointer;
 }
 
 /*******************

@@ -6,7 +6,7 @@
  * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
  * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
  * VII) DISPLAY HIP-HOP'S HISTORY INTRO
- * VIII) FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+ * VIII) FULLSCREEN NAVIGATION MENU (RAP / HIP-HOP / JAZZ / ABOUT)
  * IX) CURSOR PARALLAX ON MUSIC TYPE INTRO'S
  ******************/
 /*******************
@@ -335,7 +335,7 @@ $tunnelToHipHop.addEventListener('click', () =>
 })
 
 /*******************
-******************** FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+******************** FULLSCREEN NAVIGATION MENU (RAP / HIP-HOP / JAZZ / ABOUT)
 *******************/
 //SELECT EACH ITEM IN NAV
 const $navDisplayRap = document.querySelector('.nav-display-rap')
@@ -343,7 +343,8 @@ const $navDisplayHipHop = document.querySelector('.nav-display-hip-hop')
 const $navDisplayJazz = document.querySelector('.nav-display-jazz')
 const $navDisplayAbout = document.querySelector('.nav-display-about')
 const $hamburgerMenu = document.querySelector('#hamburger-menu')
-
+const $aboutBox = document.querySelector('.about-box')
+const $closeAboutBox = document.querySelector('.close-about-box')
 
 //ACCESS TO RAP'S PAGE
 $navDisplayRap.addEventListener('click', () =>
@@ -502,6 +503,22 @@ $navDisplayJazz.addEventListener('click', () =>
         $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
     }
     //IF THE CURRENT PAGE IS JAZZ NOTHING TO DO
+})
+
+//DISPLAY ABOUT BOX
+$navDisplayAbout.addEventListener('click', () =>
+{
+    $aboutBox.style.display = `flex`
+    $aboutBox.classList.remove('about-box-animation-out')
+    $aboutBox.classList.add('about-box-animation-in')
+})
+
+//CLOSE ABOUT BOX
+$closeAboutBox.addEventListener('click', () =>
+{
+    $aboutBox.classList.remove('about-box-animation-in')
+    $aboutBox.classList.add('about-box-animation-out')
+    $aboutBox.style.display = `none`
 })
 
 /*******************
