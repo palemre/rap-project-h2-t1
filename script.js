@@ -100,15 +100,15 @@ $rapOrigin.addEventListener('click', () =>
             $pulseButtonText.innerHTML = rapOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.png')` }
             else if (i == 1)
-            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.png')` }
             else if (i == 2)
-            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.png')` }
             else if (i == 3)
             { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/notorious-big.png')` }
             else if (i == 4)
-            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.jpg')` }
+            { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.png')` }
         })
         if (i != selectedButton)
         {

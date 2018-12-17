@@ -26,15 +26,15 @@ $jazzOrigin.addEventListener('click', () =>
             $pulseButtonTextJazz.innerHTML = jazzOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/benny.jpg')` }
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/benny.png')` }
             else if (i == 1)
-            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/coleman-hawkins.jpg')` }
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/coleman-hawkins.png')` }
             else if (i == 2)
-            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/john-coltrane.jpg')` }
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/john-coltrane.png')` }
             else if (i == 3)
             { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/kindofblue-session.png')` }
             else if (i == 4)
-            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/franck-zappa.jpg')` }
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/franck-zappa.png')` }
         })
         if (i != selectedButtonJazz)
         {
