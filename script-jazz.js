@@ -9,7 +9,7 @@
 const $pulseButtonsJazz = $jazzOrigin.querySelectorAll('.js-pulse-button-jazz')
 const $pulseButtonTextJazz = $jazzOrigin.querySelector('.js-pulse-button-text-jazz')
 let selectedButtonJazz = 0
-const jazzOriginTexts = ['Le genre se développe en tant que mouvement culturel et artistique aux États-Unis, à New York, dans le South Bronx au début des années 1970.', '1974 : Les premiers raps sont réalisés par des maîtres de cérémonies faisant des rimes simples pour mettre de l’ambiance en soirée. Mais les premiers raps sont italiens contrairement à ce que l’on peut croire.', '1979 : Sortie de « Rapper’s Delight » du groupe Sugarhill Gag, devient le premier tube rap dans le monde.', '1980 : Début de la popularité, explosion du rap dans le monde entier. C’est à cette période que celui-ci vas arriver en europe notamment en France et en Angleterre.', '1990 : La sortie de Fear of a Black Planet par Public Enemy joue un rôle clé dans la popularisation du hip-hop auprès du grand public. C’est l’année où le rap a explosé.']
+const jazzOriginTexts = ['1938 : Benny Goodman a réalisé selon Bruce Eder le concert de jazz le plus important de l’histoire : cette fête est devenue le «coming out» du jazz dans le monde de la musique «respectable».', '1939 : Body and Soul par Coleman Hawkins, est un enregistrement très populaire et une source d’inspiration pour de nombreux musiciens. Ce morceau devient fondateur du genre be-bop', '1957 : John Coltrane est considéré comme le saxophoniste le plus révolutionnaire et influant de l’histoire du Jazz. Son album Blue Train va engendrer la popularité du hard bop.', '1959 :  Kind of Blue de Miles Davis est l’album de jazz le plus vendu de tous les temps. Il est considéré pour nombreux comme l’un des albums les plus influents jamais enregistrés dans l’histoire du jazz.', '1969 : Franck Zappa a sorti son album Hot Rats qui deviendra pionnier du genre Jazz-Rock. L’album est cité dans l’ouvrage de référence de Robert Dimery «les 1001 albums qu’il faut avoir écoutés dans sa vie».']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
 $jazzOrigin.addEventListener('click', () =>
@@ -19,20 +19,20 @@ $jazzOrigin.addEventListener('click', () =>
         $pulseButtonsJazz[i].addEventListener('click', () =>
         {
             selectedButtonJazz = i
-            $pulseButtonsJazz[i].style.backgroundColor = '#7762E8'
+            $pulseButtonsJazz[i].style.backgroundColor = '#BF3333'
             $pulseButtonsJazz[i].classList.add('pulse-button-animation-jazz')
             $pulseButtonTextJazz.innerHTML = jazzOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
-            // if (i == 0)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/grandmaster-flash.jpg')` }
-            // else if (i == 1)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/beastie-boys.jpg')` }
-            // else if (i == 2)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/2pac.jpg')` }
-            // else if (i == 3)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/notorious-big.png')` }
-            // else if (i == 4)
-            // { $rapOrigin.style.backgroundImage = `url('images/rap/rap-timeline/eminem.jpg')` }
+            if (i == 0)
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/benny.jpg')` }
+            else if (i == 1)
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/coleman-hawkins.jpg')` }
+            else if (i == 2)
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/john-coltrane.jpg')` }
+            else if (i == 3)
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/kindofblue-session.png')` }
+            else if (i == 4)
+            { $jazzOrigin.style.backgroundImage = `url('images/jazz/jazz-timeline/franck-zappa.jpg')` }
         })
         if (i != selectedButtonJazz)
         {

@@ -53,9 +53,10 @@
 /* BACKGROUND OF JAZZ'S ORIGIN */
 .music-style-origin.js-jazz-origin
 {
-    background: #0D0D0D;
+    background: url('images/jazz/jazz-timeline/benny.jpg');
     max-width: 100%;
     position: relative;
+    background-size: cover;
 }
 .music-style-origin-text.jazz-origin-text
 { width: 1rem; }
