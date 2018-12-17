@@ -7,6 +7,7 @@
  * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
  * VII) DISPLAY HIP-HOP'S HISTORY INTRO
  * VIII) FIXED NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+ * IX) CURSOR PARALLAX ON MUSIC TYPE INTRO'S
  ******************/
 /*******************
 ******************** WEBSITE DISC LOADER
@@ -501,4 +502,30 @@ $navDisplayJazz.addEventListener('click', () =>
         $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
     }
     //IF THE CURRENT PAGE IS JAZZ NOTHING TO DO
+})
+
+/*******************
+******************** CURSOR PARALLAX ON MUSIC TYPE INTRO'S
+*******************/
+let windowWidth = window.innerWidth
+let windowHeight = window.innerHeight
+window.addEventListener('resize', () =>
+{
+    windowWidth = window.innerWidth
+    windowHeight = window.innerHeight
+})
+
+//CURSOR PARALLAX
+const cursorParallaxes = document.querySelectorAll('.cursor-parallax')
+window.addEventListener('mousemove', (_event) =>
+{
+    const ratioX = _event.clientX / windowWidth - 0.5
+    const ratioY = _event.clientY / windowHeight - 0.5
+    for(const cursorParallax of cursorParallaxes)
+    {
+        const depth = parseFloat(cursorParallax.dataset.cursorDepth)
+        const translateX = - ratioX * depth * 100
+        const translateY = - ratioY * depth * 100
+        cursorParallax.style.transform = `translate(${translateX}%, ${translateY}%)`
+    }
 })

@@ -25,21 +25,15 @@
     background: url('../images/hip-hop/mosaique-albums-hip-hop.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
-.wrapper-rap-history .hip-hop-content .hip-hop-history .scroll-down-text.scroll-hip-hop
-{ top: 7%; }
-.wrapper-rap-history .hip-hop-content .hip-hop-history .scroll-down-line.line-hip-hop
-{ top: 11%; }
 
 /* HIP-HOP TITLE STYLE ON STYLE.CSS --> .music-type-text */
 .wrapper-rap-history .hip-hop-content .hip-hop-history .text-the,
 .music-type-text.hip-hop
 { color: var(--colorForTitleInHipHop); }
-.music-type-text.hip-hop
-{ top: 7.7%; }
 .wrapper-rap-history .hip-hop-content .hip-hop-history .text-the
 {
     position: absolute;
-    top: 10%;
+    top: 51.5%;
     left: 25%;
     transform: rotate(-90deg);
     transform-origin: 0 0;

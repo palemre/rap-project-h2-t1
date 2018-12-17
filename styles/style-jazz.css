@@ -22,24 +22,18 @@
 {
     width: 100%;
     display: block;
-    background: url('../images/hip-hop/mosaique-albums-jazz.png');
+    background: url('../images/jazz/mosaique-albums-jazz.png');
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
-.wrapper-rap-history .jazz-content .jazz-history .scroll-down-text.scroll-jazz
-{ top: 7%; }
-.wrapper-rap-history .jazz-content .jazz-history .scroll-down-line.line-jazz
-{ top: 11%; }
 
 /* JAZZ TITLE STYLE ON STYLE.CSS --> .music-type-text */
 .wrapper-rap-history .jazz-content .jazz-history .text-the,
 .music-type-text.jazz
 { color: var(--colorForTitleInJazz); }
-.music-type-text.jazz
-{ top: 7.7%; }
 .wrapper-rap-history .jazz-content .jazz-history .text-the
 {
     position: absolute;
-    top: 10%;
+    top: 51%;
     left: 33.6%;
     transform: rotate(-90deg);
     transform-origin: 0 0;
