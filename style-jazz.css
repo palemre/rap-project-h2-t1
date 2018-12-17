@@ -71,3 +71,34 @@
 .wrapper-rap-history .jazz-content .music-style-origin .pulse-button-text
 { color: var(--colorForTitleInJazz); }
 
+/*******************
+******************** JAZZ CONTENT : TYPES
+*******************/
+.wrapper-rap-history .jazz-content .artist.jazz-swing
+{ background-image: url('images/jazz/artists/swing.jpg'); }
+.wrapper-rap-history .jazz-content .artist.jazz-bebop
+{ background-image: url('images/jazz/artists/bebop.jpg'); }
+.wrapper-rap-history .jazz-content .artist.jazz-hard-bop
+{ background-image: url('images/jazz/artists/hard-bop.jpg'); }
+.wrapper-rap-history .jazz-content .artist.jazz-jazz-rock
+{ background-image: url('images/jazz/artists/jazz-rock.jpg'); }
+
+/* EACH ARTIST DIV STYLE IN STYLE.CSS -> .artist */
+/* EACH ARTIST DESCRIPTION TEXT POSITIONNING */
+.wrapper-rap-history .jazz-content .artist-swing-text
+{ left: 5%; }
+.wrapper-rap-history .jazz-content .artist-bebop-text
+{ left: 30%; }
+.wrapper-rap-history .jazz-content .artist-hard-bop-text
+{ left: 55%; }
+.wrapper-rap-history .jazz-content .artist-jazz-rock-text
+{ left: 80%; }
+
+/* ANIMATION FOR BACKGROUND OPACITY OF HOVERED ARTIST IN STYLE.CSS
+    .artist-background-animation-mouseover
+    .artist-background-animation-mouseout
+*/
+/* ANIMATION FOR DESCRIPTION TEXT OPACITY OF HOVERED ARTIST IN STYLE.CSS
+    .artist-text-animation-mouseover
+    .artist-text-animation-mouseout
+*/

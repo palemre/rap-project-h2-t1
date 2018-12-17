@@ -42,80 +42,80 @@ $jazzOrigin.addEventListener('click', () =>
     }
 })
 
-// /*******************
-// ******************** JAZZ'S TYPES
-// *******************/
-// //JAZZ TYPES DISPLAY
-// const $jazzTypes = $wrapperRapHistory.querySelector('.js-jazz-types')
-// $jazzTypes.style.height =`${offsetHeight}px`
+/*******************
+******************** JAZZ'S TYPES
+*******************/
+//JAZZ TYPES DISPLAY
+const $jazzTypes = $wrapperRapHistory.querySelector('.js-jazz-types')
+$jazzTypes.style.height =`${offsetHeight}px`
 
-// //SELECT EACH ARTIST BACKGROUND IMAGE
-// const $artistMiaBackground = $hipHopTypes.querySelector('.js-artist-mia')
-// const $artistMcHammerBackground = $hipHopTypes.querySelector('.js-artist-mc-hammer')
-// const $artistDjShadowBackground = $hipHopTypes.querySelector('.js-artist-dj-shadow')
-// const $artistDjKoolHercBackground = $hipHopTypes.querySelector('.js-artist-dj-kool-herc')
+//SELECT EACH ARTIST BACKGROUND IMAGE
+const $artistSwingBackground = $jazzTypes.querySelector('.js-artist-swing')
+const $artistBebopBackground = $jazzTypes.querySelector('.js-artist-bebop')
+const $artistHardBopBackground = $jazzTypes.querySelector('.js-artist-hard-bop')
+const $artistJazzRockBackground = $jazzTypes.querySelector('.js-artist-jazz-rock')
 
-// //SELECT EACH ARTIST DESCRIPTION TEXT
-// const $artistMiaText = $hipHopTypes.querySelector('.js-artist-mia-text')
-// const $artistMcHammerText = $hipHopTypes.querySelector('.js-artist-mc-hammer-text')
-// const $artistDjShadowText = $hipHopTypes.querySelector('.js-artist-dj-shadow-text')
-// const $artistDjKoolHerc = $hipHopTypes.querySelector('.js-artist-dj-kool-herc-text')
+//SELECT EACH ARTIST DESCRIPTION TEXT
+const $artistSwingText = $jazzTypes.querySelector('.js-artist-swing-text')
+const $artistBebopText = $jazzTypes.querySelector('.js-artist-bebop-text')
+const $artistHardBopText = $jazzTypes.querySelector('.js-artist-hard-bop-text')
+const $artistJazzRockText = $jazzTypes.querySelector('.js-artist-jazz-rock-text')
 
-// //SET MOUSEOVER & MOUSEOUT LISTENER FOR DISPLAYING DESCRIPTION TEXT
-// $artistMiaBackground.addEventListener('mouseover', () =>
-// {
-//     $artistMiaBackground.classList.remove('artist-background-animation-mouseout')
-//     $artistMiaBackground.classList.add('artist-background-animation-mouseover')
-//     $artistMiaText.classList.remove('artist-text-animation-mouseout')
-//     $artistMiaText.classList.add('artist-text-animation-mouseover')
-// })
-// $artistMiaBackground.addEventListener('mouseout', () =>
-// {
-//     $artistMiaBackground.classList.remove('artist-background-animation-mouseover')
-//     $artistMiaBackground.classList.add('artist-background-animation-mouseout')
-//     $artistMiaText.classList.remove('artist-text-animation-mouseover')
-//     $artistMiaText.classList.add('artist-text-animation-mouseout')
-// })
-// $artistMcHammerBackground.addEventListener('mouseover', () =>
-// {
-//     $artistMcHammerBackground.classList.remove('artist-background-animation-mouseout')
-//     $artistMcHammerBackground.classList.add('artist-background-animation-mouseover')
-//     $artistMcHammerText.classList.remove('artist-text-animation-mouseout')
-//     $artistMcHammerText.classList.add('artist-text-animation-mouseover')
-// })
-// $artistMcHammerBackground.addEventListener('mouseout', () =>
-// {
-//     $artistMcHammerBackground.classList.remove('artist-background-animation-mouseover')
-//     $artistMcHammerBackground.classList.add('artist-background-animation-mouseout')
-//     $artistMcHammerText.classList.remove('artist-text-animation-mouseover')
-//     $artistMcHammerText.classList.add('artist-text-animation-mouseout')
-// })
-// $artistDjShadowBackground.addEventListener('mouseover', () =>
-// {
-//     $artistDjShadowBackground.classList.remove('artist-background-animation-mouseout')
-//     $artistDjShadowBackground.classList.add('artist-background-animation-mouseover')
-//     $artistDjShadowText.classList.remove('artist-text-animation-mouseout')
-//     $artistDjShadowText.classList.add('artist-text-animation-mouseover')
-// })
-// $artistDjShadowBackground.addEventListener('mouseout', () =>
-// {
-//     $artistDjShadowBackground.classList.remove('artist-background-animation-mouseover')
-//     $artistDjShadowBackground.classList.add('artist-background-animation-mouseout')
-//     $artistDjShadowText.classList.remove('artist-text-animation-mouseover')
-//     $artistDjShadowText.classList.add('artist-text-animation-mouseout')
-// })
-// $artistDjKoolHercBackground.addEventListener('mouseover', () =>
-// {
-//     $artistDjKoolHercBackground.classList.remove('artist-background-animation-mouseout')
-//     $artistDjKoolHercBackground.classList.add('artist-background-animation-mouseover')
-//     $artistDjKoolHerc.classList.remove('artist-text-animation-mouseout')
-//     $artistDjKoolHerc.classList.add('artist-text-animation-mouseover')
-// })
-// $artistDjKoolHercBackground.addEventListener('mouseout', () =>
-// {
-//     $artistDjKoolHercBackground.classList.remove('artist-background-animation-mouseover')
-//     $artistDjKoolHercBackground.classList.add('artist-background-animation-mouseout')
-//     $artistDjKoolHerc.classList.remove('artist-text-animation-mouseover')
-//     $artistDjKoolHerc.classList.add('artist-text-animation-mouseout')
-// })
+//SET MOUSEOVER & MOUSEOUT LISTENER FOR DISPLAYING DESCRIPTION TEXT
+$artistSwingBackground.addEventListener('mouseover', () =>
+{
+    $artistSwingBackground.classList.remove('artist-background-animation-mouseout')
+    $artistSwingBackground.classList.add('artist-background-animation-mouseover')
+    $artistSwingText.classList.remove('artist-text-animation-mouseout')
+    $artistSwingText.classList.add('artist-text-animation-mouseover')
+})
+$artistSwingBackground.addEventListener('mouseout', () =>
+{
+    $artistSwingBackground.classList.remove('artist-background-animation-mouseover')
+    $artistSwingBackground.classList.add('artist-background-animation-mouseout')
+    $artistSwingText.classList.remove('artist-text-animation-mouseover')
+    $artistSwingText.classList.add('artist-text-animation-mouseout')
+})
+$artistBebopBackground.addEventListener('mouseover', () =>
+{
+    $artistBebopBackground.classList.remove('artist-background-animation-mouseout')
+    $artistBebopBackground.classList.add('artist-background-animation-mouseover')
+    $artistBebopText.classList.remove('artist-text-animation-mouseout')
+    $artistBebopText.classList.add('artist-text-animation-mouseover')
+})
+$artistBebopBackground.addEventListener('mouseout', () =>
+{
+    $artistBebopBackground.classList.remove('artist-background-animation-mouseover')
+    $artistBebopBackground.classList.add('artist-background-animation-mouseout')
+    $artistBebopText.classList.remove('artist-text-animation-mouseover')
+    $artistBebopText.classList.add('artist-text-animation-mouseout')
+})
+$artistHardBopBackground.addEventListener('mouseover', () =>
+{
+    $artistHardBopBackground.classList.remove('artist-background-animation-mouseout')
+    $artistHardBopBackground.classList.add('artist-background-animation-mouseover')
+    $artistHardBopText.classList.remove('artist-text-animation-mouseout')
+    $artistHardBopText.classList.add('artist-text-animation-mouseover')
+})
+$artistHardBopBackground.addEventListener('mouseout', () =>
+{
+    $artistHardBopBackground.classList.remove('artist-background-animation-mouseover')
+    $artistHardBopBackground.classList.add('artist-background-animation-mouseout')
+    $artistHardBopText.classList.remove('artist-text-animation-mouseover')
+    $artistHardBopText.classList.add('artist-text-animation-mouseout')
+})
+$artistJazzRockBackground.addEventListener('mouseover', () =>
+{
+    $artistJazzRockBackground.classList.remove('artist-background-animation-mouseout')
+    $artistJazzRockBackground.classList.add('artist-background-animation-mouseover')
+    $artistJazzRockText.classList.remove('artist-text-animation-mouseout')
+    $artistJazzRockText.classList.add('artist-text-animation-mouseover')
+})
+$artistJazzRockBackground.addEventListener('mouseout', () =>
+{
+    $artistJazzRockBackground.classList.remove('artist-background-animation-mouseover')
+    $artistJazzRockBackground.classList.add('artist-background-animation-mouseout')
+    $artistJazzRockText.classList.remove('artist-text-animation-mouseover')
+    $artistJazzRockText.classList.add('artist-text-animation-mouseout')
+})
 
