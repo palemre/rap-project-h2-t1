@@ -10,8 +10,7 @@
  * IV) FULLSCREEN HAMBURGER MENU
  * V) FIXED DOTS NAV
  * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
- * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ
- * VIII) FUULSCREEN NAVIGATION MUSIC TYPE DISPLAY (RAP / HIP-HOP / JAZZ)
+ * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ & BUTTON DESIGN
  ******************/
 html,
 body
@@ -824,10 +823,67 @@ body
 }
 
 /* BUTTON FOR TUNNEL FROM RAP TO HIP-HOP */
-.tunnel-animation-button
+.tunnel-button-container
 {
-    position: relative;
-    top: 50%;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.tunnel-button
+{
+    color: var(--colorForTitleInRap);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    font-family: 'Quicksand';
+}
+a.tunnel-button:hover
+{ color: #FFF; }
+a.tunnel-button:focus
+{ color: #FFF; }
+.tunnel-button
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 15rem;
+    padding: 1rem 0;
+    border: 3px solid var(--colorForTitleInRap);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.tunnel-button:hover
+{ border: 3px solid var(--colorForTitleInHipHop); }
+.tunnel-button:before
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: var(--colorForTitleInHipHop);
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+.tunnel-button:hover:before
+{
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.5s all ease;
+}
+.tunnel-button:focus:before
+{
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.5s all ease;
 }
