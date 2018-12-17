@@ -1,4 +1,3 @@
-https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 # L'Histoire du Rap
 
 L'Histoire du Rap is a project leaded by HETIC students (a well-known french web school), within no more than 10 days. This project have been done as a subject to reflexion on History. According to the creator's, history's problem is how it is learned and accessed. That's why they chose one specific historical subject, rap music, and delayed rap's history through an immersive website.
@@ -17,56 +16,53 @@ Nothing to install.
 
 ## Running
 
-Launch index.html. Through this home page you'll be able to learn more on rap's history by scrolling down and discovering rap through its origin with important dates, its different types, message and impacts on society. Then dive to hip-hop, the main music style which rap comes from. Once again you will be able to learn more about hip-hop with exactly rap's scheme. Finally, the process is the same for jazz, the music which hip-hop comes from.
+Launch index.html. Through this home page you'll be able to learn more on rap's history by scrolling down (or up/down arrow keys) and discovering rap through its origin with important dates, its different types, message and impacts on society. Then dive to hip-hop, the main music style which rap comes from. Once again you will be able to learn more about hip-hop with exactly rap's scheme. Finally, the process is the same for jazz, the music which hip-hop comes from.
+
+## Features
+
+* A fullscreen navigation menu allows you to access directly a music type.
+
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+For each feature coded, a commit have been sent to the repository for being tested by other team members. While designing the website, we confronted some support and accesibility problems leading us to opt for maximum cross-border coding and better device support. The updates were uploaded online for letting our family and friends to test the website too, and to get their feedbacks.
+Nevertheless the website is not responsive.
 
 ```
-Give an example
+Here is an example of our tests : Fullscreen navigation menu tests
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-reset css
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Tools used for the conception of the website :
+* [HTML5](https://www.w3.org/html/) - Markup Language
+* [CSS3](https://www.w3.org/Style/CSS/Overview.en.html) - Stylesheeet language
+* [JAVASCRIPT](https://www.javascript.com/) - Interpreted programming language
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+As the main point was to resolve human-history linked problem, here associated to rap's history, within 10 days, we decided to not open it for contribution and keep the project as it have been built in this short period of time.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We used [GitHub](http://github.com/) for versioning. See the repository [here](https://github.com/palemre/rap-project-h2-t1). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Lou GLOAGUEN**
+* **Manon BUÉE**
+* **Camille STARK**
+* **Jules LEVET**
+* **Emre PALANDOKEN** - [GitHub](https://github.com/palemre/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [license.md](license.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Our grateful thanks to Sir Bruno SIMON, developper & HETIC professor
+* Our grateful thanks to Sir François PUMIR, handler of this project
+* Our grateful thanks to all HETIC staff members, friends and to our families
+* Inspiration : rapelite, clique, rap2france, behance, codepen etc.
