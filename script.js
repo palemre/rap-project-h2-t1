@@ -2,7 +2,7 @@
  * I) DISC LOADER : DELETE AFTER ANIMATION FINISHED
  * II) HEADPHONE WARNING : DISPLAY AFTER DISC & DELETE AFTER ANIMATION FINISHED
  * III) RAP HISTORY : DISPLAY MAIN RAP WRAPPER + RAP'S ORIGIN
- * IV) NAV DOTS & AUDIO : FILL NAV DOTS & PLAYS AUDIO ON SCROLL
+ * IV) NAV DOTS : FILL NAV DOTS ON SCROLL & CLICK + KEYBOARD PRESS SCROLL TO DOT'S SECTION
  * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
  * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
  * VII) DISPLAY HIP-HOP'S HISTORY INTRO
@@ -119,7 +119,7 @@ $rapOrigin.addEventListener('click', () =>
 })
 
 /*******************
-******************** NAV DOTS FILL AND AUDIO ON SCROLL
+******************** FILL NAV DOTS ON SCROLL & CLICK + KEYBOARD PRESS SCROLL TO DOT'S SECTION
 *******************/
 //SCROLL PERCENTAGE
 const h = document.documentElement 
@@ -138,7 +138,6 @@ const $fifthVerticalDot = $verticalDotsNav.querySelector('.fifth-dot')
 window.addEventListener('scroll', () =>
 {
     percentOfScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100
-
     if (percentOfScroll >= 0 && percentOfScroll < 20)
     {
         $firstVerticalDot.style.background = `#FFF`
@@ -180,6 +179,42 @@ window.addEventListener('scroll', () =>
         $fifthVerticalDot.style.background = `#FFF`
     }
 })
+
+//ON CLICK GO TO CLICKED DOT'S SECTION
+$firstVerticalDot.addEventListener('click', () =>
+{
+    window.scroll(0,0)
+})
+$secondVerticalDot.addEventListener('click', () =>
+{
+    window.scroll(0,0)
+    window.scrollBy(0, document.body.offsetHeight)
+})
+$thirdVerticalDot.addEventListener('click', () =>
+{
+    window.scroll(0,0)
+    window.scrollBy(0, document.body.offsetHeight*2)
+})
+$fourthVerticalDot.addEventListener('click', () =>
+{
+    window.scroll(0,0)
+    window.scrollBy(0, document.body.offsetHeight*3)
+})
+$fifthVerticalDot.addEventListener('click', () =>
+{
+    window.scroll(0,0)
+    window.scrollBy(0, document.body.offsetHeight*4)
+})
+
+//KEYBOARD SUPPORT FOR SCROLL PROGRESSION
+window.addEventListener('keydown', (_button) =>
+{
+    if(_button.keyCode == '38')
+    { window.scrollBy(0, -document.body.offsetHeight) }
+    else if(_button.keyCode == '40')
+    { window.scrollBy(0, document.body.offsetHeight) }
+}) 
+
 
 /*******************
 ******************** RAP'S HISTORY : RAP'S TYPES

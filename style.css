@@ -416,6 +416,10 @@ body
     border-radius: 50%;
     transition: all 0.3s;
 }
+.vertical-dots-nav .vertical-nav-dot:hover
+{
+    cursor: pointer;
+}
 .vertical-nav-dot:first-child
 { background: #FFF; }
 
