@@ -102,3 +102,25 @@
     .artist-text-animation-mouseover
     .artist-text-animation-mouseout
 */
+
+/*******************
+******************** JAZZ CONTENT : MESSAGE
+*******************/
+.music-style-message.jazz-message
+{
+    background: url('images/jazz/jazz-message-background.jpeg');
+    background-size: cover;
+}
+/* STYLE FOR JAZZ'S MESSAGE IN STYLE.CSS
+    .music-style-message
+    .music-style-message-text-la
+    .music-style-message-text-morale
+    .music-style-message-description-text
+*/
+.music-style-message-description-text.jazz-message-text
+{
+    top: 10%;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}

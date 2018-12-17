@@ -119,3 +119,9 @@ $artistJazzRockBackground.addEventListener('mouseout', () =>
     $artistJazzRockText.classList.add('artist-text-animation-mouseout')
 })
 
+/*******************
+******************** JAZZ'S MESSAGE
+*******************/
+const $jazzMessage = $wrapperRapHistory.querySelector('.js-jazz-message')
+$jazzMessage.style.height =`${offsetHeight}px`
+
