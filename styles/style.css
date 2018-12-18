@@ -38,9 +38,11 @@ body
     src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
 .important-text
-{
-    color: var(--colorForTitleInRap);
-}
+{ color: var(--colorForTitleInRap); }
+.important-text-hip-hop
+{ color: var(--colorForTitleInHipHop); }
+.important-text-jazz
+{ color: var(--colorForTitleInJazz); }
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
