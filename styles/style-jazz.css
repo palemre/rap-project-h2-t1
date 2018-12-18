@@ -27,19 +27,6 @@
 }
 
 /* JAZZ TITLE STYLE ON STYLE.CSS --> .music-type-text */
-.wrapper-rap-history .jazz-content .jazz-history .text-the,
-.music-type-text.jazz
-{ color: var(--colorForTitleInJazz); }
-.wrapper-rap-history .jazz-content .jazz-history .text-the
-{
-    position: absolute;
-    top: 51%;
-    left: 33.6%;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    font-size: 2.75rem;
-    font-family: 'Monument-Extended';
-}
 
 /*******************
 ******************** JAZZ CONTENT : ORIGIN
@@ -63,7 +50,7 @@
 .wrapper-rap-history .jazz-content .music-style-origin .pulse-button
 { box-shadow: 0 0 0 0 #BF3333; }
 .wrapper-rap-history .jazz-content .music-style-origin .pulse-button-text
-{ color: var(--colorForTitleInJazz); }
+{ color: var(--colorForText); }
 
 /*******************
 ******************** JAZZ CONTENT : TYPES
@@ -105,6 +92,10 @@
     background: url('../images/jazz/jazz-message-background.png');
     background-size: cover;
 }
+.music-style-message.jazz-message .music-style-message-text-morale
+{ color: var(--colorForTitleInJazz); }
+.music-style-message.jazz-message .music-style-message-text-la
+{ color: var(--colorForText); }
 /* STYLE FOR JAZZ'S MESSAGE IN STYLE.CSS
     .music-style-message
     .music-style-message-text-la
@@ -127,6 +118,10 @@
     background: url('../images/jazz/jazz-impacts-background.png');
     background-size: cover;
 }
+.music-style-impacts.jazz-impacts .music-style-impacts-text-impacts
+{ color: var(--colorForTitleInJazz); }
+.music-style-message.jazz-message .music-style-impacts-text-les
+{ color: var(--colorForText; }
 /* STYLE FOR JAZZ'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les

@@ -27,19 +27,6 @@
 }
 
 /* HIP-HOP TITLE STYLE ON STYLE.CSS --> .music-type-text */
-.wrapper-rap-history .hip-hop-content .hip-hop-history .text-the,
-.music-type-text.hip-hop
-{ color: var(--colorForTitleInHipHop); }
-.wrapper-rap-history .hip-hop-content .hip-hop-history .text-the
-{
-    position: absolute;
-    top: 51.5%;
-    left: 25%;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    font-size: 2.85rem;
-    font-family: 'Monument-Extended';
-}
 
 /*******************
 ******************** HIP-HOP CONTENT : ORIGIN
@@ -63,7 +50,7 @@
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button
 { box-shadow: 0 0 0 0 #7762E8; }
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button-text
-{ color: var(--colorForTitleInHipHop); }
+{ color: var(--colorForText); }
 
 /*******************
 ******************** HIP-HOP CONTENT : TYPES
@@ -105,6 +92,10 @@
     background: url('../images/hip-hop/hip-hop-message-background.png');
     background-size: cover;
 }
+.music-style-message.hip-hop-message .music-style-message-text-morale
+{ color: var(--colorForTitleInHipHop); }
+.music-style-message.hip-hop-message .music-style-message-text-la
+{ color: var(--colorForText); }
 /* STYLE FOR HIP-HOP'S MESSAGE IN STYLE.CSS
     .music-style-message
     .music-style-message-text-la
@@ -127,6 +118,10 @@
     background: url('../images/hip-hop/hip-hop-impacts-background.png');
     background-size: cover;
 }
+.music-style-impacts.hip-hop-impacts .music-style-impacts-text-impacts
+{ color: var(--colorForTitleInHipHop); }
+.music-style-message.hip-hop-message .music-style-impacts-text-les
+{ color: var(--colorForText); }
 /* STYLE FOR HIP-HOP'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les

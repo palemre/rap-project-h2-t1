@@ -1,6 +1,6 @@
 # L'Histoire du Rap
 
-L'Histoire du Rap is a project leaded by HETIC students (a well-known french web school), within no more than 10 days. This project have been done as a subject to reflexion on History. According to the creator's, history's problem is how it is learned and accessed. That's why they chose one specific historical subject, rap music, and delayed rap's history through an immersive website.
+L'Histoire du Rap :fr: is a project leaded by HETIC students (a well-known french web school), within no more than 10 days. This project have been done as a subject to reflexion on History. According to the creator's, history's problem is how it is learned and accessed. That's why they chose one specific historical subject, rap music, and delayed rap's history through an immersive website.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ Launch index.html. Through this home page you'll be able to learn more on rap's 
 
 ## Features
 
-* A fullscreen navigation menu allows you to access directly a music type.
+:sparkles: A fullscreen navigation menu allows you to access directly a music type.
 
 
 ### Break down into end to end tests
@@ -58,11 +58,11 @@ We used [GitHub](http://github.com/) for versioning. See the repository [here](h
 
 ## License
 
-This project is licensed under the MIT License - see the [license.md](license.md) file for details
+:copyright: This project is licensed under the MIT License - see the [license.md](license.md) file for details
 
 ## Acknowledgments
 
-* Our grateful thanks to Sir Bruno SIMON, developper & HETIC professor
-* Our grateful thanks to Sir François PUMIR, handler of this project
-* Our grateful thanks to all HETIC staff members, friends and to our families
+* Our grateful thanks to Sir Bruno SIMON, developper & HETIC professor (member of jury of this project) :bust_in_silhouette:
+* Our grateful thanks to Sir François PUMIR, handler of this project (member of jury of this project) :bust_in_silhouette:
+* Our grateful thanks to all HETIC staff members, friends and to our families :heart:
 * Inspiration : rapelite, clique, rap2france, behance, codepen etc.

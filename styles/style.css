@@ -619,7 +619,7 @@ body
 .pulse-button-text
 {
     font-family: 'Quicksand';
-    color: var(--colorForTitleInRap);
+    color: var(--colorForText);
     position: relative;
     top: 60%;
     left: 50%;
@@ -654,6 +654,7 @@ body
     opacity: 1;
     will-change: opacity;
     position: relative;
+    background-size: cover;
 }
 .wrapper-rap-history .rap-content .artist.rapper-eminem
 { background-image: url('../images/rap/rapper/eminem.png'); }
@@ -729,13 +730,11 @@ body
 .music-style-message-text-la
 {
     font-family: 'Monument-Extended';
-    color: var(--colorForTitleInRap);
+    color: var(--colorForText);
     font-size: 3.15rem;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
     position: absolute;
     bottom: 1.5%;
-    left: 15%;
+    left: 20%;
 }
 .music-style-message-text-morale
 {
@@ -770,13 +769,11 @@ body
 .music-style-impacts-text-les
 {
     font-family: 'Monument-Extended';
-    color: var(--colorForTitleInRap);
+    color: var(--colorForText);
     font-size: 2.35rem;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
     position: absolute;
-    top: 20.5%;
-    left: 15.8%;
+    top: 20%;
+    left: 20%;
 }
 .music-style-impacts-text-impacts
 {
