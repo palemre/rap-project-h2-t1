@@ -20,15 +20,15 @@ Nothing to install.
 
 ## Features
 
-:sparkles: Own logo and favicon.
-:sparkles: Vinyl preload.
-:sparkles: Headhphone animation.
-:sparkles: Scroll down call to action animation.
-:sparkles: 4 category per music type animation.
-:sparkles: Interactive filling timeline for each music type with larger clickable area for better ergonomics.
-:sparkles: Interactive fixed vertical dots for navigation inside a music type. Works with up/down arrow keys.
-:sparkles: Fullscreen hamburger menu for navigation between music types and access to about box.
-:sparkles: Back in time effect between different music types for describing history of rap.
+:sparkles: Own logo and favicon.<br>
+:sparkles: Vinyl preload.<br>
+:sparkles: Headhphone animation.<br>
+:sparkles: Scroll down call to action animation.<br>
+:sparkles: 4 category per music type animation.<br>
+:sparkles: Interactive filling timeline for each music type with larger clickable area for better ergonomics.<br>
+:sparkles: Interactive fixed vertical dots for navigation inside a music type. Works with up/down arrow keys.<br>
+:sparkles: Fullscreen hamburger menu for navigation between music types and access to about box.<br>
+:sparkles: Back in time effect between different music types for describing history of rap.<br>
 :sparkles: Mixed music playing at the background for each music type. Mix's composed by songs of 30 sec and choosen by ourself.
 
 ## Built With
@@ -73,4 +73,4 @@ We used [GitHub](http://github.com/) for versioning. See the repository [here](h
 * :bust_in_silhouette: Our grateful thanks to Sir Bruno SIMON, developper & HETIC professor (member of jury of this project) 
 * :bust_in_silhouette: Our grateful thanks to Sir François PUMIR, handler of this project (member of jury of this project) 
 * :heart: Our grateful thanks to all HETIC staff members, friends and to our families 
-* Inspiration : rapelite, clique, rap2france, behance, codepen etc.
+* :memo:Inspiration : rapelite, clique, rap2france, behance, codepen etc.
