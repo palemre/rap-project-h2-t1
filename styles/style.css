@@ -4,13 +4,14 @@
     --colorForText: #F0F0F0; /* white-like color for basic texts */
 }
 /*******************
- * I)   DISC LOADER
- * II)  HEADPHONE WARNING
- * III) DISPLAY MAIN RAP WRAPPER
- * IV)  FULLSCREEN HAMBURGER MENU
- * V)   FIXED DOTS NAV
- * VI)  RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
- * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ & BUTTON DESIGN
+ * I)    DISC LOADER
+ * II)   HEADPHONE WARNING
+ * III)  DISPLAY MAIN RAP WRAPPER
+ * IV)   FULLSCREEN HAMBURGER MENU
+ * V)    FIXED DOTS NAV
+ * VI)   RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
+ * VII)  TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ & BUTTON DESIGN
+ * VIII) BACKGROUND MUSIC CONTROLLER
  ******************/
 html,
 body
@@ -568,8 +569,15 @@ body
     flex-direction: column;
     right: 2rem;
     top: 35%;
+    transition: all 0.5s;
+    will-change: transform;
     transform: translateY(-50%);
     color: var(--colorForText);
+    user-select: none;
+}
+.scroll-down-text:hover
+{
+    transform: translateY(-30%);
 }
 .scroll-down-line
 {
@@ -920,4 +928,32 @@ a.tunnel-button:focus
     right: 0;
     opacity: 1;
     transition: 0.5s all ease;
+}
+
+/*******************
+******************** BACKGROUND MUSIC CONTROLLER
+*******************/
+.play-pause-box
+{
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    background: url('../images/pause-button.png');
+    background-size: cover;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.play-pause-box.playing
+{
+    background: url('../images/pause-button.png');
+    background-size: cover;
+}
+.play-pause-box.paused
+{
+    background: url('../images/play-button.png');
+    background-size: cover;
 }

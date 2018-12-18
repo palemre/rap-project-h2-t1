@@ -8,6 +8,7 @@
  * VII   DISPLAY HIP-HOP'S HISTORY INTRO
  * VIII) FULLSCREEN NAVIGATION MENU (RAP / HIP-HOP / JAZZ / ABOUT)
  * IX)   CURSOR PARALLAX ON MUSIC TYPE INTRO'S
+ * X)    BACKGROUND MUSIC CONTROLLER
  ******************/
 /*******************
 ******************** WEBSITE DISC LOADER
@@ -34,6 +35,12 @@ const $rapTypes = $wrapperRapHistory.querySelector('.js-rap-types')
 const $rapMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-rap-history-background')
 const $hipHopMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-hip-hop-history')
 
+const $backgroundMusicController = document.querySelector('.play-pause-box')
+
+//BACKGROUND AUDIOS
+const audioRap = new Audio('./musics/background-rap-music.mp3');
+const audioHipHop = new Audio('./musics/background-hip-hop-music.mp3');
+const audioJazz = new Audio('./musics/background-jazz-music.mp3');
 
 const offsetHeight = document.body.offsetHeight
 const offsetWidth = document.body.offsetWidth
@@ -48,6 +55,10 @@ const headphoneDisplay = setInterval(() =>
 
 $startButton.addEventListener('click', () =>
 {
+    //DISPLAY CONTROLLER & START RAP AUDIO
+    $backgroundMusicController.style.display = `block`
+    audioRap.play();
+
     $headphone.classList.add('headphone-warning-animation')
     $headphoneWarning.classList.add('headphone-warning-animation')
     $startButton.classList.add('headphone-warning-animation')
@@ -350,6 +361,11 @@ const $hiphopOrigin = $wrapperRapHistory.querySelector('.js-hip-hop-origin')
 
 $tunnelToHipHop.addEventListener('click', () =>
 {
+    //PLAY AUDIO OF HIP-HOP
+    audioJazz.pause()
+    audioRap.pause()
+    audioHipHop.play()
+
     document.body.style.overflow = `hidden`
     $rapMainContainerToDisplay.classList.add('tunnel-animation')
     $rapMainContainerToDisplay.style.transform = `translateZ(801px)`
@@ -433,6 +449,10 @@ $navDisplayRap.addEventListener('click', () =>
         $rapMosaicBackgroundImage.style.height =`${offsetHeight}px`
     }
     //IF THE CURRENT PAGE IS RAP NOTHING TO DO
+    //PLAY BACKGROUND RAP MUSIC
+    audioJazz.pause()
+    audioHipHop.pause()
+    audioRap.play()
 })
 
 //ACCESS TO HIP-HOP'S PAGE
@@ -486,6 +506,10 @@ $navDisplayHipHop.addEventListener('click', () =>
         $hiphopOrigin.style.width =`${offsetWidth}px`
     }
     //IF THE CURRENT PAGE IS HIP-HOP NOTHING TO DO
+    //PLAY BACKGROUND HIP-HOP MUSIC
+    audioJazz.pause()
+    audioRap.pause()
+    audioHipHop.play()
 })
 
 //ACCESS TO JAZZ'S PAGE
@@ -539,6 +563,10 @@ $navDisplayJazz.addEventListener('click', () =>
         $jazzMosaicBackgroundImage.style.height =`${offsetHeight}px`
     }
     //IF THE CURRENT PAGE IS JAZZ NOTHING TO DO
+    //PLAY BACKGROUND JAZZ MUSIC
+    audioRap.pause()
+    audioHipHop.pause()
+    audioJazz.play()
 })
 
 //DISPLAY ABOUT BOX
@@ -582,3 +610,54 @@ window.addEventListener('mousemove', (_event) =>
         cursorParallax.style.transform = `translate(${translateX}%, ${translateY}%)`
     }
 })
+
+/*******************
+******************** BACKGROUND MUSIC CONTROLLER
+*******************/
+//CROSS-BROWSER AUDIO LOOP
+audioRap.addEventListener('ended', () =>
+{
+    audioRap.currentTime = 0;
+    audioRap.play();
+});
+audioHipHop.addEventListener('ended', () =>
+{
+    audioHipHop.currentTime = 0;
+    audioHipHop.play();
+});
+audioJazz.addEventListener('ended', () =>
+{
+    audioJazz.currentTime = 0;
+    audioJazz.play();
+});
+
+$backgroundMusicController.addEventListener('click', () =>
+{
+    //CHECK IF MUSIC IS PLAYING
+    if ($backgroundMusicController.classList.contains('playing'))
+    {
+        $backgroundMusicController.classList.remove('playing')
+        $backgroundMusicController.classList.add('paused')
+
+        //CHECK WHICH PAGE IS DISPLAYED FOR PAUSING CORRESPONDING MUSIC
+        if ($rapMainContainerToDisplay.style.display != `none`)
+        { audioRap.pause() }
+        else if ($hipHopMainContainerToDisplay.style.display != `none`)
+        { audioHipHop.pause() }
+        else if ($jazzContent.style.display != `none`)
+        { audioJazz.pause() }
+    }
+    else
+    {
+        $backgroundMusicController.classList.remove('paused')
+        $backgroundMusicController.classList.add('playing')
+
+        if ($rapMainContainerToDisplay.style.display != `none`)
+        { audioRap.play() }
+        else if ($hipHopMainContainerToDisplay.style.display != `none`)
+        { audioHipHop.play() }
+        else if ($jazzContent.style.display != `none`)
+        { audioJazz.play() }
+    }
+})
+

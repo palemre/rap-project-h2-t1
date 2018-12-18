@@ -182,6 +182,11 @@ const $jazzMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-jazz-hi
 //SELECT JAZZ CONTENTS
 $tunnelToJazz.addEventListener('click', () =>
 {
+    //PLAY AUDIO OF JAZZ
+    audioRap.pause()
+    audioHipHop.pause()
+    audioJazz.play()
+
     document.body.style.overflow = `hidden`
     $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
     $hipHopMainContainerToDisplay.style.transform = `translateZ(802px)`
