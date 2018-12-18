@@ -482,6 +482,43 @@ body
 .vertical-nav-dot:first-child
 { background: #FFF; }
 
+/* ON HOVER DISPLAY WHERE EACH NAV GOES TO AT THE RIGHT OF DOT */
+.vertical-nav-dot.first-dot:hover::after
+{
+    content: 'Intro';
+    color: var(--colorForText);
+    margin-left: 1.5rem;
+    font-family: 'Quicksand';
+}
+.vertical-nav-dot.second-dot:hover::after
+{
+    content: 'Origins';
+    color: var(--colorForText);
+    margin-left: 1.5rem;
+    font-family: 'Quicksand';
+}
+.vertical-nav-dot.third-dot:hover::after
+{
+    content: 'Types';
+    color: var(--colorForText);
+    margin-left: 1.5rem;
+    font-family: 'Quicksand';
+}
+.vertical-nav-dot.fourth-dot:hover::after
+{
+    content: 'Message';
+    color: var(--colorForText);
+    margin-left: 1.5rem;
+    font-family: 'Quicksand';
+}
+.vertical-nav-dot.fifth-dot:hover::after
+{
+    content: 'Impacts';
+    color: var(--colorForText);
+    margin-left: 1.5rem;
+    font-family: 'Quicksand';
+}
+
 /*******************
 ******************** RAP'S HISTORY : INTRO
 *******************/
