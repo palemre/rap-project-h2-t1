@@ -45,12 +45,14 @@
 /* HIP-HOP ORIGIN TEXT STYLE ON STYLE.CSS --> .music-style-origin-text */
 /* HIP-HOP ORIGIN PULSE BUTTON STYLE ON STYLE.CSS --> .pulse-button */
 /* HIP-HOP ORIGIN PULSE BUTTON TEXT STYLE ON STYLE.CSS --> .pulse-button-text */
-.pulse-button.current-pulse-button-hip-hop
-{ background: #7762E8; }
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button
 { box-shadow: 0 0 0 0 #7762E8; }
 .wrapper-rap-history .hip-hop-content .music-style-origin .pulse-button-text
 { color: var(--colorForText); }
+.timeline-line-filler.hip-hop-filler
+{ background: var(--colorForTitleInHipHop); }
+.music-style-origin .current-timeline-button-hip-hop
+{ background: var(--colorForTitleInHipHop); }
 
 /*******************
 ******************** HIP-HOP CONTENT : TYPES

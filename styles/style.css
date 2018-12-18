@@ -4,12 +4,12 @@
     --colorForText: #F0F0F0; /* white-like color for basic texts */
 }
 /*******************
- * I) DISC LOADER
- * II) HEADPHONE WARNING
+ * I)   DISC LOADER
+ * II)  HEADPHONE WARNING
  * III) DISPLAY MAIN RAP WRAPPER
- * IV) FULLSCREEN HAMBURGER MENU
- * V) FIXED DOTS NAV
- * VI) RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
+ * IV)  FULLSCREEN HAMBURGER MENU
+ * V)   FIXED DOTS NAV
+ * VI)  RAP'S HISTORY : INTRO -> ORIGIN -> TYPES -> MESSAGE -> IMPACTS
  * VII) TUNNEL EFFECT BETWEEN MUSIC TYPES : RAP -> HIP-HOP -> JAZZ & BUTTON DESIGN
  ******************/
 html,
@@ -177,6 +177,9 @@ body
     text-align: center;
     margin-top: 10%;
     animation: headphone-display 3s;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /*******************
@@ -569,52 +572,22 @@ body
 /* EACH MUSIC STYLE'S ORIGIN TIMELINE DESIGN */
 .music-style-origin-timeline-container
 {
+    margin-left: 50%;
+    transform: translateX(-50%);
     display: flex;
+    width: 60%;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    height: 10rem;
 }
 .pulse-button
 {
     position: relative;
-    margin-top: -50px;
-    margin: 0 50px;
-    display: block;
-    width: 25px;
-    height: 25px;
-    border: none;
-    border-radius: 50%;
-    background: #FFF;
+    width: 3.5rem;
+    height: 3.5rem;
     cursor: pointer;
-    box-shadow: 0 0 0 0 #FFBA00;
-}
-.pulse-button.current-pulse-button
-{ background: #FFBA00; }
-
-.pulse-button-animation
-{ animation: pulse-button-timeline 1s 5; }
-@keyframes pulse-button-timeline
-{
-    70%  { box-shadow: 0 0 0 10px #FFBA00; }
-    100% { box-shadow: 0 0 0 0 #FFBA00;    }
-}
-.pulse-button-animation-hip-hop
-{ animation: pulse-button-timeline-hip-hop 1s 5; }
-@keyframes pulse-button-timeline-hip-hop
-{
-    70%  { box-shadow: 0 0 0 10px #7762E8; }
-    100% { box-shadow: 0 0 0 0 #7762E8;    }
-}
-.pulse-button-animation-jazz
-{ animation: pulse-button-timeline-jazz 1s 5; }
-@keyframes pulse-button-timeline-jazz
-{
-    70%  { box-shadow: 0 0 0 10px #BF3333; }
-    100% { box-shadow: 0 0 0 0 #BF3333;    }
+    margin: 0 3.5rem;
+    z-index: 10;
 }
 .pulse-button-text
 {
@@ -629,13 +602,39 @@ body
 }
 .music-style-origin-timeline-line
 {
-    width: 60%;
     position: absolute;
-    height: 0.5rem;
-    background: #FFF;
-    top: 11.25%;
-    left: 20%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: #F0F0F0;
 }
+.timeline-button
+{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--colorForText);
+    z-index: 10;
+}
+.timeline-line-filler
+{
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background: #FFBA00;
+    will-change: transform;
+    transform-origin: left;
+    transition: all 1s;
+}
+.timeline-line-filler.rap-filler
+{ background: var(--colorForTitleInRap); }
+.music-style-origin .current-timeline-button-rap
+{ background: var(--colorForTitleInRap); }
 
 /*******************
 ******************** RAP'S HISTORY : RAP TYPES
@@ -832,6 +831,7 @@ body
 }
 a.tunnel-button
 {
+    width: 25rem;
     color: var(--colorForTitleInRap);
     text-decoration: none;
     transition: 0.3s ease all;

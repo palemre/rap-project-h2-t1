@@ -45,12 +45,14 @@
 /* JAZZ ORIGIN TEXT STYLE ON STYLE.CSS --> .music-style-origin-text */
 /* JAZZ ORIGIN PULSE BUTTON STYLE ON STYLE.CSS --> .pulse-button */
 /* JAZZ ORIGIN PULSE BUTTON TEXT STYLE ON STYLE.CSS --> .pulse-button-text */
-.pulse-button.current-pulse-button-jazz
-{ background: #BF3333; }
+.timeline-button.current-timeline-button-jazz
+{ background: var(--colorForTitleInJazz); }
 .wrapper-rap-history .jazz-content .music-style-origin .pulse-button
-{ box-shadow: 0 0 0 0 #BF3333; }
+{ box-shadow: 0 0 0 0 var(--colorForTitleInJazz); }
 .wrapper-rap-history .jazz-content .music-style-origin .pulse-button-text
 { color: var(--colorForText); }
+.timeline-line-filler.jazz-filler
+{ background: var(--colorForTitleInJazz); }
 
 /*******************
 ******************** JAZZ CONTENT : TYPES

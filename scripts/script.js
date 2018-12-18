@@ -1,13 +1,13 @@
 /*******************
- * I) DISC LOADER : DELETE AFTER ANIMATION FINISHED
- * II) HEADPHONE WARNING : DISPLAY AFTER DISC & DELETE AFTER ANIMATION FINISHED
- * III) RAP HISTORY : DISPLAY MAIN RAP WRAPPER + RAP'S ORIGIN
- * IV) NAV DOTS : FILL NAV DOTS ON SCROLL & CLICK + KEYBOARD PRESS SCROLL TO DOT'S SECTION
- * V) RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
- * VI) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
- * VII) DISPLAY HIP-HOP'S HISTORY INTRO
+ * I)    DISC LOADER : DELETE AFTER ANIMATION FINISHED
+ * II)   HEADPHONE WARNING : DISPLAY AFTER DISC & DELETE AFTER ANIMATION FINISHED
+ * III   RAP HISTORY : DISPLAY MAIN RAP WRAPPER + RAP'S ORIGIN
+ * IV)   NAV DOTS : FILL NAV DOTS ON SCROLL & CLICK + KEYBOARD PRESS SCROLL TO DOT'S SECTION
+ * V)    RAP'S HISTORY : RAP'S TYPES -> MESSAGE & IMPACTS
+ * VI)   BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : RAP -> HIP-HOP
+ * VII   DISPLAY HIP-HOP'S HISTORY INTRO
  * VIII) FULLSCREEN NAVIGATION MENU (RAP / HIP-HOP / JAZZ / ABOUT)
- * IX) CURSOR PARALLAX ON MUSIC TYPE INTRO'S
+ * IX)   CURSOR PARALLAX ON MUSIC TYPE INTRO'S
  ******************/
 /*******************
 ******************** WEBSITE DISC LOADER
@@ -82,39 +82,75 @@ $startButton.addEventListener('click', () =>
 
 
 //RAP'S ORIGIN TIMELINE PULSE BUTTONS
-const $pulseButtons = $rapOrigin.querySelectorAll('.js-pulse-button')
+const $timelineLineFillerRap = document.querySelector('.timeline-line-filler.rap-filler')
+const $pulseButtonsRap = $rapOrigin.querySelectorAll('.js-pulse-button-rap')
+const $pulseButtonsRapInner = $rapOrigin.querySelectorAll('.js-timeline-button-rap')
+
 const $pulseButtonText = $rapOrigin.querySelector('.js-pulse-button-text')
-let selectedButton = 0
 const rapOriginTexts = ['1982 : The Message de Grandmaster Flash est la révolution annoncée. C’est le premier tube hip-hop ; une culture de rue qui était alors composée principalement de danse et de set.', '1982 : les Beastie Boys commencèrent eux aussi à se faire connaître, prouvant et montrant ainsi que la culture hip-hop était bien un mélange de culture et d\'influence noir et blanche.', '1996 : L’album All eyez on me 2Pac reconnu comme l’un des plus influent de l’histoire du hip-hop. Côté West-Coast en guerre avec la East-Coast des USA', '1997 : Life after Death : album sortie à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de hip-hop le plus vendu tous les temps.', '2002 : Lose Yourself musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un Oscar et deux Grammy Awards.']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
 $rapOrigin.addEventListener('click', () =>
 {
-    for (let i = 0; i < $pulseButtons.length; i++)
+    for (let i = 0; i < $pulseButtonsRap.length; i++)
     {
-        $pulseButtons[i].addEventListener('click', () =>
+        $pulseButtonsRap[i].addEventListener('click', () =>
         {
-            selectedButton = i
-            $pulseButtons[i].style.backgroundColor = '#FFBA00'
-            $pulseButtons[i].classList.add('pulse-button-animation')
+            $pulseButtonsRapInner[i].style.backgroundColor = '#FFF'
+            $pulseButtonsRap[i].classList.add('pulse-button-animation')
             $pulseButtonText.innerHTML = rapOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/grandmaster-flash.png')` }
+            {
+                $timelineLineFillerRap.style.transform = `scaleX(1)`
+                $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+3].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+4].style.backgroundColor = '#F0F0F0'
+                $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/grandmaster-flash.png')`
+            }
             else if (i == 1)
-            { $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/beastie-boys.png')` }
+            {
+                $timelineLineFillerRap.style.transform = `scaleX(3)`
+                $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+3].style.backgroundColor = '#F0F0F0'
+                $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/beastie-boys.png')`
+            }
             else if (i == 2)
-            { $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/2pac.png')` }
+            {
+                $timelineLineFillerRap.style.transform = `scaleX(5)`
+                $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsRapInner[i+2].style.backgroundColor = '#F0F0F0'
+                $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/2pac.png')`
+            }
             else if (i == 3)
-            { $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/notorious-big.png')` }
+            {
+                $timelineLineFillerRap.style.transform = `scaleX(7)`
+                $pulseButtonsRapInner[i-3].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i+1].style.backgroundColor = '#F0F0F0'
+                $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/notorious-big.png')`
+            }
             else if (i == 4)
-            { $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/eminem.png')` }
+            {
+                $timelineLineFillerRap.style.transform = `scaleX(9)`
+                $pulseButtonsRapInner[i-4].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-3].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
+                $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
+                $rapOrigin.style.backgroundImage = `url('./images/rap/rap-timeline/eminem.png')`
+            }
         })
-        if (i != selectedButton)
-        {
-            $pulseButtons[i].style.backgroundColor = `#FFF`
-            $pulseButtons[i].classList.remove('pulse-button-animation')
-        }
     }
 })
 

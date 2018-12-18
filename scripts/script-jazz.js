@@ -1,16 +1,18 @@
 /*******************
- * I) JAZZ'S ORIGIN
- * II) JAZZ'S TYPES
+ * I)   JAZZ'S ORIGIN
+ * II)  JAZZ'S TYPES
  * III) JAZZ'S MESSAGE
- * IV) JAZZ'S IMPACTS
+ * IV)  JAZZ'S IMPACTS
  ******************/
 /*******************
 ******************** JAZZ'S ORIGIN TIMELINE
 *******************/
 //JAZZ'S ORIGIN TIMELINE PULSE BUTTONS
+const $timelineLineFillerJazz = document.querySelector('.timeline-line-filler.jazz-filler')
 const $pulseButtonsJazz = $jazzOrigin.querySelectorAll('.js-pulse-button-jazz')
+const $pulseButtonsJazzInner = $jazzOrigin.querySelectorAll('.js-timeline-button-jazz')
+
 const $pulseButtonTextJazz = $jazzOrigin.querySelector('.js-pulse-button-text-jazz')
-let selectedButtonJazz = 0
 const jazzOriginTexts = ['1938 : Benny Goodman a réalisé selon Bruce Eder le concert de jazz le plus important de l’histoire : cette fête est devenue le «coming out» du jazz dans le monde de la musique «respectable».', '1939 : Body and Soul par Coleman Hawkins, est un enregistrement très populaire et une source d’inspiration pour de nombreux musiciens. Ce morceau devient fondateur du genre be-bop', '1957 : John Coltrane est considéré comme le saxophoniste le plus révolutionnaire et influant de l’histoire du Jazz. Son album Blue Train va engendrer la popularité du hard bop.', '1959 :  Kind of Blue de Miles Davis est l’album de jazz le plus vendu de tous les temps. Il est considéré pour nombreux comme l’un des albums les plus influents jamais enregistrés dans l’histoire du jazz.', '1969 : Franck Zappa a sorti son album Hot Rats qui deviendra pionnier du genre Jazz-Rock. L’album est cité dans l’ouvrage de référence de Robert Dimery «les 1001 albums qu’il faut avoir écoutés dans sa vie».']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
@@ -20,27 +22,60 @@ $jazzOrigin.addEventListener('click', () =>
     {
         $pulseButtonsJazz[i].addEventListener('click', () =>
         {
-            selectedButtonJazz = i
-            $pulseButtonsJazz[i].style.backgroundColor = '#BF3333'
-            $pulseButtonsJazz[i].classList.add('pulse-button-animation-jazz')
+            $pulseButtonsJazzInner[i].style.backgroundColor = '#FFF'
             $pulseButtonTextJazz.innerHTML = jazzOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/benny.png')` }
+            {
+                $timelineLineFillerJazz.style.transform = `scaleX(1)`
+                $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+3].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+4].style.backgroundColor = '#F0F0F0'
+                $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/benny.png')`
+            }
             else if (i == 1)
-            { $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/coleman-hawkins.png')` }
+            {
+                $timelineLineFillerJazz.style.transform = `scaleX(3)`
+                $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+3].style.backgroundColor = '#F0F0F0'
+                $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/coleman-hawkins.png')`
+            }
             else if (i == 2)
-            { $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/john-coltrane.png')` }
+            {
+                $timelineLineFillerJazz.style.transform = `scaleX(5)`
+                $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsJazzInner[i+2].style.backgroundColor = '#F0F0F0'
+                $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/john-coltrane.png')`
+            }
             else if (i == 3)
-            { $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/kindofblue-session.png')` }
+            {
+                $timelineLineFillerJazz.style.transform = `scaleX(7)`
+                $pulseButtonsJazzInner[i-3].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i+1].style.backgroundColor = '#F0F0F0'
+                $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/kindofblue-session.png')`
+            }
             else if (i == 4)
-            { $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/franck-zappa.png')` }
+            {
+                $timelineLineFillerJazz.style.transform = `scaleX(9)`
+                $pulseButtonsJazzInner[i-4].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-3].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
+                $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
+                $jazzOrigin.style.backgroundImage = `url('./images/jazz/jazz-timeline/franck-zappa.png')`
+            }
         })
-        if (i != selectedButtonJazz)
-        {
-            $pulseButtonsJazz[i].style.backgroundColor = `#FFF`
-            $pulseButtonsJazz[i].classList.remove('pulse-button-animation-jazz')
-        }
     }
 })
 

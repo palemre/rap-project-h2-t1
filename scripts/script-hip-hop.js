@@ -1,17 +1,19 @@
 /*******************
- * I) HIP-HOP'S ORIGIN
- * II) HIP-HOP'S TYPES
+ * I)   HIP-HOP'S ORIGIN
+ * II)  HIP-HOP'S TYPES
  * III) HIP-HOP'S MESSAGE
- * IV) HIP-HOP'S IMPACTS
- * V) BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : HIP-HOP -> JAZZ
+ * IV)  HIP-HOP'S IMPACTS
+ * V)   BACK IN TIME TUNNEL EFFECT FOR PASSING BETWEEN MUSIC TYPES : HIP-HOP -> JAZZ
  ******************/
 /*******************
 ******************** HIP-HOP'S ORIGIN TIMELINE
 *******************/
 //HIP-HOP'S ORIGIN TIMELINE PULSE BUTTONS
+const $timelineLineFillerHipHop = document.querySelector('.timeline-line-filler.hip-hop-filler')
 const $pulseButtonsHipHop = $hiphopOrigin.querySelectorAll('.js-pulse-button-hip-hop')
+const $pulseButtonsHipHopInner = $hiphopOrigin.querySelectorAll('.js-timeline-button-hip-hop')
+
 const $pulseButtonTextHipHop = $hiphopOrigin.querySelector('.js-pulse-button-text-hip-hop')
-let selectedButtonHipHop = 0
 const hiphopOriginTexts = ['1984 : Run DMC par DMC et REV RUN sont l’un des premiers groupes à avoir sorti un album sur le hip-hop devenant un incontournable du genre.', '1987 : Paid in full - par Eric B & Rakim, la sortie de cette album marque l’age d’or du hip hop et il figure dans la liste des ‘500 plus grands albums de tous les temps’ par le magazine Rolling Stones.', '1988 : Public enemy - It takes A nation Of Millions to hold Us Back. Le deuxième album de Public Enemy présente un vrai discours révolutionnaire sur l’état de la nation.', '1996 : The Score de The Fugees ont transformé le hip hop en pop, et on marqué l’histoire par leurs sublimes reprises ainsi que leurs chansons ‘conscientes’', '2004 : The College Drop out par Kanye West, c’est un album ayant reçu 10 nominations aux Grammy Award en 2005. Cet album a marqué l’histoire du rap par son analyse encore pertinente de l’Occident.']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
@@ -21,27 +23,60 @@ $hiphopOrigin.addEventListener('click', () =>
     {
         $pulseButtonsHipHop[i].addEventListener('click', () =>
         {
-            selectedButtonHipHop = i
-            $pulseButtonsHipHop[i].style.backgroundColor = '#7762E8'
-            $pulseButtonsHipHop[i].classList.add('pulse-button-animation-hip-hop')
+            $pulseButtonsHipHopInner[i].style.backgroundColor = '#FFF'
             $pulseButtonTextHipHop.innerHTML = hiphopOriginTexts[i]
             //CHANGE BACKGROUND IMAGE ACCORDING TO SELECTED POINT
             if (i == 0)
-            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/run-dmc.png')` }
+            {
+                $timelineLineFillerHipHop.style.transform = `scaleX(1)`
+                $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+3].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+4].style.backgroundColor = '#F0F0F0'
+                $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/run-dmc.png')`
+            }
             else if (i == 1)
-            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/paid-in-full.png')` }
+            {
+                $timelineLineFillerHipHop.style.transform = `scaleX(3)`
+                $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+2].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+3].style.backgroundColor = '#F0F0F0'
+                $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/paid-in-full.png')`
+            }
             else if (i == 2)
-            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/public-enemy.png')` }
+            {
+                $timelineLineFillerHipHop.style.transform = `scaleX(5)`
+                $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i+1].style.backgroundColor = '#F0F0F0'
+                $pulseButtonsHipHopInner[i+2].style.backgroundColor = '#F0F0F0'
+                $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/public-enemy.png')`
+            }
             else if (i == 3)
-            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/the-fugees.png')` }
+            {
+                $timelineLineFillerHipHop.style.transform = `scaleX(7)`
+                $pulseButtonsHipHopInner[i-3].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i+1].style.backgroundColor = '#F0F0F0'
+                $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/the-fugees.png')`
+            }
             else if (i == 4)
-            { $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/college-droput-hero.png')` }
+            {
+                $timelineLineFillerHipHop.style.transform = `scaleX(9)`
+                $pulseButtonsHipHopInner[i-4].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-3].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
+                $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
+                $hiphopOrigin.style.backgroundImage = `url('./images/hip-hop/hip-hop-timeline/college-droput-hero.png')`
+            }
         })
-        if (i != selectedButtonHipHop)
-        {
-            $pulseButtonsHipHop[i].style.backgroundColor = `#FFF`
-            $pulseButtonsHipHop[i].classList.remove('pulse-button-animation-hip-hop')
-        }
     }
 })
 
