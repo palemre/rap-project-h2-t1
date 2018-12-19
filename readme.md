@@ -37,6 +37,9 @@ Tools used for the conception of the website :
 * [HTML5](https://www.w3.org/html/) - Markup Language
 * [CSS3](https://www.w3.org/Style/CSS/Overview.en.html) - Stylesheeet language
 * [JAVASCRIPT](https://www.javascript.com/) - Interpreted programming language
+* [TEXTFIXER](http://www.textfixerfr.com/html/compresser-du-code-html.php) - HTML minifier
+* [CSSMINIFIER](https://cssminifier.com/) - CSS Minifier
+* [MINIFIER](https://www.minifier.org/) - JS Minifier
 
 Team workflow :
 * [GitHub](https://github.com/) - Versionning tool
