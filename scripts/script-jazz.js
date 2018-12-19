@@ -41,7 +41,7 @@ $jazzOrigin.addEventListener('click', () =>
             }
             else if (i == 1)
             {
-                $timelineLineFillerJazz.style.transform = `scaleX(3)`
+                $timelineLineFillerJazz.style.transform = `scaleX(2)`
                 $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i+1].style.backgroundColor = '#F0F0F0'
@@ -51,7 +51,7 @@ $jazzOrigin.addEventListener('click', () =>
             }
             else if (i == 2)
             {
-                $timelineLineFillerJazz.style.transform = `scaleX(5)`
+                $timelineLineFillerJazz.style.transform = `scaleX(3)`
                 $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i].style.backgroundColor = '#BF3333'
@@ -61,7 +61,7 @@ $jazzOrigin.addEventListener('click', () =>
             }
             else if (i == 3)
             {
-                $timelineLineFillerJazz.style.transform = `scaleX(7)`
+                $timelineLineFillerJazz.style.transform = `scaleX(4)`
                 $pulseButtonsJazzInner[i-3].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i-1].style.backgroundColor = '#BF3333'
@@ -71,7 +71,7 @@ $jazzOrigin.addEventListener('click', () =>
             }
             else if (i == 4)
             {
-                $timelineLineFillerJazz.style.transform = `scaleX(9)`
+                $timelineLineFillerJazz.style.transform = `scaleX(5)`
                 $pulseButtonsJazzInner[i-4].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i-3].style.backgroundColor = '#BF3333'
                 $pulseButtonsJazzInner[i-2].style.backgroundColor = '#BF3333'

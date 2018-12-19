@@ -42,7 +42,7 @@ $hiphopOrigin.addEventListener('click', () =>
             }
             else if (i == 1)
             {
-                $timelineLineFillerHipHop.style.transform = `scaleX(3)`
+                $timelineLineFillerHipHop.style.transform = `scaleX(2)`
                 $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i+1].style.backgroundColor = '#F0F0F0'
@@ -52,7 +52,7 @@ $hiphopOrigin.addEventListener('click', () =>
             }
             else if (i == 2)
             {
-                $timelineLineFillerHipHop.style.transform = `scaleX(5)`
+                $timelineLineFillerHipHop.style.transform = `scaleX(3)`
                 $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i].style.backgroundColor = '#7762E8'
@@ -62,7 +62,7 @@ $hiphopOrigin.addEventListener('click', () =>
             }
             else if (i == 3)
             {
-                $timelineLineFillerHipHop.style.transform = `scaleX(7)`
+                $timelineLineFillerHipHop.style.transform = `scaleX(4)`
                 $pulseButtonsHipHopInner[i-3].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i-1].style.backgroundColor = '#7762E8'
@@ -72,7 +72,7 @@ $hiphopOrigin.addEventListener('click', () =>
             }
             else if (i == 4)
             {
-                $timelineLineFillerHipHop.style.transform = `scaleX(9)`
+                $timelineLineFillerHipHop.style.transform = `scaleX(5)`
                 $pulseButtonsHipHopInner[i-4].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i-3].style.backgroundColor = '#7762E8'
                 $pulseButtonsHipHopInner[i-2].style.backgroundColor = '#7762E8'
