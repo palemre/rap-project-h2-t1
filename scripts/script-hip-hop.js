@@ -199,6 +199,7 @@ $tunnelToJazz.addEventListener('click', () =>
     document.body.style.overflow = `hidden`
     $hipHopMainContainerToDisplay.classList.add('tunnel-animation')
     $hipHopMainContainerToDisplay.style.transform = `translateZ(802px)`
+    $jazzContent.style.transform = `translateZ(0)`
     const tunnelAnimation = setInterval(() =>
     {
         $hipHopMainContainerToDisplay.style.display = `none`
