@@ -29,7 +29,7 @@ Nothing to install.
 :star: Interactive fixed vertical dots for navigation inside a music type. Works with up/down arrow keys.<br>
 :hamburger: Fullscreen hamburger menu for navigation between music types and access to about box.<br>
 :sparkles: Back in time effect between different music types for describing history of rap.<br>
-:speaker: Mixed music playing at the background for each music type. Mix's composed by songs of 30 sec and choosen by ourself.
+:speaker: Mixed music playing at the background for each music type. Mix's composed by songs of 30 sec and choosen by ourself. Play/pause controlled by button and spacebar.
 
 ## Built With
 

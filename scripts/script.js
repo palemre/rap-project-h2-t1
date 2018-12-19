@@ -354,3 +354,22 @@ else if($hipHopMainContainerToDisplay.style.display!=`none`)
 {audioHipHop.play()}
 else if($jazzContent.style.display!=`none`)
 {audioJazz.play()}}})
+window.addEventListener('keydown',(_button)=>{_button.preventDefault()
+if(_button.keyCode=='32')
+{if($backgroundMusicController.classList.contains('playing'))
+{$backgroundMusicController.classList.remove('playing')
+$backgroundMusicController.classList.add('paused')
+if($rapMainContainerToDisplay.style.display!=`none`)
+{audioRap.pause()}
+else if($hipHopMainContainerToDisplay.style.display!=`none`)
+{audioHipHop.pause()}
+else if($jazzContent.style.display!=`none`)
+{audioJazz.pause()}}
+else{$backgroundMusicController.classList.remove('paused')
+$backgroundMusicController.classList.add('playing')
+if($rapMainContainerToDisplay.style.display!=`none`)
+{audioRap.play()}
+else if($hipHopMainContainerToDisplay.style.display!=`none`)
+{audioHipHop.play()}
+else if($jazzContent.style.display!=`none`)
+{audioJazz.play()}}}})
