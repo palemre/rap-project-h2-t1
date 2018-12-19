@@ -14,10 +14,10 @@ const $pulseButtonsJazzInner = $jazzOrigin.querySelectorAll('.js-timeline-button
 
 const $pulseButtonTextJazz = $jazzOrigin.querySelector('.js-pulse-button-text-jazz')
 const jazzOriginTexts = [`<span class="bigger-text">1938</span> : Benny Goodman a réalisé selon Bruce Eder le <span class="important-text-jazz">concert de jazz le plus important de l’histoire</span> : cette fête est devenue le «coming out» du jazz dans le monde de la musique «respectable».`,
-`<span class="bigger-text">1939</span> : <span class="important-text-jazz">Body and Soul</span> par Coleman Hawkins, est un enregistrement très populaire et une source d’inspiration pour de nombreux musiciens. Ce morceau devient <span class="important-text-jazz">fondateur du genre be-bop</span>`,
+`<span class="bigger-text">1939</span> : <span class="important-text-jazz">Body and Soul</span> par Coleman Hawkins, est un enregistrement très populaire et une source d’inspiration pour de nombreux musiciens. Ce morceau devient <span class="important-text-jazz">fondateur du genre be-bop</span>.`,
 `<span class="bigger-text">1957</span> : <span class="important-text-jazz">John Coltrane</span> est considéré comme le saxophoniste le plus révolutionnaire et influant de l’histoire du Jazz. Son album <span class="important-text-jazz">Blue Train</span> va engendrer la popularité du <span class="important-text-jazz">hard bop</span>.`,
 `<span class="bigger-text">1959</span> :  <span class="important-text-jazz">Kind of Blue</span> de Miles Davis est l’<span class="important-text-jazz">album de jazz le plus vendu de tous les temps</span>. Il est considéré pour nombreux comme l’un des albums les plus influents jamais enregistrés dans l’histoire du jazz.`,
-`<span class="bigger-text">1969</span> : Franck Zappa a sorti son album <span class="important-text-jazz">Hot Rats</span> qui deviendra pionnier du genre <span class="important-text-jazz">Jazz-Rock</span>. L’album est cité dans l’ouvrage de référence de Robert Dimery «les 1001 albums qu’il faut avoir écoutés dans sa vie».`]
+`<span class="bigger-text">1969</span> : Franck Zappa a sorti son album <span class="important-text-jazz">Hot Rats</span> qui deviendra pionnier du genre <span class="important-text-jazz">Jazz-Rock</span>. L’album est cité dans l’ouvrage de référence de Robert Dimery «les 1001 albums qu’il faut avoir écouté dans sa vie».`]
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
 $jazzOrigin.addEventListener('click', () =>

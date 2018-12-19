@@ -100,7 +100,7 @@ const $pulseButtonsRapInner = $rapOrigin.querySelectorAll('.js-timeline-button-r
 
 const $pulseButtonText = $rapOrigin.querySelector('.js-pulse-button-text')
 const rapOriginTexts = [`<span class="bigger-text">1970</span> : Le genre se développe en tant que <span class="important-text">mouvement culturel et artistique</span> aux États-Unis, à New York, dans le <span class="important-text">South Bronx</span> au début des années <span class="important-text">1970 - 1980</span>.`,
-`<span class="bigger-text">1982</span> : les <span class="important-text">Beastie Boys</span> commencèrent à se faire connaître, prouvant que le rap, issu du <span class="important-text">hip-hop</span> était bien un mélange de culture et d'influence noir et blanche.`,
+`<span class="bigger-text">1982</span> : les <span class="important-text">Beastie Boys</span> commencèrent à se faire connaître, prouvant que le rap, issu du <span class="important-text">hip-hop</span> était bien un mélange de culture et d'influence noire et blanche.`,
 `<span class="bigger-text">1996</span> : L’album All eyez on me <span class="important-text">2Pac</span> reconnu comme l’un des plus influent de l’histoire du hip-hop. Gang West-Coast en <span class="important-text">guerre</span> avec la East-Coast des USA`,
 `<span class="bigger-text">1997</span> : <span class="important-text">Life after Death</span> : album sorti à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de <span class="important-text">hip-hop le plus vendu tous les temps</span>.`,
 '2002 : <span class="important-text">Lose Yourself</span> musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un <span class="important-text">Oscar et deux Grammy Awards</span>.']

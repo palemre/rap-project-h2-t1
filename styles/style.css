@@ -34,11 +34,6 @@ body
 }
 @font-face
 {
-    font-family: 'Rajdhani'; /* Font for inter-title */
-    src: url('../fonts/rajdhani/rajdhani-semibold.ttf');
-}
-@font-face
-{
     font-family: 'Monument-Extended'; /* Font for titles */
     src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
