@@ -20,16 +20,16 @@ Nothing to install.
 
 ## Features
 
-:sparkles: Own logo and favicon.<br>
-:sparkles: Vinyl preload.<br>
-:sparkles: Headhphone animation.<br>
-:sparkles: Scroll down call to action animation.<br>
-:sparkles: 4 category per music type animation.<br>
-:sparkles: Interactive filling timeline for each music type with larger clickable area for better ergonomics.<br>
-:sparkles: Interactive fixed vertical dots for navigation inside a music type. Works with up/down arrow keys.<br>
-:sparkles: Fullscreen hamburger menu for navigation between music types and access to about box.<br>
+:anger: Own logo and favicon.<br>
+:cd: Vinyl preload.<br>
+:headphones: Headhphone animation.<br>
+:arrow_up_down: Scroll down call to action animation.<br>
+:anger: 4 category per music type animation.<br>
+:boom: Interactive filling timeline for each music type with larger clickable area for better ergonomics.<br>
+:star: Interactive fixed vertical dots for navigation inside a music type. Works with up/down arrow keys.<br>
+:hamburger: Fullscreen hamburger menu for navigation between music types and access to about box.<br>
 :sparkles: Back in time effect between different music types for describing history of rap.<br>
-:sparkles: Mixed music playing at the background for each music type. Mix's composed by songs of 30 sec and choosen by ourself.
+:speaker: Mixed music playing at the background for each music type. Mix's composed by songs of 30 sec and choosen by ourself.
 
 ## Built With
 

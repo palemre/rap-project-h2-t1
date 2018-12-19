@@ -773,16 +773,16 @@ body
     background: url('../images/rap/rap-message-background.png');
     background-size: cover;
 }
-.music-style-message-text-la
+.music-style-message-text-le
 {
     font-family: 'Monument-Extended';
     color: var(--colorForText);
     font-size: 3.15rem;
     position: absolute;
     bottom: 1.5%;
-    left: 20%;
+    left: 20.2%;
 }
-.music-style-message-text-morale
+.music-style-message-text-message
 {
     font-family: 'Monument-Extended';
     color: var(--colorForTitleInRap);
@@ -819,7 +819,7 @@ body
     font-size: 2.35rem;
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 20.2%;
 }
 .music-style-impacts-text-impacts
 {

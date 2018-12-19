@@ -94,14 +94,14 @@
     background: url('../images/jazz/jazz-message-background.png');
     background-size: cover;
 }
-.music-style-message.jazz-message .music-style-message-text-morale
+.music-style-message.jazz-message .music-style-message-text-message
 { color: var(--colorForTitleInJazz); }
-.music-style-message.jazz-message .music-style-message-text-la
+.music-style-message.jazz-message .music-style-message-text-le
 { color: var(--colorForText); }
 /* STYLE FOR JAZZ'S MESSAGE IN STYLE.CSS
     .music-style-message
-    .music-style-message-text-la
-    .music-style-message-text-morale
+    .music-style-message-text-le
+    .music-style-message-text-message
     .music-style-message-description-text
 */
 .music-style-message-description-text.jazz-message-text

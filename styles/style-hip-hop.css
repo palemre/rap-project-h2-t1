@@ -94,14 +94,14 @@
     background: url('../images/hip-hop/hip-hop-message-background.png');
     background-size: cover;
 }
-.music-style-message.hip-hop-message .music-style-message-text-morale
+.music-style-message.hip-hop-message .music-style-message-text-message
 { color: var(--colorForTitleInHipHop); }
-.music-style-message.hip-hop-message .music-style-message-text-la
+.music-style-message.hip-hop-message .music-style-message-text-le
 { color: var(--colorForText); }
 /* STYLE FOR HIP-HOP'S MESSAGE IN STYLE.CSS
     .music-style-message
-    .music-style-message-text-la
-    .music-style-message-text-morale
+    .music-style-message-text-le
+    .music-style-message-text-message
     .music-style-message-description-text
 */
 .music-style-message-description-text.hip-hop-message-text

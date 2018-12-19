@@ -13,12 +13,12 @@
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
-// const $discLoader = document.querySelector('.js-loader')
-// const discDisplay = setInterval(() =>
-// {
-//     $discLoader.remove()
-//     window.clearInterval(discDisplay)
-// }, 5000)
+const $discLoader = document.querySelector('.js-loader')
+const discDisplay = setInterval(() =>
+{
+    $discLoader.remove()
+    window.clearInterval(discDisplay)
+}, 5000)
 
 /*******************
 ******************** HEADPHONE WARNING + MAIN RAP WRAPPER DISPLAY
@@ -51,7 +51,7 @@ const headphoneDisplay = setInterval(() =>
     $headphoneWarning.style.display = `block`
     $startButton.style.display = `block`
     window.clearInterval(headphoneDisplay)
-}, 1000)
+}, 5000)
 
 $startButton.addEventListener('click', () =>
 {
@@ -98,7 +98,11 @@ const $pulseButtonsRap = $rapOrigin.querySelectorAll('.js-pulse-button-rap')
 const $pulseButtonsRapInner = $rapOrigin.querySelectorAll('.js-timeline-button-rap')
 
 const $pulseButtonText = $rapOrigin.querySelector('.js-pulse-button-text')
-const rapOriginTexts = ['1982 : The Message de Grandmaster Flash est la révolution annoncée. C’est le premier tube hip-hop ; une culture de rue qui était alors composée principalement de danse et de set.', '1982 : les Beastie Boys commencèrent eux aussi à se faire connaître, prouvant et montrant ainsi que la culture hip-hop était bien un mélange de culture et d\'influence noir et blanche.', '1996 : L’album All eyez on me 2Pac reconnu comme l’un des plus influent de l’histoire du hip-hop. Côté West-Coast en guerre avec la East-Coast des USA', '1997 : Life after Death : album sortie à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de hip-hop le plus vendu tous les temps.', '2002 : Lose Yourself musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un Oscar et deux Grammy Awards.']
+const rapOriginTexts = [`Le genre se développe en tant que <span class="important-text">mouvement culturel et artistique</span> aux États-Unis, à New York, dans le <span class="important-text">South Bronx</span> au début des années <span class="important-text">1970</span>.`,
+`1982 : les <span class="important-text">Beastie Boys</span> commencèrent à se faire connaître, prouvant que le rap, issu du <span class="important-text">hip-hop</span> était bien un mélange de culture et d'influence noir et blanche.`,
+`1996 : L’album All eyez on me <span class="important-text">2Pac</span> reconnu comme l’un des plus influent de l’histoire du hip-hop. Gang West-Coast en <span class="important-text">guerre</span> avec la East-Coast des USA`,
+`1997 : <span class="important-text">Life after Death</span> : album sorti à titre posthume de Notorious B.I.G côté East-Coast. Il est l’un des seuls album de <span class="important-text">hip-hop le plus vendu tous les temps</span>.`,
+'2002 : <span class="important-text">Lose Yourself</span> musique composée par Eminem présente sur la bande original de 8-Mile qui lui font gagner un <span class="important-text">Oscar et deux Grammy Awards</span>.']
 
 //CHANGE TEXT ACCORDING TO CLICKED BUTTON ON TIMELINE
 $rapOrigin.addEventListener('click', () =>
@@ -361,10 +365,14 @@ const $hiphopOrigin = $wrapperRapHistory.querySelector('.js-hip-hop-origin')
 
 $tunnelToHipHop.addEventListener('click', () =>
 {
-    //PLAY AUDIO OF HIP-HOP
-    audioJazz.pause()
-    audioRap.pause()
-    audioHipHop.play()
+    //CHECK IF PLAY BUTTON IS ON
+    if ($backgroundMusicController.classList.contains('playing'))
+    {
+        //PLAY AUDIO OF HIP-HOP
+        audioJazz.pause()
+        audioRap.pause()
+        audioHipHop.play()
+    }
 
     document.body.style.overflow = `hidden`
     $rapMainContainerToDisplay.classList.add('tunnel-animation')
