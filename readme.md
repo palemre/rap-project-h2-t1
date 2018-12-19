@@ -40,6 +40,7 @@ Tools used for the conception of the website :
 
 Team workflow :
 * [GitHub](https://github.com/) - Versionning tool
+* [Trello](https://trello.com/) - Project management tool
 * [Google Drive](https://www.google.com/drive/) - Online storage
 * [Adobe XD](https://www.adobe.com/fr/products/xd.html) - Designing & prototyping tool
 * [Adobe Audition CC](https://www.adobe.com/fr/products/audition.html) - Multitrack mix tool

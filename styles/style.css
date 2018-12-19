@@ -29,6 +29,11 @@ body
 }
 @font-face
 {
+    font-family: 'Quicksand-Bold'; /* Font for important text */
+    src: url('../fonts/quicksand/Quicksand-Bold.ttf');
+}
+@font-face
+{
     font-family: 'Rajdhani'; /* Font for inter-title */
     src: url('../fonts/rajdhani/rajdhani-semibold.ttf');
 }
@@ -38,11 +43,20 @@ body
     src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
 .important-text
-{ color: var(--colorForTitleInRap); }
+{
+    font-family: 'Quicksand-Bold';
+    color: var(--colorForTitleInRap);
+}
 .important-text-hip-hop
-{ color: var(--colorForTitleInHipHop); }
+{
+    font-family: 'Quicksand-Bold';
+    color: var(--colorForTitleInHipHop);
+}
 .important-text-jazz
-{ color: var(--colorForTitleInJazz); }
+{
+    font-family: 'Quicksand-Bold';
+    color: var(--colorForTitleInJazz);
+}
 /*******************
 ******************** WEBSITE DISC LOADER
 *******************/
