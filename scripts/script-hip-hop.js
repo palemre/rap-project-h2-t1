@@ -186,6 +186,7 @@ const $jazzMosaicBackgroundImage = $wrapperRapHistory.querySelector('.js-jazz-hi
 //SELECT JAZZ CONTENTS
 $tunnelToJazz.addEventListener('click', () =>
 {
+    audioTransition.play();
     //CHECK IF PLAY BUTTON IS ON
     if ($backgroundMusicController.classList.contains('playing'))
     {

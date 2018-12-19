@@ -42,6 +42,9 @@ body
     font-family: 'Monument-Extended'; /* Font for titles */
     src: url('../fonts/MonumentExtended/MonumentExtended-Ultrabold.otf');
 }
+/*******************
+******************** BOLD TEXT
+*******************/
 .important-text
 {
     font-family: 'Quicksand-Bold';
@@ -56,6 +59,11 @@ body
 {
     font-family: 'Quicksand-Bold';
     color: var(--colorForTitleInJazz);
+}
+.important-text-hip-hop.message-chretien
+{
+    font-family: 'Quicksand-Bold';
+    color: var(--colorForText);
 }
 /*******************
 ******************** WEBSITE DISC LOADER

@@ -41,6 +41,7 @@ const $backgroundMusicController = document.querySelector('.play-pause-box')
 const audioRap = new Audio('./musics/background-rap-music.mp3');
 const audioHipHop = new Audio('./musics/background-hip-hop-music.mp3');
 const audioJazz = new Audio('./musics/background-jazz-music.mp3');
+const audioTransition = new Audio('./musics/transition-sound.mp3');
 
 const offsetHeight = document.body.offsetHeight
 const offsetWidth = document.body.offsetWidth
@@ -365,6 +366,7 @@ const $hiphopOrigin = $wrapperRapHistory.querySelector('.js-hip-hop-origin')
 
 $tunnelToHipHop.addEventListener('click', () =>
 {
+    audioTransition.play();
     //CHECK IF PLAY BUTTON IS ON
     if ($backgroundMusicController.classList.contains('playing'))
     {
@@ -458,9 +460,14 @@ $navDisplayRap.addEventListener('click', () =>
     }
     //IF THE CURRENT PAGE IS RAP NOTHING TO DO
     //PLAY BACKGROUND RAP MUSIC
+    const tunnelAnimationSound = setInterval(() =>
+    {
+        audioRap.play()
+        window.clearInterval(tunnelAnimationSound)
+    }, 1000)
+    audioTransition.play();
     audioJazz.pause()
     audioHipHop.pause()
-    audioRap.play()
 })
 
 //ACCESS TO HIP-HOP'S PAGE
@@ -515,9 +522,14 @@ $navDisplayHipHop.addEventListener('click', () =>
     }
     //IF THE CURRENT PAGE IS HIP-HOP NOTHING TO DO
     //PLAY BACKGROUND HIP-HOP MUSIC
+    const tunnelAnimationSound = setInterval(() =>
+    {
+        audioHipHop.play()
+        window.clearInterval(tunnelAnimationSound)
+    }, 1000)
+    audioTransition.play();
     audioJazz.pause()
     audioRap.pause()
-    audioHipHop.play()
 })
 
 //ACCESS TO JAZZ'S PAGE
@@ -572,9 +584,14 @@ $navDisplayJazz.addEventListener('click', () =>
     }
     //IF THE CURRENT PAGE IS JAZZ NOTHING TO DO
     //PLAY BACKGROUND JAZZ MUSIC
+    const tunnelAnimationSound = setInterval(() =>
+    {
+        audioJazz.play()
+        window.clearInterval(tunnelAnimationSound)
+    }, 1000)
+    audioTransition.play();
     audioRap.pause()
     audioHipHop.pause()
-    audioJazz.play()
 })
 
 //DISPLAY ABOUT BOX
