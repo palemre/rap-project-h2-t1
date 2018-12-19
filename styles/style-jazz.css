@@ -23,6 +23,7 @@
     width: 100%;
     display: block;
     background: url('../images/jazz/mosaique-albums-jazz.png');
+    background-size: cover;
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 
@@ -108,6 +109,8 @@
 {
     top: 10%;
     width: 50%;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
 }
 
 /*******************
@@ -121,7 +124,7 @@
 .music-style-impacts.jazz-impacts .music-style-impacts-text-impacts
 { color: var(--colorForTitleInJazz); }
 .music-style-message.jazz-message .music-style-impacts-text-les
-{ color: var(--colorForText; }
+{ color: var(--colorForText); }
 /* STYLE FOR JAZZ'S IMPACTS IN STYLE.CSS
     .music-style-impacts
     .music-style-impacts-text-les
@@ -130,6 +133,8 @@
 */
 .music-style-impacts-description-text.jazz-impacts-text
 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
     top: 30%;
-    left: 16.1%;
+    left: 20%;
 }

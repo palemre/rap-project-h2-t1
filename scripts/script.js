@@ -128,7 +128,7 @@ $rapOrigin.addEventListener('click', () =>
             }
             else if (i == 1)
             {
-                $timelineLineFillerRap.style.transform = `scaleX(3)`
+                $timelineLineFillerRap.style.transform = `scaleX(2)`
                 $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i+1].style.backgroundColor = '#F0F0F0'
@@ -138,7 +138,7 @@ $rapOrigin.addEventListener('click', () =>
             }
             else if (i == 2)
             {
-                $timelineLineFillerRap.style.transform = `scaleX(5)`
+                $timelineLineFillerRap.style.transform = `scaleX(3)`
                 $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i].style.backgroundColor = '#FFBA00'
@@ -148,7 +148,7 @@ $rapOrigin.addEventListener('click', () =>
             }
             else if (i == 3)
             {
-                $timelineLineFillerRap.style.transform = `scaleX(7)`
+                $timelineLineFillerRap.style.transform = `scaleX(4)`
                 $pulseButtonsRapInner[i-3].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i-1].style.backgroundColor = '#FFBA00'
@@ -158,7 +158,7 @@ $rapOrigin.addEventListener('click', () =>
             }
             else if (i == 4)
             {
-                $timelineLineFillerRap.style.transform = `scaleX(9)`
+                $timelineLineFillerRap.style.transform = `scaleX(5)`
                 $pulseButtonsRapInner[i-4].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i-3].style.backgroundColor = '#FFBA00'
                 $pulseButtonsRapInner[i-2].style.backgroundColor = '#FFBA00'

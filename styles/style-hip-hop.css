@@ -23,6 +23,7 @@
     width: 100%;
     display: block;
     background: url('../images/hip-hop/mosaique-albums-hip-hop.png');
+    background-size: cover;
     box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 1) inset;
 }
 
@@ -107,7 +108,8 @@
 .music-style-message-description-text.hip-hop-message-text
 {
     top: 10%;
-    width: 50%;
+    width: 60%;
+    font-size: 1.4rem;
 }
 
 /*******************
@@ -130,8 +132,9 @@
 */
 .music-style-impacts-description-text.hip-hop-impacts-text
 {
-    top: 60%;
+    top: 35%;
     left: 20%;
+    font-size: 1.4rem;
 }
 
 /*******************
@@ -147,3 +150,16 @@
     .tunnel-animation-in
 */
 /* BUTTON FOR TUNNEL ANIMATION IN STYLE.CSS -> .tunnel-button-container */
+a.tunnel-button.hip-hop-tunnel-button
+{ color: var(--colorForTitleInHipHop); }
+.tunnel-button.hip-hop-tunnel-button
+{ border: 3px solid var(--colorForTitleInHipHop); }
+.tunnel-button.hip-hop-tunnel-button:hover
+{
+    border: 3px solid var(--colorForTitleInJazz);
+    border-radius: 2rem;
+}
+.tunnel-button.hip-hop-tunnel-button:before
+{ background-color: var(--colorForTitleInJazz); }
+a.tunnel-button:hover
+{ color: #FFF; }
