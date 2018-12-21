@@ -54,7 +54,7 @@ $pulseButtonsRapInner[i+3].style.backgroundColor='#F0F0F0'
 $pulseButtonsRapInner[i+4].style.backgroundColor='#F0F0F0'
 $rapOrigin.style.backgroundImage=`url('./images/rap/rap-timeline/grandmaster-flash.png')`}
 else if(i==1)
-{$timelineLineFillerRap.style.transform=`scaleX(2)`
+{$timelineLineFillerRap.style.transform=`scaleX(3)`
 $pulseButtonsRapInner[i-1].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i+1].style.backgroundColor='#F0F0F0'
@@ -62,7 +62,7 @@ $pulseButtonsRapInner[i+2].style.backgroundColor='#F0F0F0'
 $pulseButtonsRapInner[i+3].style.backgroundColor='#F0F0F0'
 $rapOrigin.style.backgroundImage=`url('./images/rap/rap-timeline/beastie-boys.png')`}
 else if(i==2)
-{$timelineLineFillerRap.style.transform=`scaleX(3)`
+{$timelineLineFillerRap.style.transform=`scaleX(5)`
 $pulseButtonsRapInner[i-2].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i-1].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i].style.backgroundColor='#FFBA00'
@@ -70,7 +70,7 @@ $pulseButtonsRapInner[i+1].style.backgroundColor='#F0F0F0'
 $pulseButtonsRapInner[i+2].style.backgroundColor='#F0F0F0'
 $rapOrigin.style.backgroundImage=`url('./images/rap/rap-timeline/2pac.png')`}
 else if(i==3)
-{$timelineLineFillerRap.style.transform=`scaleX(4)`
+{$timelineLineFillerRap.style.transform=`scaleX(7)`
 $pulseButtonsRapInner[i-3].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i-2].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i-1].style.backgroundColor='#FFBA00'
@@ -78,7 +78,7 @@ $pulseButtonsRapInner[i].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i+1].style.backgroundColor='#F0F0F0'
 $rapOrigin.style.backgroundImage=`url('./images/rap/rap-timeline/notorious-big.png')`}
 else if(i==4)
-{$timelineLineFillerRap.style.transform=`scaleX(5)`
+{$timelineLineFillerRap.style.transform=`scaleX(9)`
 $pulseButtonsRapInner[i-4].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i-3].style.backgroundColor='#FFBA00'
 $pulseButtonsRapInner[i-2].style.backgroundColor='#FFBA00'

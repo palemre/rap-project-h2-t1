@@ -15,7 +15,7 @@ $pulseButtonsJazzInner[i+3].style.backgroundColor='#F0F0F0'
 $pulseButtonsJazzInner[i+4].style.backgroundColor='#F0F0F0'
 $jazzOrigin.style.backgroundImage=`url('./images/jazz/jazz-timeline/benny.png')`}
 else if(i==1)
-{$timelineLineFillerJazz.style.transform=`scaleX(2)`
+{$timelineLineFillerJazz.style.transform=`scaleX(3)`
 $pulseButtonsJazzInner[i-1].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i+1].style.backgroundColor='#F0F0F0'
@@ -23,7 +23,7 @@ $pulseButtonsJazzInner[i+2].style.backgroundColor='#F0F0F0'
 $pulseButtonsJazzInner[i+3].style.backgroundColor='#F0F0F0'
 $jazzOrigin.style.backgroundImage=`url('./images/jazz/jazz-timeline/coleman-hawkins.png')`}
 else if(i==2)
-{$timelineLineFillerJazz.style.transform=`scaleX(3)`
+{$timelineLineFillerJazz.style.transform=`scaleX(5)`
 $pulseButtonsJazzInner[i-2].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i-1].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i].style.backgroundColor='#BF3333'
@@ -31,7 +31,7 @@ $pulseButtonsJazzInner[i+1].style.backgroundColor='#F0F0F0'
 $pulseButtonsJazzInner[i+2].style.backgroundColor='#F0F0F0'
 $jazzOrigin.style.backgroundImage=`url('./images/jazz/jazz-timeline/john-coltrane.png')`}
 else if(i==3)
-{$timelineLineFillerJazz.style.transform=`scaleX(4)`
+{$timelineLineFillerJazz.style.transform=`scaleX(7)`
 $pulseButtonsJazzInner[i-3].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i-2].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i-1].style.backgroundColor='#BF3333'
@@ -39,7 +39,7 @@ $pulseButtonsJazzInner[i].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i+1].style.backgroundColor='#F0F0F0'
 $jazzOrigin.style.backgroundImage=`url('./images/jazz/jazz-timeline/kindofblue-session.png')`}
 else if(i==4)
-{$timelineLineFillerJazz.style.transform=`scaleX(5)`
+{$timelineLineFillerJazz.style.transform=`scaleX(9)`
 $pulseButtonsJazzInner[i-4].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i-3].style.backgroundColor='#BF3333'
 $pulseButtonsJazzInner[i-2].style.backgroundColor='#BF3333'

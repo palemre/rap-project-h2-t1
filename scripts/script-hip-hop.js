@@ -15,7 +15,7 @@ $pulseButtonsHipHopInner[i+3].style.backgroundColor='#F0F0F0'
 $pulseButtonsHipHopInner[i+4].style.backgroundColor='#F0F0F0'
 $hiphopOrigin.style.backgroundImage=`url('./images/hip-hop/hip-hop-timeline/run-dmc.png')`}
 else if(i==1)
-{$timelineLineFillerHipHop.style.transform=`scaleX(2)`
+{$timelineLineFillerHipHop.style.transform=`scaleX(3)`
 $pulseButtonsHipHopInner[i-1].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i+1].style.backgroundColor='#F0F0F0'
@@ -23,7 +23,7 @@ $pulseButtonsHipHopInner[i+2].style.backgroundColor='#F0F0F0'
 $pulseButtonsHipHopInner[i+3].style.backgroundColor='#F0F0F0'
 $hiphopOrigin.style.backgroundImage=`url('./images/hip-hop/hip-hop-timeline/paid-in-full.png')`}
 else if(i==2)
-{$timelineLineFillerHipHop.style.transform=`scaleX(3)`
+{$timelineLineFillerHipHop.style.transform=`scaleX(5)`
 $pulseButtonsHipHopInner[i-2].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i-1].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i].style.backgroundColor='#7762E8'
@@ -31,7 +31,7 @@ $pulseButtonsHipHopInner[i+1].style.backgroundColor='#F0F0F0'
 $pulseButtonsHipHopInner[i+2].style.backgroundColor='#F0F0F0'
 $hiphopOrigin.style.backgroundImage=`url('./images/hip-hop/hip-hop-timeline/public-enemy.png')`}
 else if(i==3)
-{$timelineLineFillerHipHop.style.transform=`scaleX(4)`
+{$timelineLineFillerHipHop.style.transform=`scaleX(7)`
 $pulseButtonsHipHopInner[i-3].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i-2].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i-1].style.backgroundColor='#7762E8'
@@ -39,7 +39,7 @@ $pulseButtonsHipHopInner[i].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i+1].style.backgroundColor='#F0F0F0'
 $hiphopOrigin.style.backgroundImage=`url('./images/hip-hop/hip-hop-timeline/the-fugees.png')`}
 else if(i==4)
-{$timelineLineFillerHipHop.style.transform=`scaleX(5)`
+{$timelineLineFillerHipHop.style.transform=`scaleX(9)`
 $pulseButtonsHipHopInner[i-4].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i-3].style.backgroundColor='#7762E8'
 $pulseButtonsHipHopInner[i-2].style.backgroundColor='#7762E8'
